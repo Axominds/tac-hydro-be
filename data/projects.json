@@ -1,0 +1,1283 @@
+[
+  {
+    "id": "fs-1",
+    "title": "Ghatte Khola Small Hydropower Project",
+    "installedCapacity": "5 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Completed",
+    "location": [
+      27.78,
+      86.3
+    ],
+    "role": "TAC Hydro Engineers (P). Ltd. was commissioned to conduct the Updated Detailed Feasibility Study. Our role involves a comprehensive technical assessment, including the design and calculation of hydraulic structures, construction planning, and cost estimation to contributing renewable energy to the national grid via the Singati Substation.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27˚46’25” N to 27˚47’14” N and Longitude: 86˚17’00” E to 86˚18’35” E",
+      "Project Location": "Gaurishankar Gaupalika (Marbu), Dolakha District, Bagmati Province",
+      "Installed Capacity": "5.00 MW",
+      "Design Discharge": "1.78 m³/s (Q40)",
+      "Gross Head": "328 m",
+      "Design Flood": "90.70 m³/s",
+      "Diversion Type": "Side orifice intake with boulder riprap weir",
+      "Headrace Pipe Length/Diameter": "2,129.25 m / 1.2 m diameter",
+      "Penstock Pipe Length/Diameter": "1,022.25 m / 0.9 m diameter",
+      "Thickness of Pipe": "8 mm to 20 mm",
+      "Unit Capacity": "2.5 MW per unit (2 units of Pelton Turbines)"
+    },
+    "images": [
+      "data/public/images/Ghatte Khola Small/1.JPG",
+      "data/public/images/Ghatte Khola Small/5.jpg",
+      "data/public/images/Ghatte Khola Small/3.jpg",
+      "data/public/images/Ghatte Khola Small/4.jpg"
+    ],
+    "description": "The Ghatte Khola Small Hydropower Project is a 5 MW run-of-the-river facility located on the Ghatte Khola, a tributary of the Khare/Khani Khola, in Gaurishankar Gaupalika, Dolakha District. Positioned in the steep terrain of Bagmati Province, the project harnesses a high head system to contribute renewable energy to the national grid via the Singati Substation."
+  },
+  {
+    "id": "fs-4",
+    "title": "Rawa Khola Hydropower Project",
+    "installedCapacity": "6.7 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Completed",
+    "location": [
+      27.32,
+      86.76
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. provided consulting services for the Updated Feasibility Study of the Rawa Khola Hydropower Project (RKHP), developed by Haleshi Hydropower Private Limited in Khotang District, Eastern Nepal, on 28th February 2025.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27°18’54” N to 27°20’15” N and Longitude: 86°45’30” E to 86°47’00” E",
+      "Project Location": "Kepilasgadhi and Aiselukharka Rural Municipalities, Khotang District, Koshi Province",
+      "Installed Capacity": "6.7 MW",
+      "Design Discharge": "7.55 m³/s (Q40)",
+      "Gross Head": "113.5 m",
+      "Design Flood": "374.3 m³/s",
+      "Diversion Type": "Ogee weir with side intake",
+      "Headrace Pipe Length/Diameter": "2840.09 m / 2 m, 1.9 m, 1.8 m",
+      "Thickness of Headrace Pipe": "8-12 mm",
+      "Connecting Pipe Length/Diameter": "100 m / 1.8 m",
+      "Thickness of Connecting Pipe": "8 mm",
+      "Penstock Pipe Length/Diameter": "473.70 m / 1.8 m, 1.275 m",
+      "Thickness of Penstock Pipe": "10-12 mm",
+      "Unit Capacity": "3.454 MW per unit (2 units of Francis turbine)"
+    },
+    "images": [
+      "data/public/images/Rawa Khola HPP/1.jpg",
+      "data/public/images/Rawa Khola HPP/2.jpg",
+      "data/public/images/Rawa Khola HPP/3.jpg",
+      "data/public/images/Rawa Khola HPP/4.jpg"
+    ],
+    "description": "The Rawa Khola Hydropower Project is a 6.7 MW run-of-the-river (RoR) scheme located in the Khotang District of Koshi Province. The project area is about 277 km through the BP Koirala Highway, Kathmandu. The headworks of Rawa Khola are located approximately 150 m downstream of the confluence of Lidim Khola and Rawa Khola. The available gross head is about 113.5 m, and the design discharge is 7.55 m3/s, resulting in the installed capacity of 6.7 MW. All the major components of the headworks, including the weir, intake, gravel trap, approach canal, and settling basin, are located on the left bank. The headrace pipe runs along the left bank before crossing the river via a siphon. The remaining portion of the headrace alignment continues along the right bank of the Rawa Khola. From the headrace pipe, the flow is conveyed to the surge tank via a connecting pipe and subsequently directed to the powerhouse through the penstock. The total length of the headrace pipe is approximately 2.8 km, and the penstock is about 473.70 m long. The most feasible substation to the project site is Buipa Sub-Station (NEA) at Khotang, which is approximately 16 km from the proposed powerhouse site. The main objective of the study is to upgrade the project capacity from the existing 5.4 MW to 6.7 MW."
+  },
+  {
+    "id": "fs-5",
+    "title": "Super Seti Hydropower Project (SSHP)",
+    "installedCapacity": "24.0 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Ongoing",
+    "location": [
+      28.45,
+      84
+    ],
+    "role": "TAC Hydro Consultancy was awarded the contract for the Inception Study, Updated Feasibility Study, Detailed Engineering Design of Civil works, Tender Documents Preparation of the Civil works, Hydromechanical works, Electromechanical works, and Transmission Line works, Feasibility study of Transmission line, and Detailed Design of Hydromechanical works by SNEL.",
+    "technicalHighlights": {
+      "Project Boundary": "83° 59’ 45” E to 84° 00’ 38” E and 28° 26’ 16” N to 28° 28’ 05” N",
+      "Project Location": "Machhapuchhre Gaupalika, Kaski district, Gandaki Province, Nepal",
+      "Installed Capacity": "24.0 MW",
+      "Design Discharge": "8.5 m³/s (Q40)",
+      "Gross Head": "340 m",
+      "Design Flood": "8.5 m³/s",
+      "Diversion Type": "Concrete gravity ogee",
+      "Headrace Tunnel Length/Diameter": "1965.0 m / 3.25 m",
+      "Penstock Pipe Length/Diameter": "1196.0 m / 2.2 to 2.0 m",
+      "Thickness of Pipe": "12 mm to 36 mm",
+      "Unit Capacity": "2 units of horizontal-axis Pelton turbines"
+    },
+    "images": [
+      "data/public/images/Super Seti HPP/1.jpeg",
+      "data/public/images/Super Seti HPP/2.jpeg",
+      "data/public/images/Super Seti HPP/3.jpeg",
+      "data/public/images/Super Seti HPP/4.jpeg"
+    ],
+    "description": "S. N. Energy Ltd. (SNEL) is developing the Super Seti Hydropower Project (SSHP) in Machhapuchhre Gaupalika, Kaski district, Gandaki Province, Nepal. In order to increase the dry season energy of the project, the flow from Batase Khola (located about 20 m upstream of proposed HRT outlet site of Super Seti Project) will be tapped in 6 months dry season (mid Kartik to mid Baisakh) and mixed with flow of Seti River. The design discharge and installed capacity of the project have been fixed as 8.5 m3/s and 24.0 MW, respectively. The overall project components are proposed along the left bank of Seti River and mainly consist of broad crested type concrete ogee weir, two side intakes, two undersluice gates, gravel trap, underground settling basin, headrace tunnel, Batase headwork structure, forebay, surface penstock pipe, semi-surface powerhouse and tailrace culvert."
+  },
+  {
+    "id": "fs-6",
+    "title": "Lower Chameliya Hydropower Project",
+    "installedCapacity": "20 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Completed",
+    "location": [
+      29.68,
+      80.62
+    ],
+    "role": "TAC Hydro Engineers (P). Ltd., in Joint Venture with ERMC (P). Ltd., was commissioned by the Department of Electricity Development (DoED) to conduct the Feasibility Study. Our role involves a comprehensive technical assessment, including the design and calculation of hydraulic structures, construction planning, and cost estimation. We are responsible for optimizing the cascade connection from the CHEP tailrace to the LCHP head pond, ensuring the technical viability and economic feasibility of the 20 MW scheme.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 29°40’46” N to 29°41’56” N; Longitude 80°34’55” E to 80°38’47” E",
+      "Project Location": "Shailyashikhar, Darchula, SudurPaschim",
+      "Installed Capacity": "20.00 MW",
+      "Design Discharge": "36.38 m³/s (Q40)",
+      "Gross Head": "67.35 m",
+      "Design Flood": "N/A",
+      "Diversion Type": "Surface Rectangular Headpond with 1 bay, FSL at EL 784.8, spillway length 92 m",
+      "Headrace Pipe Length/Diameter": "Buried pipe of length 5840 m / 4.40 m dia. at 1 in 1000 gradient",
+      "Penstock Pipe Length/Diameter": "Buried pipe of length 258 m / 3.5 m to 4 m dia.",
+      "Thickness of Pipe": "At headrace 16 mm, at penstock 12 to 16 mm",
+      "Unit Capacity": "2 units; 10 MW each"
+    },
+    "images": [
+      "data/public/images/Lower Chameliya HPP/2.png",
+      "data/public/images/Lower Chameliya HPP/4.png",
+      "data/public/images/Lower Chameliya HPP/5.png"
+    ],
+    "description": "The Lower Chamelia Hydropower Project (LCHP) is a 20 MW Cascade Peaking Run-of-River (PRoR) development situated along the Chamelia River in the Darchula and Baitadi Districts of Sudurpashchim Province. As a cascade project of the existing NEA’s Chameliya Hydroelectric Project (CHEP), LCHP is strategically designed to utilize the tailrace water from CHEP, ensuring optimal water resource management. The project features a 5,480 m low-pressure pipe and an inverted siphon to cross the Naughar Gad river, ultimately generating an estimated 124.065 GWh of energy annually."
+  },
+  {
+    "id": "fs-8",
+    "title": "Lower Khani B Hydropower Project",
+    "installedCapacity": "6.2 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Ongoing",
+    "location": [
+      27.82,
+      86.33
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned by Koplang Energy Hydropower Pvt. Ltd. to conduct the Updated Feasibility for the 6.2 MW project. In this project, our firm will be responsible for providing consulting services for the preparation of the Updated Feasibility Study of the project, including hydrological analysis, site investigations, project layout optimization, design review, cost estimation, and assessment of technical and economic feasibility to support project implementation.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27˚48’34” N to 27˚49’20” N and Longitude: 86˚19’30” E to 86˚20’00” E",
+      "Project Location": "Marbu VDC of Dolakha District, Bagmati Province",
+      "Installed Capacity": "6.2 MW",
+      "Design Discharge": "5.1 m³/s (Q43.2)",
+      "Gross Head": "152.68 m",
+      "Design Flood": "185 m³/s",
+      "Diversion Type": "Broad Crested Weir",
+      "Penstock Pipe Length/Diameter": "1010 m length / 1.2 m diameter",
+      "Thickness of Pipe": "6 mm to 14 mm",
+      "Unit Capacity": "3.229 MW per unit featuring Horizontal Axis Pelton Turbines (Total 2 units)"
+    },
+    "images": [
+      "data/public/images/Lower Khani B HPP/1.JPG",
+      "data/public/images/Lower Khani B HPP/2.JPG",
+      "data/public/images/Lower Khani B HPP/3.jpeg",
+      "images/Lower Khani B HPP/4.jpeg"
+    ],
+    "description": "The Lower Khani B Hydropower Project (LKBHP) is a Run-of-River (RoR) hydropower scheme with an installed capacity of 6.2 MW, as specified in the Detailed Feasibility Study Report (DFSR), Power Purchase Agreement (PPA), and the Generation License. It utilizes a design discharge of 5.1 m³/s which corresponds to PoE (Probability of Exceedance) 43.2% and a gross head of 152.68 m. The powerhouse is surface type and comprises two Francis turbine units."
+  },
+  {
+    "id": "fs-10",
+    "title": "Middle Chameliya Hydropower Project",
+    "installedCapacity": "28.304 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Completed",
+    "location": [
+      29.73,
+      80.75
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. provided consulting services for the preparation of the Detailed Feasibility Study of the project, including hydrological analysis, site investigations, project layout optimization, design review, cost estimation, and assessment of technical and economic feasibility to support project implementation.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 29°42’55” N to 29°45’00” N and Longitude: 80°42’38” E to 80°46’45” E",
+      "Project Location": "Lama Bagar, Darchula District",
+      "Installed Capacity": "28.304 MW",
+      "Design Discharge": "25.17 m³/s (Q40)",
+      "Gross Head": "136.26 m",
+      "Design Flood": "505.07 m³/s",
+      "Diversion Type": "Ogee Shaped type",
+      "Headrace Pipe Length/Diameter": "7200 m / 3.8 m",
+      "Penstock Pipe Length/Diameter": "300 m / 3 m",
+      "Thickness of Pipe": "14 to 16 mm",
+      "Unit Capacity": "2 Horizontal Francis turbine with 14.59 MW (each) units"
+    },
+    "images": [
+      "data/public/images/Middle Chameliya HPP/1.jpg",
+      "data/public/images/Middle Chameliya HPP/2.jpg"
+    ],
+    "description": "Madhya Chameliya Hydropower Project (MCHPP) is a Run-of-the-River (ROR) project proposed with an installed capacity of 28.304 MW. MCHPP is located in the Darchula District, Sudurpaschim Province of Nepal. Water from Chameliya River is diverted to intake by sloping glacis weir and conveyed to gravel trap and then to the settling basin through approach pipe. The design discharge will be conveyed to powerhouse through water conveyance system (headrace pipe, surge pipe and penstock)."
+  },
+  {
+    "id": "fs-12",
+    "title": "Super Inkhu Hydropower Project",
+    "installedCapacity": "22.12 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Completed",
+    "location": [
+      27.61,
+      86.79
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned to conduct the Detailed Feasibility Study, including hydrological analysis, optimization of project capacity, and design of all major components.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27°36'13” to 27°37'13” N, Longitude: 86°47'09” to 86°48'19” E",
+      "Project Location": "Makpe Dudhkoshika and Mahakulung Rural Municipality",
+      "Installed Capacity": "24.41 MW",
+      "Design Discharge": "7.24 m³/s (Q41)",
+      "Gross Head": "398 m",
+      "Design Flood": "455.54 m³/s",
+      "Diversion Type": "Ogee Shape Weir, 29 m",
+      "Headrace Tunnel Shape/Length/Diameter": "Inverted-D Shaped Tunnel / 1617 m / 2.8 m",
+      "Penstock Pipe Length/Diameter": "597 m / 2.0 m",
+      "Thickness of Pipe": "11 mm - 26 mm",
+      "Unit Capacity": "2 units, Pelton Turbine (Horizontal), 12.205 MW"
+    },
+    "images": [
+      "data/public/images/Super Inkhu HPP/1.jpg",
+      "data/public/images/Super Inkhu HPP/2.jpg",
+      "data/public/images/Super Inkhu HPP/3.jpg",
+      "data/public/images/Super Inkhu HPP/4.jpg"
+    ],
+    "description": "The Super Inkhu Hydropower Project (often referred to as Upper Inkhu Khola HEP) is a 24.79 MW run-of-river (RoR) project located in the Solukhumbu district of Koshi Province, Nepal. The project is designed to generate significant annual energy, with development led by Dordi Khola Jalbidhyut Company Limited."
+  },
+  {
+    "id": "fs-15",
+    "title": "Super Molung Hydropower Project",
+    "installedCapacity": "9.79 MW",
+    "scope": "Detailed Feasibility Study",
+    "status": "Ongoing",
+    "location": [
+      27.42,
+      86.39
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. delivered consultancy services for the preparation of the Detailed Feasibility Study for the project. Our scope of work included hydrological assessments, site investigations, optimization of the project layout, design evaluation, cost estimation, and analysis of technical and financial viability to facilitate informed project implementation.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27˚25’45” N to 27˚23’31” N and Longitude 86˚23’10” E to 85˚24’34” E",
+      "Project Location": "Okhaldhunga",
+      "Installed Capacity": "9.79 MW",
+      "Design Discharge": "2.1 m³/s (Q40)",
+      "Gross Head": "370 m (Intake at 1940 masl; Powerhouse at 1570 masl)",
+      "Design Flood": "146 m³/s (1 in 50 years at Intake)",
+      "Diversion Type": "Boulder Weir with side intake",
+      "Headrace Pipe Length/Diameter": "5630 m / 1.2 m",
+      "Penstock Pipe Length/Diameter": "650 m / 0.9 m",
+      "Thickness of Pipe": "6 mm, 8 mm to 15 mm",
+      "Unit Capacity": "2 unit of horizontal axis pelton turbine"
+    },
+    "images": [
+      "data/public/images/Super Molung Khola HPP/1.jpeg",
+      "data/public/images/Super Molung Khola HPP/2.jpeg",
+      "data/public/images/Super Molung Khola HPP/3.jpeg",
+      "data/public/images/Super Molung Khola HPP/5.jpeg"
+    ],
+    "description": "Super Molung Hydropower Project (SMHP) developed by Noble Hydropower Pvt. Ltd. is a Run-of-River scheme on Malun Khola in Okhaldhunga District, Koshi Province, Nepal. The project features diversion weirs with side intakes, settling basins, a headrace tunnel, penstock, and a surface powerhouse equipped with Pelton turbines. It is designed for efficient energy generation while ensuring proper sediment management and environmental flow."
+  },
+  {
+    "id": "ded-1",
+    "title": "Ghatte Khola Small Hydropower Project",
+    "installedCapacity": "5 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Completed",
+    "location": [
+      27.78,
+      86.3
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned by Manakamana Engineering Hydropower Pvt. Ltd. to provide Engineering Supervision and Quality Control for the project. In this role, our firm was responsible for the complete technical design of the civil and hydromechanical components, translating the feasibility framework into actionable construction blueprints. Additionally, we provided on-site consulting services to supervise construction activities and managed technical coordination from our Kathmandu office to ensure the project met its commercial and engineering requirements.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27˚46’25” N to 27˚47’14” N and Longitude: 86˚17’00” E to 86˚18’35” E",
+      "Project Location": "Gaurishankar Gaupalika (Marbu), Dolakha District, Bagmati Province",
+      "Installed Capacity": "5.00 MW",
+      "Design Discharge (Q40)": "1.78 m³/s",
+      "Gross Head": "328 m",
+      "Design Flood": "90.70 m³/s",
+      "Diversion Type": "Side orifice intake with boulder riprap weir",
+      "Headrace Pipe Length/Diameter": "2,129.25 m length / 1.2 m diameter",
+      "Penstock Pipe Length/Diameter": "1,022.25 m length / 0.9 m diameter",
+      "Thickness of Pipe": "8 mm to 20 mm",
+      "Unit Capacity": "2.5 MW per unit (2 units of Pelton Turbines)"
+    },
+    "images": [
+      "data/public/images/Ghatte Khola Small/1.JPG",
+      "data/public/images/Ghatte Khola Small/5.jpg",
+      "data/public/images/Ghatte Khola Small/3.jpg",
+      "data/public/images/Ghatte Khola Small/4.jpg"
+    ],
+    "description": "The Ghatte Khola Small Hydropower Project is a 5 MW run-of-the-river facility located on the Ghatte Khola, a tributary of the Khare/Khani Khola, in Gaurishankar Gaupalika, Dolakha District. Positioned in the steep terrain of Bagmati Province, the project harnesses a high head system to contribute renewable energy to the national grid via the Singati Substation."
+  },
+  {
+    "id": "ded-3",
+    "title": "Rawa Khola Hydropower Project",
+    "installedCapacity": "6.7 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Ongoing",
+    "location": [
+      27.32,
+      86.76
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. provided consulting services for Detailed Engineering Design of the Rawa Khola Hydropower Project (RKHP), developed by Halesi Hydropower Private Limited in Khotang District, eastern Nepal. A contract agreement for the Detailed Engineering Design of the Rawa Khola HPP (6.7 MW), including Hydromechanical and Transmission Line works, was signed on 10th December 2025, which is ongoing.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27°18’54” N to 27°20’15” N and Longitude: 86°45’30” E to 86°47’00” E",
+      "Project Location": "Kepilasgadhi and Aiselukharka Rural Municipalities, Khotang District, Koshi Province",
+      "Installed Capacity": "6.7 MW",
+      "Design Discharge (Q40)": "7.55 m³/s",
+      "Gross Head": "113.5 m",
+      "Design Flood": "374.3 m³/s",
+      "Diversion Type": "Ogee weir with side intake",
+      "Headrace Pipe Length/Diameter": "2840.09m; 2m, 1.9m, 1.8m",
+      "Thickness of Headrace Pipe": "8-12mm",
+      "Connecting Pipe Length/Diameter": "100m; 1.8m",
+      "Thickness of Connecting Pipe": "8mm",
+      "Penstock Pipe Length/Diameter": "473.70m; 1.8m, 1.275m",
+      "Thickness of Penstock Pipe": "10-12mm",
+      "Unit Capacity": "3.454 MW per unit (2 units of Francis turbine)"
+    },
+    "images": [
+      "data/public/images/Rawa Khola HPP/1.jpg",
+      "data/public/images/Rawa Khola HPP/2.jpg",
+      "data/public/images/Rawa Khola HPP/3.jpg",
+      "data/public/images/Rawa Khola HPP/4.jpg"
+    ],
+    "description": "The Rawa Khola Hydropower Project is a 6.7 MW run-of-the-river (RoR) scheme located in the Khotang District of Koshi Province. The project area is about 277km through the BP Koirala Highway, Kathmandu. The headworks of Rawa Khola are located approximately 150m downstream of the confluence of Lidim Khola and Rawa Khola. The available gross head is about 113.5 m, and the design discharge is 7.55 m3/s, resulting in the installed capacity of 6.7 MW. All the major components of the headworks, including the weir, intake, gravel trap, approach canal, and settling basin, are located on the left bank. The headrace pipe runs along the left bank before crossing the river via a siphon. The remaining portion of the headrace alignment continues along the right bank of the Rawa Khola. From the headrace pipe, the flow is conveyed to the surge tank via a connecting pipe and subsequently directed to the powerhouse through the penstock. The most feasible substation to the project site is Buipa Sub-Station (NEA) at Khotang, which is approximately 12.5 km from the proposed powerhouse site. The main objective of the study is to conduct a detailed engineering design of the project, including HM and TL works."
+  },
+  {
+    "id": "ded-4",
+    "title": "Upper Piluwa Khola-3 Hydroelectric Project",
+    "installedCapacity": "4.95 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Completed",
+    "location": [
+      27.29,
+      87.41
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was appointed by the EPC contractor, Growth/PES JV Pvt. Ltd., to provide critical Design Review and Engineering Support during the construction of both civil and hydromechanical works. Our involvement, which began on March 30, 2021, ensures that the construction adheres to technical specifications and structural integrity standards.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27° 17' 42''N to 27° 18' 04''N and Longitude: 87° 24' 22''E to 87° 25' 30''E",
+      "Project Location": "Madi and Chainpur Municipalities of Sankhuwasabha District, Province 1",
+      "Installed Capacity": "4.95 MW",
+      "Design Discharge (Q40)": "5.02 m3/s, Piluwa Khola: 4.11 m3/s & Sikhuwa Khola: 0.91 m3/s",
+      "Gross Head": "128 m",
+      "Design Flood": "259 m3/s (1 in 100 years flood )",
+      "Diversion Type": "Boulder weir with undersluice, 25 m long",
+      "Headrace Pipe Length/Diameter": "1360 m, 1550 mm",
+      "Penstock Pipe Length/Diameter": "395m/ 1350 mm",
+      "Thickness of Pipe": "8 – 16 mm",
+      "Unit Capacity": "2 unit of Horizontal axis Francis turbine"
+    },
+    "images": [
+      "data/public/images/Upper Piluwa Khola-3 HPP/1.JPG",
+      "data/public/images/Upper Piluwa Khola-3 HPP/4.jpg",
+      "data/public/images/Upper Piluwa Khola-3 HPP/3.jpg",
+      "data/public/images/Upper Piluwa Khola-3 HPP/6.jpg"
+    ],
+    "description": "The Upper Piluwa Khola-3 Hydroelectric Project is a 4.95 MW run-of-the-river facility located in the Madi and Chainpur Municipalities of Sankhuwasabha District, Koshi Province. Developed by Mabilung Energy Private Limited (MEPL), the project features a unique dual-river intake system, utilizing water from both the Piluwa and Sikhuwa Khola. The scheme is designed to harness a gross head of 128 m, with the penstock crossing the Lakhuwa Khola to reach a surface powerhouse located near the river confluence."
+  },
+  {
+    "id": "ded-5",
+    "title": "Liping Khola Hydropower Project",
+    "installedCapacity": "16.26 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Completed",
+    "location": [
+      27.97,
+      85.95
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. has been awarded the Detail Engineering Design for the project, supporting the Client in maintaining quality, safety, and compliance throughout the construction phase. The services commenced after contract agreement signed with Him River Power Limited on 10th Baisakh 2078 B.S.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27° 58’ 11” N to 27° 59’ 20” N and Longitude: 85° 56’ 30” E to 85° 57’ 44” E",
+      "Project Location": "Tatopani, Sindhupalchowk district, Bagmati Province",
+      "Installed Capacity": "16.26 MW",
+      "Design Discharge (Q40)": "2.45 m³/s",
+      "Gross Head": "807 m",
+      "Design Flood": "146 m³/s",
+      "Diversion Type": "Boulder weir with side intake",
+      "Tunnel Length/Diameter": "1,267 m, D shape - 2.55 m high x 2.6 m wide",
+      "Penstock Pipe Length/Diameter": "1355 m; 1.1, 1.0, 0.9 m",
+      "Thickness of Pipe": "8 mm to 24 mm",
+      "Unit Capacity": "8.13 MW per unit (2 units of Pelton Turbines)"
+    },
+    "images": [
+      "data/public/images/Liping Khola HPP/1.jpeg",
+      "data/public/images/Liping Khola HPP/2.jpeg",
+      "images/Liping Khola HPP/3.jpeg",
+      "data/public/images/Liping Khola HPP/4.jpeg"
+    ],
+    "description": "Liping Khola Hydropower Project is a Run-of-River (RoR) scheme developed by Him River Power Limited, located in Sindhupalchowk District, Bagmati Province, Nepal. The project site is accessible via the Araniko National Highway and lies approximately 115 km from Kathmandu. All major components, including the headworks, water conveyance system, and underground powerhouse, are situated on the left bank of Liping Khola. The project layout consists of a diversion weir with two side intake orifices leading to a cobble trap, followed by a 108 m long approach tunnel to underground settling basins. The flow is then conveyed through a headrace tunnel, surface penstock, drop shaft, and inclined penstock shaft before reaching the turbine."
+  },
+  {
+    "id": "ded-6",
+    "title": "Jagdulla Hydroelectric Project",
+    "installedCapacity": "106 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Ongoing",
+    "location": [
+      29.09,
+      82.59
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned to carry out the Detailed Engineering Design (DED) for the project. In this role, our firm is responsible for the complete technical design of the civil and hydromechanical components, translating the feasibility framework into actionable construction blueprints.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitudes: 29°03'16'' N to 29°07'53'' N ; Longitudes: 82°33'00'' E to 82°38'00'' E",
+      "Project Location": "Jagdulla Rural Municipality and Mudkechula Rural Municipality, Dolpa District, Karnali Province",
+      "Installed Capacity": "106.50 MW",
+      "Design Discharge (Q40)": "16.2 m³/s",
+      "Gross Head": "789.6 m",
+      "Design Flood": "1000 years flood, 1141 m³/s (headworks) and 1703 m³/s (powerhouse)",
+      "Diversion Type": "Dam/Barrage type with emergency spillway",
+      "Headrace Tunnel Length/Diameter": "6135 m / 3.8 m excavated diameter",
+      "Penstock Pipe Length/Diameter": "1406.69 m/ 2.1 m diameter",
+      "Thickness of Pipe": "10-48 mm",
+      "Unit Capacity": "36 MW"
+    },
+    "images": [
+      "data/public/images/Jagdulla HEP/1.jpg",
+      "data/public/images/Jagdulla HEP/2.jpg",
+      "data/public/images/Jagdulla HEP/3.jpg",
+      "data/public/images/Jagdulla HEP/4.jpg"
+    ],
+    "description": "The Jagdulla PRoR Hydroelectric Project (JHEP) is one of the peaking run-of-river schemes in Nepal, designed to provide a six-hour peaking capability during the dry season. It is located in Wards 1, 2, and 3 of Jagdulla Rural Municipality and Ward 4 of Mudkechula Rural Municipality in Dolpa District of Karnali Province. The project’s regional geological survey and engineering geological survey have been complete and geotechnical investigations are proposed at different locations of the headworks, surge tank, and powerhouse area."
+  },
+  {
+    "id": "ded-10",
+    "title": "Kasuwa Khola Hydropower Project",
+    "installedCapacity": "92 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Completed",
+    "location": [
+      27.6,
+      87.3
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. provided consulting services for the Detailed Engineering Design of the Kasuwa Khola Hydropower Project (KKHP) 45MW, developed by Kasuwa Khola Hydropower Limited in Sankhawasabha District, Eastern Nepal, on 13th Baisakh 2078 B.S. The project capacity has been increased as requested by the Client to accommodate the new proposal by the government, which allows design discharge for up to a 25% probability of exceedance (Q25%). Hence, the agreement was signed for conducting Detail Engineering Design of upgraded capacity of KKHP 84MW on 23rd Jestha 2080. The project study is revised to accommodate the study for 92MW under the Additional Study Agreement.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27°34'20''N to 27°37'39''N Longitude 87°16'00''E to 87°17'56''E",
+      "Project Location": "Sankhawasabha",
+      "Installed Capacity": "92 MW",
+      "Design Discharge (Q42.55)": "20.57 m³/s",
+      "Gross Head": "560m",
+      "Design Flood": "340 m³/s",
+      "Primary Headworks": "Kasuwa Khola (Weir with side intake, orifice intake (10 orifices at the right bank and 4 at d/s of the intake)",
+      "Secondary Headworks": "Hiwa Khola (Stone masonry weir with Double trench bottom intake)",
+      "Connecting Pipe Length/ Diameter": "463.7m; 1m",
+      "Headrace Tunnel Length/Diameter": "3107.2m; (3.4 X 3.7 m for rock class I, II, and III 4.1 x 4.1 m for rock class IV and V)",
+      "Surge shaft Type/Diameter": "Simple Surge shaft; 8m",
+      "Penstock Pipe Length/Diameter": "Surface; 948.5m; 2.4m",
+      "Thickness of Pipe": "14-28mm",
+      "Drop Shaft Length/Pipe Diameter": "Circular Concrete infill; 171.175m;2.4m",
+      "Inclined Penstock Tunnel Length/Pipe Diameter": "Steel pipe, Inverted D-type; 994.8m;1.95m",
+      "Unit Capacity": "31.665 per unit (No. of Units =3; Vertical axis Pelton Turbine)"
+    },
+    "images": [
+      "data/public/images/Kasuwa Khola HPP/1.jpg",
+      "data/public/images/Kasuwa Khola HPP/2.jpg",
+      "data/public/images/Kasuwa Khola HPP/3.jpg",
+      "data/public/images/Kasuwa Khola HPP/4.jpg"
+    ],
+    "description": "Kasuwa Khola Hydropower Project is a Peaking Run-of-River (PRoR) type project with a peaking capacity of 1 hour, developed by Kasuwa Khola Hydropower Limited. The project has an installed capacity of 92 MW. The right bank of the Kasuwa Khola comprises nearly all of the headworks’ components, water conveyance system, and the powerhouse of the project. The proposed headworks area lies approximately 350 m upstream of the confluence of Hiwa Khola and Kasuwa Khola at Bhabila Village. The project comprises of two headworks, one at Kasuwa river identified as primary headworks and the other at Hiwa river as secondary headworks. An underground powerhouse is located at the foothill of Murmi Danda at about 800 m upstream of the confluence of Kasuwa Khola and Arun River on the right bank."
+  },
+  {
+    "id": "ded-11",
+    "title": "Khani Khola-1 Hydropower Project",
+    "installedCapacity": "40 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Ongoing",
+    "location": [
+      27.81,
+      86.34
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned by Greenlife Hydropower Ltd. to conduct the Detailed Engineering Design for the 40 MW project. In this capacity, our firm is responsible for preparing Detailed Engineering Design, construction level drawings, reinforcement details including bar bending Schedule that will be good for construction and can be issued to the contractor for the construction of Khani Khola-1 Hydropower Project (40 MW).",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27˚47’48” N to 27˚50’28” N and Longitude: 86˚20’00” E to 86˚22’00” E",
+      "Project Location": "Marbu VDC of Dolakha District, Bagmati Province",
+      "Installed Capacity": "40 MW",
+      "Design Discharge (Q40)": "5.1 m³/s",
+      "Gross Head": "963 m",
+      "Design Flood": "193 m³/s",
+      "Diversion Type": "Broad Crested Concrete Ogee Overflow Weir",
+      "Headrace Pipe Length/Diameter": "1900 m length / 2.2 m diameter",
+      "Penstock Pipe Length/Diameter": "1470 m length / 1.2 m-1.3 m diameter",
+      "Thickness of Pipe": "12 mm to 26 mm",
+      "Unit Capacity": "13.75 MW per unit featuring Horizontal Axis Pelton Turbines (Total 3 units)"
+    },
+    "images": [
+      "data/public/images/Khani Khola 1 HPP/1.JPG",
+      "data/public/images/Khani Khola 1 HPP/2.png",
+      "data/public/images/Khani Khola 1 HPP/3.jpeg",
+      "images/Khani Khola 1 HPP/4.jpeg"
+    ],
+    "description": "Khani Khola-1 Hydropower Project is a Run-of-River (RoR) type project developed by Greenlife Hydropower Limited. The project has an installed capacity of 40MW. The project has one main headwork at Khani Khola and two associated headworks at Hanapu and Napke collectively generating 15 MW. All the structures for 25 MW have been constructed and is in testing phase. It utilizes a significant gross head to contribute sustainable energy to the national power grid while maintaining a minimal environmental footprint."
+  },
+  {
+    "id": "ded-12",
+    "title": "Mathillo Inkhu Hydropower Project",
+    "installedCapacity": "24.22 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Completed",
+    "location": [
+      27.57,
+      86.77
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned by the developer Universal Power Company for the works of feasibility study, hydrological analysis, optimization of project capacity, detail topographical survey, location of different component, hydraulic design and detail design of civil, hydromechanical, electromechanical and transmission line components.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27°34’03” N to 27°36’09” N, Longitude: 86°46’00” E to 86°47’38” E",
+      "Project Location": "Dudhkoshika, Mahakulung and Sotang Rural Municipality, Solukhumbu District, Koshi Province",
+      "Installed Capacity": "24.79 MW",
+      "Design Discharge (Q41)": "7.45 m³/sec",
+      "Gross Head": "400 m",
+      "Design Flood": "477.14 m³/sec (1 in 100 years)",
+      "Diversion Type": "Ogee Shape Weir, 29 m long",
+      "Headrace Tunnel Shape/ Length/Diameter": "Inverted-D Shaped Tunnel/ 2950 m/ 2.8 m",
+      "Penstock Pipe Length/Diameter": "825 m/ 2.0 m",
+      "Thickness of Pipe": "6 mm - 24 mm",
+      "Unit Capacity": "Pelton Turbine (Horizontal), 2 units, 12.395 MW"
+    },
+    "images": [
+      "data/public/images/Mathillo Inkhu HPP/1.jpg",
+      "data/public/images/Mathillo Inkhu HPP/2.JPG",
+      "data/public/images/Mathillo Inkhu HPP/3.JPG",
+      "data/public/images/Mathillo Inkhu HPP/4.jpg"
+    ],
+    "description": "The Mathilo Inkhu Hydropower Project (often referred to as Upper Inkhu Khola HEP) is a 24.79 MW run-of-river (RoR) project located in the Solukhumbu district of Koshi Province, Nepal. The project is designed to generate significant annual energy, with development led by Universal Power Company Limited."
+  },
+  {
+    "id": "ded-13",
+    "title": "Tamor-Mewa Hydroelectric Project",
+    "installedCapacity": "128 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Ongoing",
+    "location": [
+      27.36,
+      87.64
+    ],
+    "role": "The Sanima Hydro and Engineering Pvt. Ltd (SHEPL)-TAC Hydro Consultancy Pvt. Ltd. J.V. was commissioned by Spark Hydroelectric Company Limited (SHECL) on October 8th 2024 to conduct the Updated Feasibility Study for the 128 MW project. In this capacity, our firm focused on re-evaluating the hydrological parameters, optimizing the project layout, and verifying the technical and economic viability of the scheme. Our work provided the refined technical framework and updated feasibility reporting necessary to move the project toward its next phase of development and detailed engineering.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27° 20' 00'' N to 27° 24' 08'' N and Longitude: 87° 37' 15'' E to 87° 40' 00'' E",
+      "Project Location": "Phungling Municipality, Meringden RM, Mikwakhola RM, and Athrai Tribeni RM of Taplejung District",
+      "Installed Capacity": "128 MW",
+      "Design Discharge (Q40)": "95.38 m³/s",
+      "Gross Head": "170 m",
+      "Design Flood at Headwork": "2899.22 m³/s (1 in 200-years Flood)",
+      "Diversion Type": "Concrete diversion weir with side intake",
+      "Headrace Pipe Length/Diameter": "1520.21 m / 5.9 m",
+      "Headrace Tunnel Type/Length/Diameter": "Modified Horseshoe/ 4939.33 m/ 7.1 m",
+      "Penstock Pipe Length/Diameter": "404 m/ 5.5 m",
+      "Thickness of Pipe": "22 to 40 mm",
+      "Unit Capacity": "4 units of vertical axis Francis turbine"
+    },
+    "images": [
+      "data/public/images/Tamor Mewa HEP/1.jpg",
+      "data/public/images/Tamor Mewa HEP/2.JPG",
+      "data/public/images/Tamor Mewa HEP/3.JPG",
+      "data/public/images/Tamor Mewa HEP/4.JPG"
+    ],
+    "description": "The Tamor-Mewa Hydroelectric Project (TMHEP) is a major 128 MW run-of-the-river hydropower project located in the Taplejung District of Koshi Province, eastern Nepal. The project is being developed by Spark Hydroelectric Company Limited (SHECL) and utilizes the substantial flow of the Tamor River for power generation. The project area extends across Phungling Municipality (Wards 1, 2, 3, and 9), Meringden Rural Municipality (Wards 2 and 3), Mikwakhola Rural Municipality (Wards 1 and 2), and Athrai Tribeni Rural Municipality (Wards 2, 3, and 5), covering the former VDCs of Phungling, Khokling, Khamlung, Santhakra, Chage, Hangpang, and Phulbari in Taplejung District, Koshi Province, Nepal."
+  },
+  {
+    "id": "ded-14",
+    "title": "Middle Chameliya Hydropower Project",
+    "installedCapacity": "28.304 MW",
+    "scope": "Detailed Engineering Design",
+    "status": "Completed",
+    "location": [
+      29.73,
+      80.75
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. provided consulting services for the preparation of the Detailed Engineering Design of the project. Our firm was responsible for translating the feasibility framework into construction-ready engineering solutions. Our scope included the detailed structural design of the headworks, the hydraulic optimization of the 7,200 m water conveyance system, and the preparation of precise specifications for the hydromechanical and electromechanical components. We ensured that the final design optimized energy generation while adhering to rigorous safety and environmental standards.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 29°42’55” N to 29°45’00” N and Longitude: 80°42’38” N to 80°46’45” N",
+      "Project Location": "Lama Bagar, Darchula District",
+      "Installed Capacity": "28.304 MW",
+      "Design Discharge (Q40)": "25.17 m³/s",
+      "Gross Head": "136.26 m",
+      "Design Flood": "505.07 m³/s",
+      "Diversion Type": "Ogee Shaped type",
+      "Headrace Pipe Length/Diameter": "7200m / 3.8 m",
+      "Penstock Pipe Length/Diameter": "300m / 3m",
+      "Thickness of Pipe": "14 to 16 mm",
+      "Unit Capacity": "2 Horizontal Francis turbine with 14.59 MW (each) units."
+    },
+    "images": [
+      "data/public/images/Middle Chameliya HPP/1.jpg",
+      "data/public/images/Middle Chameliya HPP/2.jpg"
+    ],
+    "description": "Madhya Chameliya Hydropower Project (MCHPP) is a Run-of-the-River (ROR) project proposed with an installed capacity of 28.304 MW. MCHPP is located in the Darchula District, Sudurpaschim Province of Nepal. Water from Chameliya River is diverted to intake by sloping glacis weir and conveyed to gravel trap and then to the settling basin through approach pipe. The design discharge will be conveyed to powerhouse through water conveyance system (headrace pipe, surge pipe and penstock)."
+  },
+  {
+    "id": "cs-1",
+    "title": "Upper Piluwa Khola-3 Hydroelectric Project",
+    "installedCapacity": "4.95 MW",
+    "scope": "Construction Supervision",
+    "status": "Completed",
+    "location": [
+      27.29,
+      87.41
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was appointed by the EPC contractor, Growth/PES JV Pvt. Ltd., to provide critical Design Review and Engineering Support during the construction of both civil and hydromechanical works. Our involvement, which began on March 30, 2021, ensures that the construction adheres to technical specifications and structural integrity standards. We provide real-time engineering solutions for complex project components, including the dual diversion weirs, the 1,360 m headrace pipe, and the Lakhuwa Khola penstock crossing, ensuring the project transitions smoothly from design to operational status.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27° 17' 42''N to 27° 18' 04''N and Longitude: 87° 24' 22''E to 87° 25' 30''E",
+      "Project Location": "Madi and Chainpur Municipalities of Sankhuwasabha District, Province 1",
+      "Installed Capacity": "4.95 MW",
+      "Design Discharge (Q40)": "5.02 m3/s, Piluwa Khola: 4.11 m3/s & Sikhuwa Khola: 0.91 m3/s",
+      "Gross Head": "128 m",
+      "Design Flood": "259 m³/s (1 in 100 years flood)",
+      "Diversion Type": "Boulder weir with undersluice, 25 m long",
+      "Headrace Pipe Length/Diameter": "1360 m",
+      "Penstock Pipe Length/Diameter": "395m/ 1350 mm",
+      "Thickness of Pipe": "8 – 16 mm",
+      "Unit Capacity": "2 unit of Horizontal axis Fransis turbine"
+    },
+    "images": [
+      "data/public/images/Upper Piluwa Khola-3 HPP/1.JPG",
+      "data/public/images/Upper Piluwa Khola-3 HPP/4.jpg",
+      "data/public/images/Upper Piluwa Khola-3 HPP/3.jpg",
+      "data/public/images/Upper Piluwa Khola-3 HPP/6.jpg"
+    ],
+    "description": "The Upper Piluwa Khola-3 Hydroelectric Project is a 4.95 MW run-of-the-river facility located in the Madi and Chainpur Municipalities of Sankhuwasabha District, Koshi Province. Developed by Mabilung Energy Private Limited (MEPL), the project features a unique dual-river intake system, utilizing water from both the Piluwa and Sikhuwa Khola. The scheme is designed to harness a gross head of 128 m, with the penstock crossing the Lakhuwa Khola to reach a surface powerhouse located near the river confluence."
+  },
+  {
+    "id": "cs-2",
+    "title": "Liping Khola Hydropower Project",
+    "installedCapacity": "16.26 MW",
+    "scope": "Construction Supervision",
+    "status": "Ongoing",
+    "location": [
+      27.97,
+      85.95
+    ],
+    "role": "As per the scope of consulting services, TAC carries out inspection, measurement, and quality control of all civil construction works to ensure compliance with the approved drawings and specifications. In addition, daily discussions and meetings are held to review progress, set daily targets, and address site constraints. Based on site observations and progress review, TAC provides practical suggestions and recommendations to improve the speed and efficiency of construction works, with the objective of achieving the project milestones within the scheduled time.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27° 58’ 11” N to 27° 59’ 20” N and Longitude: 85° 56’ 30” E to 85° 57’ 44” E",
+      "Project Location": "Tatopani, Sindhupalchowk district, Bagmati Province",
+      "Capacity": "16.26 MW",
+      "Design Discharge (Q40)": "2.45 m3/s",
+      "Gross Head": "807 m",
+      "Design Flood": "146 m3/s",
+      "Diversion Type": "Boulder weir with side intake",
+      "Tunnel Length/Diameter": "1,267 m, D shape - 2.55 m high x 2.6 m wide",
+      "Penstock Pipe Length/Diameter": "1355 m; 1.1, 1.0, 0.9 m",
+      "Thickness of Pipe": "8 mm to 24 mm",
+      "Unit Capacity": "8.13 MW per unit (2 units of Pelton Turbines)"
+    },
+    "images": [
+      "data/public/images/Liping Khola HPP/1.jpeg",
+      "data/public/images/Liping Khola HPP/2.jpeg",
+      "images/Liping Khola HPP/3.jpeg",
+      "data/public/images/Liping Khola HPP/4.jpeg"
+    ],
+    "description": "Liping Khola Hydropower Project is a Run-of-River (RoR) scheme developed by Him River Power Limited, located in Sindhupalchowk District, Bagmati Province, Nepal. The project site is accessible via the Araniko National Highway and lies approximately 115 km from Kathmandu. All major components, including the headworks, water conveyance system, and underground powerhouse, are situated on the left bank of Liping Khola. The project layout consists of a diversion weir with two side intake orifices leading to a cobble trap, followed by a 108 m long approach tunnel to underground settling basins. The flow is then conveyed through a headrace tunnel, surface penstock, drop shaft, and inclined penstock shaft before reaching the turbine."
+  },
+  {
+    "id": "cs-3",
+    "title": "Ghatte Khola Small Hydropower Project",
+    "installedCapacity": "5.00 MW",
+    "scope": "Construction Supervision",
+    "status": "Completed",
+    "location": [
+      27.78,
+      86.3
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned by Manakamana Engineering Hydropower Pvt. Ltd. to provide Construction Supervision and Quality Control for the project. In this role, our firm was responsible to provide on-site consulting services to supervise construction activities and managed technical coordination from our Kathmandu office to ensure the project met its commercial and engineering requirements.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27˚46’25” N to 27˚47’14” N and Longitude: 86˚17’00” E to 86˚18’35” E",
+      "Project Location": "Gaurishankar Gaupalika (Marbu), Dolakha District, Bagmati Province",
+      "Installed Capacity": "5.00 MW",
+      "Design Discharge (Q40)": "1.78 m3/s",
+      "Gross Head": "328 m",
+      "Design Flood": "90.70 m3/s",
+      "Diversion Type": "Side orifice intake with boulder riprap weir",
+      "Headrace Pipe Length/Diameter": "2,129.25 m length / 1.2 m diameter",
+      "Penstock Pipe Length/Diameter": "1,022.25 m length / 0.9 m diameter",
+      "Thickness of Pipe": "8 mm to 20 mm",
+      "Unit Capacity": "2.5 MW per unit (2 units of Pelton Turbines)"
+    },
+    "images": [
+      "data/public/images/Ghatte Khola Small/1.JPG",
+      "data/public/images/Ghatte Khola Small/5.jpg",
+      "data/public/images/Ghatte Khola Small/3.jpg",
+      "data/public/images/Ghatte Khola Small/4.jpg"
+    ],
+    "description": "The Ghatte Khola Small Hydropower Project is a 5 MW run-of-the-river facility located on the Ghatte Khola, a tributary of the Khare/Khani Khola, in Gaurishankar Gaupalika, Dolakha District. Positioned in the steep terrain of Bagmati Province, the project harnesses a high head system to contribute renewable energy to the national grid via the Singati Substation."
+  },
+  {
+    "id": "dd-2",
+    "title": "Nupche Likhu Hydropower Project",
+    "installedCapacity": "57.50 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      27.69,
+      86.46
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. is responsible for conducting due diligence Study on behalf of Equity Investor Avasar Equity Diversified fund which includes evaluating, verifying, and de-risking hydroelectric projects for investors as well as review technical, financial, environmental, and legal aspects to ensure the project's feasibility, safety, and profitability.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27°40′37″ N to 27°43′43″ N and Longitude 86°26′30″ E to 86°30′30″ E",
+      "Project Location": "Umakunda Rural Municipality, Ramechhap District, Bagmati Province (Province No. 3), Nepal",
+      "Installed Capacity": "57.50 MW",
+      "Design Discharge (Q45)": "7.11 m³/s (Nupche=3.89 m3/s & Likhu =3.22m3/s)",
+      "Gross Head": "1003.50 m (Intake at 3337 masl; Powerhouse at 2334.50 masl)",
+      "Design Flood": "76 m³/s (At Nupche Hedworks) / 63 m³/s (At Likhu Hedworks)",
+      "Diversion Type": "Boulder lined weir with side intakes (at both Nupche and Likhu Headworks)",
+      "Headrace Tunnel": "Nupche Inlet portal to Junction: 1677.32 m; Likhu Inlet portal to Junction: 1435.95 m; Outlet Inlet portal to Junction: 3204.76 m; Adit Tunnel Length: 362.39 m",
+      "Headrace Pipe Length/Diameter": "Likhu Headrace Pipe: 940.00 m, 1.60 m ; Nupche Headrace pipe: 275 m, 1.60 m",
+      "Penstock Pipe Length/Diameter": "2422.50 m, 1.25 to 0.72 m",
+      "Thickness of Pipe": "8mm to 56mm, 10mm",
+      "Unit Capacity": "3 units of horizontal axis Pelton turbines"
+    },
+    "images": [
+      "data/public/images/Nupche Likhu HPP/1.jpg",
+      "data/public/images/Nupche Likhu HPP/2.jpg",
+      "data/public/images/Nupche Likhu HPP/3.jpg",
+      "data/public/images/Nupche Likhu HPP/4.jpg"
+    ],
+    "description": "Nupche Likhu Hydropower Project (NLHPP), developed by Vision Energy & Power Ltd., is a run-of-river hydropower project located in Ramechhap District, Bagmati Province (Province No. 3), Nepal. The project is situated within Umakunda Rural Municipality, where both the intake and powerhouse sites are located. The project is designed with multiple headworks to capture flows from both the Nupche and Likhu rivers. The source of water for the Nupche Likhu Hydropower Project originates from snow-fed rivers in the high mountain and hilly regions. The project is one of the highest head hydropower projects currently under construction in Nepal."
+  },
+  {
+    "id": "dd-3",
+    "title": "Lower Erkhuwa Hydropower Project",
+    "installedCapacity": "14.15 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      27.42,
+      87.11
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. is responsible for conducting due diligence Study on behalf of lenders consortium (lead bank: Machhapuchchhre Bank Ltd) which includes evaluating, verifying, and de-risking hydroelectric projects for lenders as well as review technical, financial, environmental, and legal aspects to ensure the project's feasibility, safety, and profitability.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27°24′28″ N to 27°25′24″ N and Longitude: 87°05′57″ E to 87°07′44″ E",
+      "Project Location": "Bhojpur District",
+      "Installed Capacity": "14.15 MW",
+      "Design Discharge (Q40)": "11.20 m³/s",
+      "Gross Head": "150.63 m",
+      "Design Flood": "218.28 m³/s",
+      "Diversion Type": "Ogee Shaped, Overflow Type",
+      "Headrace Tunnel": "2,524.95 m",
+      "Penstock Pipe Length/Diameter": "595 m, 2.2 m",
+      "Thickness of Pipe": "10 mm to 16 mm",
+      "Unit Capacity": "7.294 MW per Unit (2 units of Horizontal-axis Francis turbines)"
+    },
+    "images": [
+      "data/public/images/Lower Erkhuwa HPP/1.jpg",
+      "data/public/images/Lower Erkhuwa HPP/2.jpg",
+      "data/public/images/Lower Erkhuwa HPP/3.jpg",
+      "data/public/images/Lower Erkhuwa HPP/4.jpg"
+    ],
+    "description": "Lower Erkhuwa Hydropower Project (LEHPP) developed by Lower Erkhuwa Hydropower Company Pvt. Ltd. is a run-of-the-river (RoR) hydropower scheme with an installed capacity of 14.15 MW and an average annual energy generation of 79.79 GWh, comprising 12.68 GWh dry season energy and 67.11 GWh wet season energy in Khadananda Municipality and Shalpa Silicho Rural Municipality, Bhojpur District, Koshi Province, Nepal, utilizing the Erkhuwa Khola. The intake located in Khadananda Municipality and Shalpa Silicho, and the powerhouse in Khadananda Municipality."
+  },
+  {
+    "id": "dd-4",
+    "title": "Midim-1 Hydropower Project",
+    "installedCapacity": "13.424 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      28.25,
+      84.27
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. had signed an agreement with the client Mount Rasuwa Hydropower Pvt. Ltd (MRHPL) for the Due Diligence study of this project with the client on 27th June, 2025. The firm is responsible for evaluating, verifying, and de-risking hydroelectric projects for investors, lenders, and developers as well as review technical, financial, environmental, and legal aspects to ensure the project's feasibility, safety, and profitability.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude. 28º14’00” N to 28º17’55” N and Longitude 84º15’00” E to 84º18’00” E",
+      "Project Location": "Kholasothar and Marsyangdi Rural Municipality, Lamjung District, Gandaki Province",
+      "Installed Capacity": "13.424 MW",
+      "Design Discharge (Q42)": "4.64 m³/s",
+      "Gross Head": "347 m",
+      "Design Flood": "251 m³/s (1 in 100 yr Flood)",
+      "Diversion Type": "Boulder lined weir",
+      "Headrace Pipe Length/Diameter": "4866 m, 1.75 m (internal diameter)",
+      "Penstock Pipe Length/Diameter": "920 m + 28 m (bifurcation), 1.4 m (internal diameter)",
+      "Unit Capacity": "6.92 MW per unit (2 units of Vertical-axis Pelton turbines)"
+    },
+    "images": [
+      "data/public/images/Midim-1 HPP/1.jpg",
+      "data/public/images/Midim-1 HPP/2.jpg",
+      "data/public/images/Midim-1 HPP/3.jpg",
+      "data/public/images/Midim-1 HPP/4.jpg"
+    ],
+    "description": "The Midim-1 Hydropower Project of installed capacity 13,424 kW, is being constructed by Mount Rasuwa Hydropower Pvt. Ltd. as a run-of-river scheme in Lamjung District in Gandaki province. The project utilizes the stream of Midim Khola which is a tributary of Marsyangdi River. The headworks of Midim 1 hydropower project is located at 50 m U/S from the confluence of Midim Khola and Tiju Khola. There is side intake with orifice and trashrack to control entry of debris, followed by gravel trap and desander at the left bank of Midim Khola."
+  },
+  {
+    "id": "dd-5",
+    "title": "Upper Tadi Khola Hydropower Project",
+    "installedCapacity": "11.00 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      27.98,
+      85.42
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. is responsible for conducting due diligence Study on behalf of lenders consortium (lead bank: Kumari Bank Ltd) which includes evaluating, verifying, and de-risking hydroelectric projects for lenders as well as review technical, financial, environmental, and legal aspects to ensure the project's feasibility, safety, and profitability.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27°59’03” N to 27°57’32” N and longitude: 85°25’01” E to 85°26’00” E",
+      "Project Location": "Ghyangphedi, Dupcheshwor Rural Municipality, Nuwakot District",
+      "Installed Capacity": "11.00 MW",
+      "Design Discharge (Q40)": "6.3 m³/s",
+      "Gross Head": "216.8 m",
+      "Design Flood": "207 m³/s (1 in 100 year)",
+      "Diversion Type": "Boulder Riprap weir",
+      "Penstock Pipe Length/Diameter": "2459.46 m, 1.8, 1.70, 1.60 and 1.14 m",
+      "Unit Capacity": "2 units of Vertical shaft Pelton turbines"
+    },
+    "images": [
+      "data/public/images/Upper Tadi Khola HEP/1.jpg",
+      "data/public/images/Upper Tadi Khola HEP/2.jpg",
+      "data/public/images/Upper Tadi Khola HEP/3.jpg",
+      "data/public/images/Upper Tadi Khola HEP/4.jpg"
+    ],
+    "description": "The Upper Tadi Khola Hydroelectric Project of installed capacity 11 MW, is being constructed by Suryakunda Hydro Electric Limited. The Project location is in Nuwakot District of Bagmati province. The project utilizes the stream of Tadi khola, which is a tributary of Trishuli River. A 25 m long boulder riprap weir having one bay of under sluice is provided to divert the flow. The Intake, gravel trap, settling basin, and forebay are proposed along the right bank of the river."
+  },
+  {
+    "id": "dd-6",
+    "title": "Madhya Super Daraudi Hydropower Project",
+    "installedCapacity": "10.00 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      28.22,
+      84.73
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. is responsible for conducting due diligence Study on behalf of lenders consortium (lead bank: Prime Commercial Bank Ltd) which includes evaluating, verifying, and de-risking hydroelectric projects for lenders as well as review technical, financial, environmental, and legal aspects to ensure the project's feasibility, safety, and profitability.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: N 28° 14’ 00” to N 28° 11’ 30” and Longitude: E 84° 44’ 15” to E 84° 43’ 30”",
+      "Project Location": "Ajirkot & Sulikot Rural Municipality, Gorkha District, Gandaki Province",
+      "Installed Capacity": "10.00 MW",
+      "Design Discharge (Q40)": "5.09 m3/s",
+      "Gross Head": "249.5m",
+      "Design Flood": "519 m3/s",
+      "Diversion Type": "Ogee-Shaped Weir, Concrete",
+      "Headrace Pipe Length/Diameter": "1746 m/1.7m",
+      "Penstock Pipe Length/Diameter": "2425 m/ 1.6 m",
+      "Thickness of Pipe": "8, 10, 14, 18, 20, 22, 26",
+      "Unit Capacity": "5 MW per unit (2 units of Horizontal axis Francis turbine)"
+    },
+    "images": [
+      "data/public/images/Madhya Super daraudi HPP/1.jpg",
+      "data/public/images/Madhya Super daraudi HPP/2.jpg",
+      "data/public/images/Madhya Super daraudi HPP/3.jpg"
+    ],
+    "description": "The Madhya Super Daraudi Hydropower Project (10 MW) is a Run-of-River (RoR) scheme located in the Gorkha district (Ajirkot and Barpak Sulikot Rural Municipalities) of Gandaki Province, Nepal. Developed by Barpak Daraudi Hydropower Private Limited (BDHPL), the project utilizes the water resources of the Daraudi River to generate clean energy for the national grid."
+  },
+  {
+    "id": "dd-7",
+    "title": "Tadi Ghyangphedi Hydropower Project",
+    "installedCapacity": "8.00 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      27.99,
+      85.45
+    ],
+    "role": "The Due Diligence Study was signed on 2025/03/28 as a tripartite agreement between Tadi Ghyangphedi Hydropower Project, Siddhartha Bank Limited, and TAC Hydro Consultancy Pvt. Ltd. as the Technical Consultant. Our role included the verification of technical feasibility, financial viability, and socio-environmental acceptability of the project facilitating Siddhartha Bank Limited to decide the technical and financial criteria, and whether the project is worth the investment.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 270 58’ 31” N to 280 00’ 40” N; Longitude: 850 26’ 34” E to 850 27’ 51” E",
+      "Project Location": "Dupcheswor Rural Municipality, Nuwakot, Bagmati",
+      "Installed Capacity": "8 MW",
+      "Design Discharge": "Q43.6; 2.21 m3/s",
+      "Gross Head": "446.0 m",
+      "Design Flood": "246 m3/s at intake and 313 m3/s at powerhouse",
+      "Diversion Type": "Broad Crested boulder weir at crest level 1990 masl of length 22 m and height 3 m",
+      "Headrace Pipe Length/Diameter": "2281.36 m/ 1.2 m, 1.1 m & 1.0 m",
+      "Penstock Pipe Length/Diameter": "1632.08 m up to bifurcation/ 1.0 m, 0.9 m & 0.8 m",
+      "Thickness of Pipe": "8 mm to 14 mm at headrace and 14 mm to 20 mm at penstock",
+      "Unit Capacity": "2 units of 4 MW each"
+    },
+    "images": [
+      "data/public/images/Tadi Ghyangphedi HPP/1.jpg",
+      "data/public/images/Tadi Ghyangphedi HPP/2.jpg",
+      "data/public/images/Tadi Ghyangphedi HPP/3.png",
+      "data/public/images/Tadi Ghyangphedi HPP/4.jpg"
+    ],
+    "description": "The Tadi Ghyangphedi Hydropower Project is an 8 MW run-of-the-river (RoR) development located in the Nuwakot District of Bagmati Province. Developed by ABP Energy Pvt. Ltd., the project utilizes a high-head layout to capture the flow of the Tadi River at an elevation of 1,990 masl. With a substantial gross head of 446 m and a design discharge of 2.21 m3/s, the project is set to generate 48.746 GWh of energy annually, which is evacuated via a 10 km long 33 kV transmission line to the Samundratar Substation."
+  },
+  {
+    "id": "dd-8",
+    "title": "Jurimba khola Small Hydropower Project",
+    "installedCapacity": "7.63 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      27.91,
+      85.9
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. had signed an agreement with Jurimba Hydropower Company Pvt. Ltd. for the Due Diligence study of this project with the client on 27th October, 2024.",
+    "technicalHighlights": {
+      "Project Boundary": "latitude: 27° 54' 18'' N to 27° 55' 28'' N and longitude: 85° 53' 26'' E and 85° 55' 18'' E",
+      "Project Location": "Sindhupalchowk district, Bagmati Province, Nepal",
+      "Installed Capacity": "7.63 MW",
+      "Design Discharge (Q40)": "1.06 m3/s",
+      "Gross Head": "870.28 m",
+      "Design Flood": "64 m3/s",
+      "Diversion Type": "Boulder weir, 25 m length",
+      "Headrace Pipe Length/Diameter": "1445 m/ 0.95 m",
+      "Penstock Pipe Length/Diameter": "0.8m",
+      "Thickness of Pipe": "8 mm to 30 mm",
+      "Unit Capacity": "2 unit of horizontal axis Pelton turbine"
+    },
+    "images": [
+      "data/public/images/Jurimba Khola Small HPP/1.jpg",
+      "data/public/images/Jurimba Khola Small HPP/2.jpg"
+    ],
+    "description": "Jurimba Khola Small Hydropower Project developed by Jurimba Hydropower Company Pvt. Ltd. (JHCPL) is a Peaking Run-of-River (PROR) type project in Sindhupalchowk district, Bagmati Province, Nepal. The main components of the project are headworks with boulder weir, intake, settling basin, peaking pond, headrace pipe, surge shaft, penstock pipe, surface powerhouse and tailrace. The proposed surface powerhouse is in the right bank of Bhotekoshi River and just upstream from confluence of Bhotekhosi River and Jurimba Khola. The headwork diverts the Jurimba khola discharge to toward the powerhouse and the tail water will then be discharged back to Jurimba khola through tailrace culvert."
+  },
+  {
+    "id": "dd-11",
+    "title": "Thuligad Khola Hydroelectric Project",
+    "installedCapacity": "17.00 MW",
+    "scope": "Due Diligence Appraisal",
+    "status": "Completed",
+    "location": [
+      28.95,
+      80.82
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd. was commissioned to carry out the Due Diligence Study (DDS) for the project. In this role, our firm is responsible for the supervision of the technical and financial feasibility of the project as a technical consultant.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 280 55’ 50” N to 280 58’ 47” N, Longitude: 800 47’ 41” E to 800 51’ 22” E",
+      "Project Location": "Badikedar rural municipality, Doti District, Sudurpachim Province",
+      "Installed Capacity": "17 MW",
+      "Design Discharge (Q40)": "12.65 m3 /s",
+      "Gross Head": "173.50m",
+      "Design Flood": "2417.70 m3 /s at 200 years return period at Headworks",
+      "Diversion Type": "Overflow Cum Gated Barrage",
+      "Headrace Tunnel Length/Size": "2191.66m(3m X 3m)",
+      "Penstock Pipe Length/Diameter": "2531m / 2.4m",
+      "Thickness of Pipe": "8mm to 24mm",
+      "Unit Capacity": "8.5 MW"
+    },
+    "images": [
+      "data/public/images/Thuligad Khola HPP/1.jpg",
+      "data/public/images/Thuligad Khola HPP/2.jpg",
+      "data/public/images/Thuligad Khola HPP/3.jpg",
+      "data/public/images/Thuligad Khola HPP/4.jpg"
+    ],
+    "description": "The Thuligad Khola Hydroelectric Project (TKHEP) is the peaking run-of-river schemes, designed to provide a four-hour peaking capacity during the dry season. It is located in Badikedar rural municipality in Doti district of Sudurpaschim province of Nepal."
+  },
+  {
+    "id": "pm-1",
+    "title": "Bhotekoshi-1 Hydropower Project",
+    "installedCapacity": "44.00 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Ongoing",
+    "location": [
+      27.89,
+      85.91
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Electro Power Company Ltd. and Nepal Infrastructure Bank Ltd. (Lead Bank) to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27°53′00″ N to 27°54′45″ N Longitude 85°54′37″ E to 85°55′40″ E",
+      "Project Location": "Sindhupalchowk District, Bhotekoshi Rural Municipality",
+      "Installed Capacity": "40.00 MW (upgraded to 44MW)",
+      "Design Discharge": "49.12 m³/s",
+      "Gross Head": "116.50 m (Intake at 1280.50 masl; Underground Powerhouse at 1170.00 masl)",
+      "Design Flood": "1372.00 m³/s (100 yrs Flood)",
+      "Diversion Type": "Barrage-type weir",
+      "Headrace Tunnel": "2675.00 m",
+      "Penstock Pipe Length/Diameter": "283.56 m, 2.5 to 3.6 m",
+      "Thickness of Pipe": "12 mm to 28 mm",
+      "Unit Capacity": "22.68 MW per Unit (2 units of vertical axis Fransis turbines)"
+    },
+    "images": [
+      "data/public/images/Bhotekoshi-1 HPP/1.jpg",
+      "data/public/images/Bhotekoshi-1 HPP/2.jpg",
+      "data/public/images/Bhotekoshi-1 HPP/3.jpg",
+      "data/public/images/Bhotekoshi-1 HPP/4.jpg"
+    ],
+    "description": "Electro Power Company Ltd. is developing the Bhotekoshi-1 Hydropower Project (BK1HPP), a run-of-river hydropower project located in Chaku and Hindi Bazaar of Bhotekoshi Rural Municipality, Sindhupalchowk District, Bagmati Province, Nepal, utilizing the flow of the Bhotekoshi River. The facility utilizes a medium-head configuration to drive two vertical-axis Fransis turbines units."
+  },
+  {
+    "id": "pm-2",
+    "title": "Dordi-1 HYDROELECTRIC PROJECT",
+    "installedCapacity": "12 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Completed",
+    "location": [
+      28.24,
+      84.45
+    ],
+    "role": "TAC Hydro Engineers Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite agreement among Dordi Khola Jal Bidyut Co. Ltd. and Sanima bank limited. (Lead Bank) to provide technical consulting services, progress monitoring, and bill certification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 28° 13’ 33” N to 28° 15’ 11” N and Longitude 84° 26’ 55” E to 84° 28’ 45” E",
+      "Project Location": "Dordi Gaupalika, Lamjung District, Gandaki Province",
+      "Installed Capacity": "12.00 MW",
+      "Design Discharge (Q40)": "11.36 m³/s",
+      "Gross Head": "132 m",
+      "Design Flood": "490 m³/s",
+      "Diversion Type": "Free Flow Concrete Weir",
+      "Headrace Tunnel Length/Diameter": "2550 m/3.2 m",
+      "Penstock Pipe Length/Diameter": "675 m/ 2.1 m",
+      "Thickness of Pipe": "6 mm to 16 mm",
+      "Unit Capacity": "6.8 MW per Unit (2 Units of Horizontal axis Fransis turbine)"
+    },
+    "images": [
+      "data/public/images/Dordi-1 HEP/1.JPG",
+      "data/public/images/Dordi-1 HEP/2.JPG",
+      "data/public/images/Dordi-1 HEP/3.JPG",
+      "data/public/images/Dordi-1 HEP/4.JPG"
+    ],
+    "description": "Dordi-1 Hydroelectric Project of installed capacity 12,000 kW, is being constructed by Dordi Khola Jal Bidyut Co. Ltd. a subsidiary company of CEDB Hydro Fund Ltd. Site of this project lies in Lamjung District of Gandaki Zone, Province no.4. The project utilizes the stream of Dordi Khola which is a tributary of Marsyangdi River. This is a run-off-river scheme with conventional side intake on the left bank of Dordi Rural Municipality of Lamjung district."
+  },
+  {
+    "id": "pm-3",
+    "title": "Karuwa Seti Hydropower Project",
+    "installedCapacity": "32.00 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Completed",
+    "location": [
+      28.38,
+      83.97
+    ],
+    "role": "TAC Hydro Engineers Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Jhyamolongma Hydropower Company Ltd., Nepal Infrastructure Bank Ltd. (Lead Bank), and TAC to provide technical consulting services, progress monitoring, and bill verification for the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 28° 22’ 12” N to 28° 24’ 30” N longitude 83° 57’ 50” E to 83° 59’ 30” E",
+      "Project Location": "Kaski District",
+      "Installed Capacity": "32.00 MW",
+      "Design Discharge (Q41.9)": "15.3 m³/s",
+      "Gross Head": "248.45 m",
+      "Design Flood": "709.86 m³/s (100 yr Flood)",
+      "Diversion Type": "Concrete Gravity Weir",
+      "Headrace Tunnel": "2293.00 m",
+      "Penstock Pipe Length/Diameter": "2250 m (up to bifurcation), 3.0 m",
+      "Thickness of Pipe": "10 mm to 30 mm",
+      "Unit Capacity": "3 units of Horizontal-axis Fransis turbines"
+    },
+    "images": [
+      "data/public/images/Karuwa Seti HPP/1.jpg",
+      "data/public/images/Karuwa Seti HPP/2.jpg",
+      "data/public/images/Karuwa Seti HPP/3.jpg",
+      "data/public/images/Karuwa Seti HPP/4.jpg"
+    ],
+    "description": "Jhyamolongma Hydropower Company Ltd. is developing the Karuwa Seti Hydropower Project (KSHP), a run-of-river hydropower project located in Jimerbari and Mirsa Villages, Kaski District, Gandaki Province, Nepal, utilizing the flow of the Seti Khola with the intake located at Jimerbari Village and the powerhouse situated at Mirsa Village. The facility utilizes a high-head configuration to drive three Horizontal-axis Francis turbines units."
+  },
+  {
+    "id": "pm-4",
+    "title": "Super Lower Bagmati Hydropower Project",
+    "installedCapacity": "41.314 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Ongoing",
+    "location": [
+      27.37,
+      85.42
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract between Super Bagmati Hydropower Limited, Laxmi Sunrise Bank Limited (Lead Bank) to provide technical consulting services, progress monitoring and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27°19′30″ N to 27°25′00″ N Longitude 85°21′52″ E to 85°28′55″ E",
+      "Project Location": "Huchitar Village, Bagmati RM Ward No. 7(Intake Site) Bageri Village, Bagmati RM Ward No. 9 (Powerhouse)",
+      "Installed Capacity": "41.314 MW (as per PPA) and 41.86 MW (as per Generation License)",
+      "Design Discharge (Q40)": "24.12 m³/s",
+      "Gross Head": "206.20 m (Intake at 443.10 masl; Powerhouse at 240.70 masl)",
+      "Design Flood": "2296.00 m³/s (100 yrs Flood Discharge)",
+      "Diversion Type": "Ogee profiled with Side Intake",
+      "Headrace Tunnel": "6587.50 m",
+      "Siphon Length/Diameter": "125.00 m, 3.5 m internal diameter",
+      "Penstock Pipe Length/Diameter": "1005 m, 2.8 m",
+      "Unit Capacity": "14.35 MW per Unit (3 units of vertical-axis Fransis turbines)"
+    },
+    "images": [
+      "data/public/images/Super Lower Bagmati HPP/1.jpg",
+      "data/public/images/Super Lower Bagmati HPP/2.jpg",
+      "data/public/images/Super Lower Bagmati HPP/3.jpg",
+      "data/public/images/Super Lower Bagmati HPP/4.jpg"
+    ],
+    "description": "Super Bagmati Hydropower Limited is developing the Super Lower Bagmati Hydropower Project (SLBHPP), a run-of-river hydropower project located in Makwanpur, Lalitpur, Kavre, and Sindhuli districts of Bagmati Province, Nepal. The project is situated within Bagmati Rural Municipality, with the intake at Huchitar Village, Ward No. 7 and the powerhouse at Bageri Village, Ward No. 9. The project utilizes the stream of Bagmati River. The basin of the Bagmati river, including the Kathmandu valley, lies between the much larger Gandaki basin to the west and the Koshi basin to the east. The facility utilizes a high-head configuration to drive three vertical-axis Francis turbines units."
+  },
+  {
+    "id": "pm-5",
+    "title": "TALLO KHARE KHOLA HYDROPOWER PROJECT",
+    "installedCapacity": "11 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Completed",
+    "location": [
+      27.75,
+      86.21
+    ],
+    "role": "TAC Hydro Engineers Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Universal Power Company Limited. and Bank of Kathmandu Lumbini Limited. (Lead Bank) to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27° 45’ 00” to 27° 45’ 45” N and Longitude 86° 11’ 35” to 86° 13’ 52” E.",
+      "Project Location": "Khare/Chankhu VDC and Suri VDC, Janakpur/Dolakha District",
+      "Installed Capacity": "11 MW",
+      "Design Discharge (Q40)": "14.74 m3/ s",
+      "Gross Head": "136.70 m",
+      "Design Flood": "290 m3/s",
+      "Diversion Type": "Hard Stone Lined Gravity Free Flow Weir",
+      "Headrace Pipe Length/Diameter": "5149.85 m/ 2.5 m to 2.4 m",
+      "Penstock Pipe Length/Diameter": "273 m/ 1.7 to 2.3 m",
+      "Thickness of Pipe": "8mm to 25 mm",
+      "Unit Capacity": "5.8 MW per Unit (2 Units of Horizontal axis Fransis turbine)"
+    },
+    "images": [
+      "data/public/images/Tallo Khare Khola HPP/1.jpg",
+      "data/public/images/Tallo Khare Khola HPP/2.jpg",
+      "data/public/images/Tallo Khare Khola HPP/3.jpg",
+      "data/public/images/Tallo Khare Khola HPP/4.jpg"
+    ],
+    "description": "Tallo Khare Khola Hydropower Project, installed capacity 11,000 kW, is being constructed by Universal Power Company Limited a subsidiary company of CEDB Hydro fund Ltd. Site of this project lies in Dolakha District, Province no. 3. The project utilizes the stream of Khare Khola which is a tributary of Tamakoshi River. This is a run-off-river scheme with conventional side intake on the left bank of Khare Khola, Khare/Chankhu VDC of Dolakha district"
+  },
+  {
+    "id": "pm-6",
+    "title": "Upper Chameliya Hydropower Project",
+    "installedCapacity": "40 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Completed",
+    "location": [
+      29.74,
+      80.78
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Api Power Company Ltd. and Himalayan Bank Limited. (Lead Bank) to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 29° 44’ 20” N to 29° 46’ 57” N and Longitude 80° 46’ 50” E to 80° 49’ 12” E",
+      "Project Location": "Api Himal Rural Municipality, Darchula District",
+      "Installed Capacity": "40.00 MW",
+      "Design Discharge (Q40)": "23.47 m³/s",
+      "Gross Head": "204.80 m",
+      "Design Flood": "626 m³/s",
+      "Diversion Type": "Overflow Type",
+      "Headrace Pipe Length/Diameter": "5719m/ 3.2m",
+      "Penstock Pipe Length/Diameter": "832m/2.26 to 3.2 m",
+      "Thickness of Pipe": "25 mm to 32 mm",
+      "Unit Capacity": "3 Units of Horizontal Axis Francis turbine"
+    },
+    "images": [
+      "data/public/images/Upper Chameliya HPP/1.jpeg",
+      "data/public/images/Upper Chameliya HPP/2.jpeg",
+      "data/public/images/Upper Chameliya HPP/3.jpeg",
+      "data/public/images/Upper Chameliya HPP/4.jpeg"
+    ],
+    "description": "Upper Chameliya Hydropower Project (40MW) is being constructed by API Power Company Ltd. in Darchula district of Sudur Paschim Provience, Nepal. The project site is located at API Himal and Marma Rural Municipality of Darchula district on Chameliya River which is a tributary of Mahakali River. An about 45m diversion dam has been designed to construct across the Chameliya River at place named Okkalat API Himal rural municipality. The water from intake is fed to desander and conveys it through penstock pipe to reach a surface powerhouse on the right bank of Chameliya River at Ghattegad."
+  },
+  {
+    "id": "pm-7",
+    "title": "UPPER MARDI KHOLA HYDROPOWER PROJECT",
+    "installedCapacity": "7 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Completed",
+    "location": [
+      28.39,
+      83.9
+    ],
+    "role": "TAC Hydro Engineers Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite agreement among United Idi Mardi & RB Hydropower Pvt. Ltd. and Prime Commercial Bank Ltd. (Lead Bank) to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 28° 25’ 00” to 28° 22’ 16” N and Longitude 83° 54’ 30” to 53° 52’ 03” E",
+      "Project Location": "Lwanghale VDCs, Pokhara, Kaski District, Gandaki Province",
+      "Installed Capacity": "7 MW",
+      "Design Discharge (Q40)": "2.63 m3/s",
+      "Gross Head": "335 m",
+      "Design Flood": "159.00 m3/s",
+      "Diversion Type": "Ogee shaped weir",
+      "Penstock Pipe Length/Diameter": "3700m/1.2m",
+      "Thickness of Pipe": "6mm to 22mm",
+      "Unit Capacity": "3.7 MW per Unit (2 Units of Pelton turbine)"
+    },
+    "images": [
+      "data/public/images/Upper Mardi Khola HPP/1.jpeg",
+      "data/public/images/Upper Mardi Khola HPP/2.jpeg",
+      "data/public/images/Upper Mardi Khola HPP/3.jpeg",
+      "data/public/images/Upper Mardi Khola HPP/4.jpeg"
+    ],
+    "description": "Upper Mardi Khola Hydropower Project of installed capacity 7000 kW, constructed by United Idi Mardi & RB Hydropower Pvt. Ltd. Construction site of this project is at the upstream of existing Mardi Khola HPP, 4.8 MW at Lwang Ghale VDC of Kaski District. The project utilizes the stream of Mardi Khola which is a tributary of Seti River. This is a run‐off‐river scheme with conventional side intake on the Right bank of Mardi Khola at Lwang Ghale VDC ward No. 9 and the Powerhouse on the left bank of Mardi Khola at Lwang Ghale VDC ward No. 8"
+  },
+  {
+    "id": "pm-8",
+    "title": "Upper Seti Hydropower Project",
+    "installedCapacity": "20.00 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Ongoing",
+    "location": [
+      28.41,
+      83.99
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Upper Seti Hydropower Pvt. Ltd., Laxmi Sunrise Bank Ltd. (Lead Bank), to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 28°24′31″ N to 28°26′15″ N longitude 83°58′36″ E to 84°00′15″ E.",
+      "Project Location": "Machhapuchchhre Rural Municipality, Kaski District",
+      "Installed Capacity": "20.00 MW",
+      "Design Discharge (Q43.40)": "13.00 m³/s",
+      "Gross Head": "186.44 m",
+      "Design Flood": "510 m³/s (1 in 100 yrs)",
+      "Diversion Type": "Ogee Shaped Concrete Weir (Upper Seti weir) and Gabion Weir (Sadhu khola)",
+      "Headrace Tunnel/Size": "2237.70 m, 3.1 m and 3.0 m (Concrete lined)",
+      "Headrace Pipe Length/Diameter": "77 m, 2.3 m (Upper Seti) & 129.50 m, 0.5 m (sadhu Khola)",
+      "Penstock Pipe Length/Diameter": "505.70 m, 230 m",
+      "Thickness of Pipe": "8mm to 28 mm",
+      "Unit Capacity": "3 units of Horizontal-axis Francis turbines"
+    },
+    "images": [
+      "data/public/images/Upper Seti HPP/1.jpg",
+      "data/public/images/Upper Seti HPP/2.jpg",
+      "data/public/images/Upper Seti HPP/3.jpg",
+      "data/public/images/Upper Seti HPP/4.jpg"
+    ],
+    "description": "Upper Seti Hydropower Pvt. Ltd. is developing the Upper Seti Hydropower Project (USHPP), a run-of-river hydropower project located in Machhapuchhre Rural Municipality, Kaski District, Nepal, utilizing the flow of the Seti River along with the water from the sadhu khola. The facility utilizes a high-head configuration to drive three Horizontal-axis Francis turbines units."
+  },
+  {
+    "id": "pm-9",
+    "title": "Lower Erkhuwa Hydropower Project",
+    "installedCapacity": "14.15 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Completed",
+    "location": [
+      27.41,
+      87.11
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Lower Erkhuwa Hydropower Company Pvt. Ltd. and Machhapuchre Bank Ltd. (Lead Bank) to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude: 27°24′28″ N to 27°25′24″ N and Longitude: 87°05′57″ E to 87°07′44″ E",
+      "Project Location": "Bhojpur District",
+      "Installed Capacity": "14.15 MW",
+      "Design Discharge (Q40)": "11.20 m³/s",
+      "Gross Head": "150.63 m",
+      "Design Flood": "218.28 m³/s",
+      "Diversion Type": "Ogee Shaped, Overflow Type",
+      "Headrace Tunnel": "2,524.95 m",
+      "Penstock Pipe Length/Diameter": "595 m, 2.2 m",
+      "Thickness of Pipe": "10 mm to 16 mm",
+      "Unit Capacity": "7.294 MW per Unit (2 units of Horizontal-axis Francis turbines)"
+    },
+    "images": [
+      "data/public/images/Lower Erkhuwa HPP/1.jpg",
+      "data/public/images/Lower Erkhuwa HPP/2.jpg",
+      "data/public/images/Lower Erkhuwa HPP/3.jpg",
+      "data/public/images/Lower Erkhuwa HPP/4.jpg"
+    ],
+    "description": "Lower Erkhuwa Hydropower Project (LEHPP) developed by Lower Erkhuwa Hydropower Company Pvt. Ltd. is a run-of-the-river (RoR) hydropower scheme with an installed capacity of 14.15 MW and an average annual energy generation of 79.79 GWh, comprising 12.68 GWh dry season energy and 67.11 GWh wet season energy in Khadananda Municipality and Shalpa Silicho Rural Municipality, Bhojpur District, Koshi Province, Nepal, utilizing the Erkhuwa Khola. The intake located in Khadananda Municipality and Shalpa Silicho, and the powerhouse in Khadananda Municipality."
+  },
+  {
+    "id": "pm-10",
+    "title": "Nupche Likhu Hydropower Project",
+    "installedCapacity": "57.50 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Ongoing",
+    "location": [
+      27.7,
+      86.47
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Vision Energy & Power Ltd. and Machhapuchhre Bank Ltd. (Lead Bank) to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27°40′37″ N to 27°43′43″ N and Longitude 86°26′30″ E to 86°30′30″ E",
+      "Project Location": "Umakunda Rural Municipality, Ramechhap District, Bagmati Province (Province No. 3), Nepal",
+      "Installed Capacity": "57.50 MW",
+      "Design Discharge (Q45)": "7.11 m³/s (Nupche=3.89 m3/s & Likhu =3.22m3/s)",
+      "Gross Head": "1003.50 m (Intake at 3337 masl; Powerhouse at 2334.50 masl)",
+      "Design Flood": "76 m³/s (At Nupche Hedworks) 63 m³/s (At Likhu Hedworks)",
+      "Diversion Type": "Boulder lined weir with side intakes (at both Nupche and Likhu Headworks)",
+      "Headrace Tunnel": "Nupche Inlet portal to Junction: 1677.32 m Likhu Inlet portal to Junction: 1435.95 m Outlet Inlet portal to Junction: 3204.76 m Adit Tunnel Length: 362.39 m",
+      "Headrace Pipe Length/Diameter": "Likhu Headrace Pipe: 940.00 m, 1.60 m Nupche Headrace pipe: 275 m, 1.60 m",
+      "Penstock Pipe Length/Diameter": "2422.50 m, 1.25 to 0.72 m",
+      "Thickness of Pipe": "8mm to 56mm, 10mm",
+      "Unit Capacity": "3 units of horizontal axis Pelton turbines"
+    },
+    "images": [
+      "data/public/images/Nupche Likhu HPP/1.jpg",
+      "data/public/images/Nupche Likhu HPP/2.jpg",
+      "data/public/images/Nupche Likhu HPP/3.jpg",
+      "data/public/images/Nupche Likhu HPP/4.jpg"
+    ],
+    "description": "Nupche Likhu Hydropower Project (NLHPP), developed by Vision Energy & Power Ltd., is a run-of-river hydropower project located in Ramechhap District, Bagmati Province (Province No. 3), Nepal. The project is situated within Umakunda Rural Municipality, where both the intake and powerhouse sites are located. The project is designed with multiple headworks to capture flows from both the Nupche and Likhu rivers. The source of water for the Nupche Likhu Hydropower Project originates from snow-fed rivers in the high mountain and hilly regions. The project is one of the highest head hydropower projects currently under construction in Nepal."
+  },
+  {
+    "id": "pm-11",
+    "title": "Upper Balephi Hydropower Project",
+    "installedCapacity": "46.00 MW",
+    "scope": "Progress Monitoring and Bill Vetting",
+    "status": "Ongoing",
+    "location": [
+      28,
+      85.79
+    ],
+    "role": "TAC Hydro Consultancy Pvt. Ltd., as the Technical Consultant, has been engaged under a tripartite contract among Upper Balephi Hydropower Ltd., Laxmi Sunrise Bank Ltd. (Lead Bank) to provide technical consulting services, progress monitoring, and bill verification for the successful completion of the project.",
+    "technicalHighlights": {
+      "Project Boundary": "Latitude 27°58’57” N to 28°01’23” N longitude 85°46’46” E to 85°48’03” N",
+      "Project Location": "Sindhupalchowk District",
+      "Installed Capacity": "46.00 MW",
+      "Design Discharge (Q41.86)": "12.7 m³/s",
+      "Gross Head": "438.50 m",
+      "Design Flood": "974 m³/s (100 yrs Flood)",
+      "Diversion Type": "Broad Crested weir",
+      "Headrace Tunnel/Size": "2080.6 m, 3.25 m x 3.50 m (w x h)",
+      "Penstock Pipe Length/Diameter": "586.02 m, 2.2 m",
+      "Thickness of Pipe": "10 mm to 40 mm",
+      "Unit Capacity": "15.807 MW per Unit (3 units of Horizontal-axis Pelton turbines)"
+    },
+    "images": [
+      "data/public/images/Upper Balephi HPP/1.jpg",
+      "data/public/images/Upper Balephi HPP/2.jpg",
+      "images/Upper Balephi HPP/3.jpg"
+    ],
+    "description": "Upper Balephi Hydropower Ltd. is developing the Upper Balephi Hydropower Project (UBHP), a run-of-river hydropower project located in Sindhupalchowk District, Bagmati Province (Province No. 3), Nepal, utilizing the flow of the Balephi Khola with the intake at Tembasthan and the powerhouse near Nimtole, close to the Balephi-Nyasem confluence. The facility utilizes a very high-head configuration to drive three Horizontal-axis Pelton turbines units."
+  }
+]

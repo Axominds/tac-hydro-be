@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "data/public/sectorOfServices/hydropower.png",
+    "title": "Hydropower",
+    "description": "Full-cycle development including feasibility studies, detailed design, and construction supervision for civil, HM, and EM works."
+  },
+  {
+    "id": 2,
+    "image": "data/public/sectorOfServices/tunnel1.png",
+    "title": "Tunnel",
+    "description": "Specialized design and structural analysis for power tunnels and transport infrastructure in complex geological conditions."
+  },
+  {
+    "id": 3,
+    "image": "data/public/sectorOfServices/transmission.png",
+    "title": "Transmission Line",
+    "description": "End-to-end solutions for power evacuation, including route surveys, tower spotting, and grid connection design."
+  },
+  {
+    "id": 4,
+    "image": "data/public/sectorOfServices/road1.png",
+    "title": "Road",
+    "description": "Design and supervision of resilient access roads and transport networks in challenging terrains."
+  },
+  {
+    "id": 5,
+    "image": "data/public/sectorOfServices/environment1.png",
+    "title": "Environment",
+    "description": "Comprehensive environmental assessments (IEE/EIA) and sustainability planning to ensure regulatory compliance and ecological balance."
+  },
+  {
+    "id": 6,
+    "image": "data/public/sectorOfServices/irrigation.png",
+    "title": "Irrigation and Water Resources",
+    "description": "Hydraulic engineering for canal systems, headworks, and sustainable water management projects."
+  }
+]

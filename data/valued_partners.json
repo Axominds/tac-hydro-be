@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Spark Hydroelectric",
+    "logo": "data/public/partners/spark_hydro.jpg",
+    "order": 0
+  },
+  {
+    "name": "Kasuwa Khola",
+    "logo": "data/public/partners/kasuwa_khola.png",
+    "order": 1
+  },
+  {
+    "name": "Darchula Power",
+    "logo": "data/public/partners/darchula_power.png",
+    "order": 2
+  },
+  {
+    "name": "Dordi Khola",
+    "logo": "data/public/partners/dordi_khola.png",
+    "order": 3
+  },
+  {
+    "name": "Universal Power",
+    "logo": "data/public/partners/universal_power.png",
+    "order": 4
+  },
+  {
+    "name": "Middle Modi",
+    "logo": "data/public/partners/middle_modi.png",
+    "order": 5
+  },
+  {
+    "name": "DOED",
+    "logo": "data/public/partners/doed.png",
+    "order": 6
+  },
+  {
+    "name": "Super Mai Hydro",
+    "logo": "data/public/partners/supermaihydro.png",
+    "order": 7
+  },
+  {
+    "name": "Manakamana Engineering",
+    "logo": "data/public/partners/manakamana_engineering.png",
+    "order": 8
+  },
+  {
+    "name": "Mabilung Energy",
+    "logo": "data/public/partners/mabilung_energy.png",
+    "order": 9
+  },
+  {
+    "name": "Bhugol Energy",
+    "logo": "data/public/partners/bhugol_energy.png",
+    "order": 10
+  },
+  {
+    "name": "Vision Energy",
+    "logo": "data/public/partners/vision_energy.png",
+    "order": 11
+  },
+  {
+    "name": "Electro-Power",
+    "logo": "data/public/partners/electro_power.png",
+    "order": 12
+  },
+  {
+    "name": "API Power",
+    "logo": "data/public/partners/api_power.png",
+    "order": 13
+  },
+  {
+    "name": "Jhyamolongma Hydropower",
+    "logo": "data/public/partners/jhyamolongma.png",
+    "order": 14
+  },
+  {
+    "name": "Lower Erkhuwa Hydro",
+    "logo": "data/public/partners/lower_erkhuwa.png",
+    "order": 15
+  },
+  {
+    "name": "Suryakunda Hydro",
+    "logo": "data/public/partners/suryakunda.png",
+    "order": 16
+  },
+  {
+    "name": "United Idi Mardi",
+    "logo": "data/public/partners/united_idi_mardi.png",
+    "order": 17
+  },
+  {
+    "name": "Rapti Hydro",
+    "logo": "data/public/partners/rapti_hydro.png",
+    "order": 18
+  },
+  {
+    "name": "Chhyangdi Hydropower",
+    "logo": "data/public/partners/chhyangdi.png",
+    "order": 19
+  },
+  {
+    "name": "Aarati Power",
+    "logo": "data/public/partners/aarati_power.png",
+    "order": 20
+  }
+]
