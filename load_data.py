@@ -190,30 +190,57 @@ def load_core_principles():
         )
 
 
+CATEGORY_ORDER = {
+    "BOD": 1,
+    "Department Leads": 2,
+    "Design Leads": 3,
+    "Engineering Professionals": 4,
+    "Independent Consultants": 5,
+}
+
+
 def load_team():
     members = load_json("team.json")
+
+    for category_name, order in CATEGORY_ORDER.items():
+        TeamCategory.objects.update_or_create(
+            name=category_name,
+            defaults={"order": order},
+        )
+
     for item in members:
-        category, _ = TeamCategory.objects.update_or_create(name=item.get("category", ""), defaults={"order": 0})
-        member = TeamMember.objects.filter(
+        category_name = item.get("category", "")
+        category = TeamCategory.objects.filter(name=category_name).first()
+        if not category:
+            continue
+
+        member, created = TeamMember.objects.get_or_create(
             name=item.get("name", ""),
             education=item.get("education", ""),
-            bio=item.get("bio", ""),
-        ).first()
-        if not member:
-            member = TeamMember(
-                name=item.get("name", ""),
-                education=item.get("education", ""),
-                bio=item.get("bio", ""),
-                photo=copy_to_media(item.get("image"), "about_us/team"),
-                is_active=True,
-            )
+            defaults={
+                "bio": item.get("bio", ""),
+                "photo": copy_to_media(item.get("image"), "about_us/team"),
+                "is_active": True,
+            },
+        )
+
+        if not created and not member.photo:
+            member.photo = copy_to_media(item.get("image"), "about_us/team")
             member.save()
-        TeamMemberCategory.objects.update_or_create(
+
+        existing_category = TeamMemberCategory.objects.filter(
             team_member=member,
             category=category,
-            position=item.get("position", ""),
-            defaults={"order": 0},
-        )
+        ).exists()
+
+        if not existing_category:
+            category_order = CATEGORY_ORDER.get(category_name, 0)
+            TeamMemberCategory.objects.create(
+                team_member=member,
+                category=category,
+                position=item.get("position", ""),
+                order=category_order,
+            )
 
 
 def load_services():
@@ -328,11 +355,9 @@ def load_galleries():
     data = load_json("gallery.json")
     category_order = 0
     for category_name, subcategories in data.items():
-        category, _ = GalleryCategory.objects.update_or_create(
-            name=category_name, defaults={"order": category_order}
-        )
+        category, _ = GalleryCategory.objects.update_or_create(name=category_name, defaults={"order": category_order})
         category_order += 1
-        
+
         subcategory_order = 0
         for subcategory_name, images in subcategories.items():
             subcategory, _ = GallerySubcategory.objects.update_or_create(

@@ -8,6 +8,6 @@ from about_us.serializers.team_member_category import (
 
 
 class TeamMemberCategoryViewSet(ModelViewSet):
-    queryset = TeamMemberCategory.objects.all()
+    queryset = TeamMemberCategory.objects.select_related("team_member", "category")
     serializer_class = TeamMemberCategoryDetailSerializer
     list_serializer_class = TeamMemberCategoryListSerializer

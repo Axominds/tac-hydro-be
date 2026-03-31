@@ -1,3 +1,4 @@
+from load_env import env
 from django_bolt.serializers import Serializer
 from django_bolt.serializers.decorators import computed_field
 
@@ -9,7 +10,6 @@ class TeamMemberSerializer(Serializer):
     name: str
     education: str | None = None
     bio: str | None = None
-    photo_path: str | None = None
     is_active: bool = True
 
     @computed_field
@@ -17,15 +17,15 @@ class TeamMemberSerializer(Serializer):
         instance = _serializer_instances.get(id(self))
         if instance is None:
             return None
-        return f"/api/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/photo"
+        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/photo/"
 
     class Config:
         field_sets = {
-            "list": ["id", "name", "is_active", "photo"],
+            "list": ["id", "name", "education", "bio", "is_active", "photo"],
             "detail": ["id", "name", "education", "bio", "is_active", "photo"],
             "create": ["name", "education", "bio", "is_active"],
             "update": ["name", "education", "bio", "is_active"],
-            "admin": ["id", "name", "education", "bio", "is_active", "photo_path"],
+            "admin": ["id", "name", "education", "bio", "is_active"],
         }
 
 
