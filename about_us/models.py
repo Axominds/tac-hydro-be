@@ -59,7 +59,8 @@ class TeamMember(models.Model):
     name = models.CharField(max_length=255)
     education = models.TextField(blank=True)
     bio = models.TextField(blank=True)
-    photo = models.FileField(upload_to="about_us/team", blank=True)
+    photo = models.FileField(upload_to="about_us/team/photo", blank=True)
+    profile_photo = models.FileField(upload_to="about_us/team/profile_photo", blank=True)
     is_active = models.BooleanField(default=True)
 
     class Meta:
@@ -72,12 +73,13 @@ class TeamMember(models.Model):
 class TeamMemberCategory(models.Model):
     team_member = models.ForeignKey(TeamMember, on_delete=models.CASCADE, related_name="categories")
     category = models.ForeignKey(TeamCategory, on_delete=models.CASCADE, related_name="team_members")
-    position = models.CharField(max_length=255)
+    technical_expertise = models.CharField(max_length=255)
+    role = models.CharField(max_length=255, blank=True)
     order = models.PositiveIntegerField(default=0)
 
     class Meta:
         db_table = "team_member_categories"
-        ordering = ["order", "position"]
+        ordering = ["order", "technical_expertise"]
 
     def __str__(self) -> str:
         return f"{self.team_member} - {self.category}"

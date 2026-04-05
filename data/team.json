@@ -1,290 +1,422 @@
 [
   {
     "name": "Prahlad Chaudhary",
-    "position": "Chairman",
-    "category": "BOD",
+    "technical_expertise": "Hydromechanical Engineer",
+    "role": "Chairman",
+    "category": "Board of Directors",
     "education": "M.Sc. in Mech. Engineering (Machine Design), Don State Technical University | M.Sc. in Mech. Engineering (Hydropower Equipment) from Kathmandu University",
     "bio": "Mr. Chaudhary holds an M.Sc. in Machine Design with specialization in Hydropower Equipment and began his professional career in 1994. He brings nine years of experience in the design and manufacturing of hydro-mechanical and electro-mechanical equipment, followed by three years in hydropower plant operation as Plant Manager of the Chilime Hydropower Plant. He further served for five years as Project Manager during the construction of the 10 MW Siprin Khola Hydropower Project. Finally for last 14 years, he has been involved in feasibility studies and detailed design and construction supervision of numerous hydropower projects through TAC Hydro Consultancy Pvt. Ltd., giving him comprehensive expertise across the hydropower development and construction cycle.",
-    "image": "data/public/team/Prahlad Chaudhary.jpg"
+    "profile_photo": "data/public/team/profile_photo/Prahlad Chaudhary.jpg",
+    "photo": "data/public/team/photo/Prahlad Chaudhary.jpg"
   },
   {
     "name": "Balkrishna Pangeni",
-    "position": "CEO",
-    "category": "BOD",
+    "technical_expertise": "Hydropower Engineer",
+    "role": "Managing Director",
+    "category": "Board of Directors",
     "education": "MSc. in Hydropower Engineering, Pulchowk Campus",
-    "bio": "Mr. Pangeni has experience of more than 10 years in the field of Hydropower development. He is involved in the design and construction of Lohore(5MW), Ghatte (5MW), Super Mai (7.8MW), Mai Beni (11.2MW), Sano Milti Khola (3MW), Lower Chameliya (20MW).He has completed the construction of Ghatte Khola Hydropower as a Resident Engineer. He is involved in the feasibility study of Super Inkhu and Upper Inkhu HPP and Detaiedl Engineering Design of Kasuwa Khola HPP(45 MW). He has been proposed as Project Coordinator and Hydropower Engineer for the Study team of Sailun Khola HPP.\n\nProjects: Lohore(5MW), Ghatte (5MW), Super Mai (7.8MW), Mai Beni (11.2MW), Sano Milti Khola (3MW), Lower Chameliya (20MW). Resident Engineer for Ghatte Khola HPP. Study team leader for Super Inkhu and Sailun Khola HPP.",
-    "image": "data/public/team/Balkrishna Pangeni.jpg"
+    "bio": "Mr. Pangeni has experience of more than 10 years in the field of hydropower development. He is involved in the design and construction of Lohore(5MW), Ghatte (5MW), Super Mai (7.8MW), Mai Beni (11.2MW), Sano Milti Khola (3MW), Lower Chameliya (20MW). He has completed the construction of Ghatte Khola Hydropower as a Resident Engineer. He is involved in the feasibility study of Super Inkhu and Upper Inkhu HPP and Detailed Engineering Design of Kasuwa Khola HPP(45 MW). He has been proposed as Project Coordinator and Hydropower Engineer for the Study team of Sailun Khola HPP.\n\nProjects: Lohore(5MW), Ghatte (5MW), Super Mai (7.8MW), Mai Beni (11.2MW), Sano Milti Khola (3MW), Lower Chameliya (20MW). Resident Engineer for Ghatte Khola HPP. Study team leader for Super Inkhu and Sailun Khola HPP.",
+    "profile_photo": "data/public/team/profile_photo/Balkrishna Pangeni.jpg",
+    "photo": "data/public/team/photo/Balkrishna Pangeni.jpg"
   },
   {
     "name": "Dipesh Thapa",
-    "position": "Director",
-    "category": "BOD",
+    "technical_expertise": "Hydromechanical Engineer",
+    "role": "Director",
+    "category": "Board of Directors",
     "education": "Master of Science in Renewable Energy Engineering, IOE, Pulchowk",
-    "bio": "Mr. Thapa is having more than 15 years of work experience in various fields of hydropower industries. He has worked as study organizer for detailed engineering study of Kasuwa Khola HPP,45 MW. He worked as Project Engineer for design, manufacture, erection, testing and commissioning of hydromechanical and electromechanical works. He has extensive experience in design of components such as gates, stoplogs, trashracks, penstock, microhydro turbines, cable cranes and steel structures such as towers and bridges. He has been involved in various hydropower projects such as Andhikhola(10MW), Rasuwagadhi(111MW), Lower Modi(10MW), Charnawati(3.5MW), Siprin(10MW), Mailun(5MW), Tungun-Thosne & KhaniKhola, Naughar Gad, Upper Naughar Gad, Kabeli B1, Iwa Khola, Upper Naughar Gad (8MW), Kasuwa Khola (45 mw) etc. He is proposed as Sr. Hydromechanical Engineer for Feasibility Study and Detailed Engineering Design of Sailun Khola HPP.",
-    "image": "data/public/team/Dipesh Thapa.jpg"
+    "bio": "Mr. Thapa is having more than 15 years of work experience in various fields of the hydropower industry. He has worked as study organizer for detailed engineering study of Kasuwa Khola HPP,45 MW. He worked as Project Engineer for design, manufacture, erection, testing and commissioning of hydromechanical and electromechanical works. He has extensive experience in design of components such as gates, stoplogs, trashracks, penstock, microhydro turbines, cable cranes and steel structures such as towers and bridges. He has been involved in various hydropower projects such as Andhikhola(10MW), Rasuwagadhi(111MW), Lower Modi(10MW), Charnawati(3.5MW), Siprin(10MW), Mailun(5MW), Tungun-Thosne & KhaniKhola, Naughar Gad, Upper Naughar Gad, Kabeli B1, Iwa Khola, Upper Naughar Gad (8MW), Kasuwa Khola (45 mw) etc. He is proposed as Sr. Hydromechanical Engineer for Feasibility Study and Detailed Engineering Design of Sailun Khola HPP.",
+    "profile_photo": "data/public/team/profile_photo/Dipesh Thapa.jpg",
+    "photo": "data/public/team/photo/Dipesh Thapa.jpg"
   },
   {
     "name": "Saurav Dulal",
-    "position": "Director",
-    "category": "BOD",
+    "technical_expertise": "Hydropower Engineer",
+    "role": "Director",
+    "category": "Board of Directors",
     "education": "Masters in Hydropower Engineering, IOE, Pulchowk",
     "bio": "Mr. Dulal has been working as Hydropower Engineer for 5 years. He was involved in the hydraulic and structural design of hydropower components. He was involved in the design of Ghatte(5MW) Super Mai(7.8),Mai Beni(11.2MW), Lower Chameliya(20MW), Lower Dudhkunda (9.6 MW) and Rawa Khola (5.3 MW). He is proposed to team member for the hydraulic design of waterway alignment for the Feasibility Study and Detailed Engineering Design of Sailun Khola HPP.",
-    "image": "data/public/team/Saurav Dulal.jpg"
+    "profile_photo": "data/public/team/profile_photo/Saurav Dulal.jpg",
+    "photo": "data/public/team/photo/Saurav Dulal.jpg"
   },
   {
     "name": "Saurav Dulal",
-    "position": "Head of Dept. of Civil Engineering",
+    "technical_expertise": "Lead, Civil Engineering",
+    "role": "",
     "category": "Department Leads",
     "education": "Masters in Hydropower Engineering, IOE, Pulchowk",
     "bio": "Mr. Dulal has been working as Hydropower Engineer for 5 years. He was involved in the hydraulic and structural design of hydropower components. He was involved in the design of Ghatte(5MW) Super Mai(7.8),Mai Beni(11.2MW), Lower Chameliya(20MW), Lower Dudhkunda (9.6 MW) and Rawa Khola (5.3 MW). He is proposed to team member for the hydraulic design of waterway alignment for the Feasibility Study and Detailed Engineering Design of Sailun Khola HPP.",
-    "image": "data/public/team/Saurav Dulal.jpg"
+    "profile_photo": "data/public/team/profile_photo/Saurav Dulal.jpg",
+    "photo": "data/public/team/photo/Saurav Dulal.jpg"
   },
   {
     "name": "Prayash Rijal",
-    "position": "Head of Dept. of Mechanical Engineering",
+    "technical_expertise": "Lead, Mechanical Engineering",
+    "role": "",
     "category": "Department Leads",
     "education": "M.E. in Mechanical & Design Engineering | B.Tech in Mechanical Engineering",
     "bio": "Mr. Rijal is a mechanical engineering professional with over 7 years of experience specializing in hydromechanical and electromechanical design. He possesses strong capabilities in analytical design, Finite Element Analysis (FEA), and Computational Fluid Dynamics (CFD) of hydromechanical structures. He has significant experience in hydropower and high-voltage substation projects, including the 220 kV GIS Substation at Lapsiphedi. Since joining TAC Hydro in 2021, he has contributed to major projects such as United Mewa HEP, Middle Mewa HEP, Seti Nadi HEP, Upper Rahughat, and Kasuwa HEP, ensuring technically sound solutions through advanced simulation and modeling.",
-    "image": "data/public/team/Prayash Rijal.jpg"
+    "profile_photo": "data/public/team/profile_photo/Prayash Rijal.jpg",
+    "photo": "data/public/team/photo/Prayash Rijal.jpg"
   },
   {
     "name": "Rohit Gurung",
-    "position": "Head of Business Development Dept.",
+    "technical_expertise": "Lead, Business Development",
+    "role": "",
     "category": "Department Leads",
-    "education": "Bachelors in Civil Engineering",
+    "education": "Bachelor's in Civil Engineering",
     "bio": "Mr. Gurung leads the Business Development Department at TAC Hydro Consultancy with 12 years of professional experience. He is responsible for identifying strategic growth opportunities, managing high-level client relationships, and expanding the company's portfolio within the hydropower and infrastructure sectors. His role involves deep market analysis and the development of professional proposals to ensure the firm's competitive edge in the consultancy industry.",
-    "image": "data/public/team/Rohit Gurung.jpg"
+    "profile_photo": "data/public/team/profile_photo/Rohit Gurung.jpg",
+    "photo": "data/public/team/photo/Rohit Gurung.jpg"
   },
   {
     "name": "Subeen Lama",
-    "position": "Head of Account and Administration Dept.",
+    "technical_expertise": "Lead, Administration",
+    "role": "",
     "category": "Department Leads",
-    "education": "Bachelors in Business Administration",
+    "education": "Bachelor's in Business Administration",
     "bio": "Mr. Lama manages the Account and Administration Department at TAC Hydro Consultancy. He ensures the smooth operational flow of the firm through diligent financial planning, budgeting, and administrative compliance. His leadership provides the necessary organizational framework that allows the technical teams to focus exclusively on engineering excellence and project delivery.",
-    "image": "data/public/team/Subeen Lama.jpg"
+    "profile_photo": "data/public/team/profile_photo/Subeen Lama.jpg",
+    "photo": "data/public/team/photo/Subeen Lama.jpg"
   },
   {
-    "name": "Kundan Chauhan",
-    "position": "Head of Civil Engineering and Design",
-    "category": "Design Leads",
-    "education": "MSc in Hydropower Development, NTNU (Norway) | BE in Civil Engineering, KU",
-    "bio": "Mr. Chauhan holds over 10 years of professional experience, including over 7 years specifically in the hydropower sector specializing in Feasibility Studies, Detailed Engineering Design (DED), Design support during construction/Construction drawings, Construction supervision and Project Management as Senior Hydropower Engineer. His expertise spans projects ranging from 3.5 MW to 456 MW, with notable contributions to the Langtang Khola Hydroelectric Project (20 MW), Mewa Khola Hydropower Project (50 MW), Bhotekhosi-1 Hydropower Project (44 MW), Super Seti Hydropower Project (24 MW) and Jagdulla PROR Hydroelectric Project (106 MW). He possesses extensive knowledge in the layout planning and design of Headworks, Waterways, and Powerhouse complexes. Experienced in the issuance of construction drawings (IFCs) and project cost estimation, he has successfully delivered engineering solutions for different other hydropower projects such as Super Lower Bagmati Hydropower Projects (42 MW), Bagmati Small Hydropower Project (32 MW), Middle Trishuli Ganga Hydroelectric Project (15 MW) and Siwa Khola hydropower Project (9.3 MW). Also, he had been engaged during the headworks construction of Upper Tamakoshi Hydropower Project (456 MW).",
-    "image": "data/public/team/Kundan Chauhan.jpg"
+    "name": "Jyoti Man Shakya",
+    "technical_expertise": "Lead, Finance and Account",
+    "role": "",
+    "category": "Department Leads",
+    "education": "Bachelor of Business Studies | Tribhuvan University",
+    "bio": "Mr. Shakya is currently working as an Account & Finance Officer at TAC Hydro Consultancy Pvt. Ltd, with a strong focus on financial management. He specializes in maintaining accurate financial records, preparing budgets, optimizing cost, and ensuring compliance with financial regulations, taxation laws, and reporting standards. Alongside accounting responsibilities, he is involved in streamlining financial processes by utilizing accounting software and developing efficient reporting systems that enhance transparency and decision making. His role includes monitoring project-wise income and expenditures, managing cash flow, and supporting statutory audit and taxation processes as per prevailing laws of Nepal.",
+    "profile_photo": "data/public/team/profile_photo/Jyoti Man Shakya.png",
+    "photo": "data/public/team/photo/Jyoti Man Shakya.png"
   },
   {
     "name": "Ghanshyam Rana",
-    "position": "Head of Project Management",
+    "technical_expertise": "Lead of Project Management",
+    "role": "",
     "category": "Design Leads",
     "education": "Bachelors in Civil Engineering",
     "bio": "Mr. Rana oversees the Project Management department with 10 years of professional experience in the infrastructure and energy sectors. He is responsible for the overall coordination of project lifecycles, ensuring that feasibility studies and detailed designs are delivered on schedule and within budget. His expertise focuses on resource optimization, risk management, and maintaining seamless communication between multidisciplinary engineering teams and project stakeholders to ensure high-quality project delivery.",
-    "image": "data/public/team/Ghanshyam Rana.jpg"
+    "profile_photo": "data/public/team/profile_photo/Ghanshyam Rana.jpg",
+    "photo": "data/public/team/photo/Ghanshyam Rana.jpg"
   },
   {
-    "name": "Ashish Thapa Magar",
-    "position": "Mechanical Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelors in Mechanical Engineering",
-    "bio": "Mr. Magar is a Mechanical Engineer at TAC Hydro Consultancy with a focus on hydro-mechanical design and technical documentation. Since joining the firm in 2025, he has been responsible for the hydro-mechanical drawing and drafting of critical components, including gates, stoplogs, bifurcations, and bellmouths.",
-    "image": "data/public/team/Ashish Thapa Magar.jpg"
-  },
-  {
-    "name": "Junuka Shrestha",
-    "position": "Junior Mechanical Engineer",
-    "category": "Engineering Professionals",
-    "education": "Diploma in Mechanical Engineering, Thapathali Campus",
-    "bio": "Ms. Shrestha is a Mechanical Engineer at TAC Hydro Consultancy with 6 years of experience in the hydropower and infrastructure sector. Her expertise includes the preparation of detailed CAD drawings for penstocks, gates, trash racks, valves, and auxiliary systems. She is skilled in reviewing and approving mechanical design drawings, preparing Bill of Quantities (BOQs), and producing comprehensive technical reports and as-built documentation. Throughout her career, she has provided vital engineering support to site teams during erection, ensuring the practical and efficient implementation of mechanical components for small to medium-capacity hydropower plants.",
-    "image": "data/public/team/Junuka Shrestha.jpg"
-  },
-  {
-    "name": "Rakish Shrestha",
-    "position": "Mechanical Engineer",
-    "category": "Engineering Professionals",
-    "education": "Masters by Research in Mechanical Engineering, Kathmandu University",
-    "bio": "Mr. Shrestha is a Hydro-Mechanical Engineer with over 2.5 years of experience specializing in the structural and fluid dynamics of hydropower components. His expertise includes sediment-induced turbine erosion, Finite Element Analysis (FEA), and Computational Fluid Dynamics (CFD) modeling. He has extensive experience in the design and experimental study of Francis turbines and the structural analysis of complex components like bifurcations and surge tees. His research-driven approach to erosion modeling and turbulence simulation ensures the delivery of highly durable and technically optimized hydro-mechanical systems.",
-    "image": "data/public/team/Rakish Shrestha.jpg"
-  },
-  {
-    "name": "Tarakant Chaudhary",
-    "position": "Junior Mechanical Engineer",
-    "category": "Engineering Professionals",
-    "education": "Diploma in Mechanical Engineering, Manmohan Memorial Polytechnic Institute",
-    "bio": "Mr. Chaudhary serves as a CAD Engineer at TAC Hydro Consultancy with 4 years of experience in the hydropower, irrigation, and infrastructure sectors. He specializes in CAD drafting and mechanical design, with a strong background in technical documentation and BOQ preparation. His professional experience includes providing essential site support and ensuring that mechanical designs are translated into accurate construction drawings, contributing to the delivery of practical and sustainable engineering solutions.",
-    "image": "data/public/team/Tara Kant Chaudhary.jpg"
-  },
-  {
-    "name": "Yogesh Niroula",
-    "position": "Mechanical Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor in Mechanical Engineering, Kathmandu University | Diploma in Mechanical Engineering, Manmohan Memorial Polytechnic",
-    "bio": "Mr. Niroula is a detail oriented Mechanical Engineer at TAC Hydro Consultancy specializing in hydropower with practical experience in technical design machining and fabrication. He possesses significant expertise in vibrational characteristics of Francis turbines and has contributed to techno economic feasibility studies for rural energy systems. His professional background includes hands on experience in technical design and internship roles where he developed skills in SolidWorks CAD and analytical problem solving. With a strong commitment to sustainable energy solutions he provides critical support in the design and technical analysis of hydro mechanical components contributing to the delivery of innovative and practical engineering solutions.",
-    "image": "data/public/team/Yogesh Niroula.jpg"
-  },
-  {
-    "name": "Sashikant Chaudhary",
-    "position": "CAD Engineer",
-    "category": "Engineering Professionals",
-    "education": "Diploma in Civil Engineering, Thaha Polytechnic Institute",
-    "bio": "Mr. Chaudhary is a Junior Civil Engineer at TAC Hydro Consultancy with a focused background in the hydropower and infrastructure sectors. He specializes in the drafting and preparation of comprehensive civil drawings, including overall project layout planning, structural detailing, and the development of precise construction drawings. His technical proficiency in CAD ensures that complex engineering concepts are translated into practical, executable designs, contributing to the delivery of technically sound and sustainable engineering solutions.",
-    "image": "data/public/team/Sashikant Chaudhary.jpg"
-  },
-  {
-    "name": "Dipak Khadka",
-    "position": "Electrical Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Electrical Engineering",
-    "bio": "Mr. Khadka is an Electrical Engineer at TAC Hydro Consultancy specializing in power systems and electrical design for hydropower projects.",
-    "image": "data/public/team/Dipak Khadka.jpg"
-  },
-  {
-    "name": "Bardan Dangi",
-    "position": "Hydropower Engineer",
-    "category": "Engineering Professionals",
-    "education": "MSc in Hydropower Engineering, IOE Pulchowk | BE in Civil Engineering, IOE Pulchowk",
-    "bio": "Mr. Dangi has over 8 years of experience as a Civil and Hydropower Engineer, specializing in construction supervision and project management. He has served as a Project Engineer for the construction of the Liping Khola Hydropower Project (16.26 MW) and contributed to the Due Diligence Study of the Madhya Chameliya Hydropower Project (28.304 MW). Currently, he leads the technical team for the Detailed Feasibility Study of the Super Molung Hydropower Project (8.6 MW), bringing extensive field experience to the design and planning phases.",
-    "image": "data/public/team/Bardan Dangi.jpg"
-  },
-  {
-    "name": "Amit Bastakoti",
-    "position": "Structural Engineer",
-    "category": "Engineering Professionals",
-    "education": "Masters in Structural Engineering, University of Leeds (UK)| Bachelor’s in Civil Engineering, National College of Engineering",
-    "bio": "Mr. Bastakoti is a Structural Engineer with more than 3 years of professional experience in the structural design of hydropower and general civil infrastructure. He specializes in the Detailed Engineering Design (DED) of complex structures, ensuring stability and safety under diverse loading conditions. His notable project involvements at TAC Hydro include the Khani Khola-I Hydropower Project (25+15 MW), Super Seti Hydropower Project (30 MW), and the Jagdulla PROR HEP, where he provides high-level structural analysis and design inputs.",
-    "image": "data/public/team/Amit Bastakoti.jpg"
-  },
-  {
-    "name": "Rashmi Jha",
-    "position": "Civil Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Civil Engineering, Kathmandu University",
-    "bio": "Ms. Jha is a Civil Engineer with over two years of experience in the planning, design, and rehabilitation of hydropower projects. She has contributed significantly to the Detailed Engineering Design (DED) of the Kasuwa Khola Hydropower Project (45 MW) and the updated Feasibility Study of the Rawa Khola Hydropower Project (6.7 MW). Her expertise also extends to Due Diligence studies for projects such as Jurimba Khola and Thuligad Khola, as well as rehabilitation works for the Middle Modi Hydropower Project (18 MW), focusing on technical design inputs and detailed drawing preparation.",
-    "image": "data/public/team/Rashmi Jha.jpg"
-  },
-  {
-    "name": "Reinsha Rimal",
-    "position": "Civil Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Civil and Rural Engineering, Pokhara University",
-    "bio": "Ms. Rimal is a Civil Engineer at TAC Hydro Consultancy with over two years of professional experience in the hydropower and infrastructure sectors. Her expertise includes civil engineering analysis, quantity estimation, and the preparation of comprehensive technical drawings and reports. She has contributed to various project stages, including feasibility studies, detailed engineering design (DED), and BOQ preparation. Her ability to coordinate effectively with multidisciplinary project teams ensures the delivery of technically sound, practical, and sustainable hydropower solutions.",
-    "image": "data/public/team/Reinsha Rimal.jpg"
-  },
-  {
-    "name": "Siddhartha Kandel",
-    "position": "Civil Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Civil Engineering, IOE, Pulchowk Campus",
-    "bio": "Mr. Kandel is a Civil Engineer with 2 years of professional experience, specializing in hydrologic modeling and hydraulic design. At TAC Hydro Consultancy, he has been a key contributor to the technical analysis of major projects, including the Super Molung Hydropower Project, Super Seti Hydropower Project, and the Jagdulla PROR Hydropower Project. His technical precision in modeling and design facilitates the delivery of robust and efficient engineering solutions for complex hydraulic infrastructure.",
-    "image": "data/public/team/Siddhartha Kandel.jpg"
-  },
-  {
-    "name": "Gopal Bhattarai",
-    "position": "Hydropower Engineer",
-    "category": "Engineering Professionals",
-    "education": "MSc in Hydropower Engineering, IOE, Pulchowk Campus | Bachelor's in Civil Engineering, IOE, Pulchowk Campus",
-    "bio": "Mr. Bhattarai is a specialist in hydropower assessment, hydraulic planning, and design. He brings a meticulous approach to engineering planning and drafting, helping define high standards across TAC Hydro's project portfolio. His notable experience includes two years as the Site In-charge and Site Engineer for the Upper Tamakoshi Hydropower Project, where he managed critical site-level engineering challenges. His blend of site-based management and high-level hydraulic design ensures practical and technically excellent project outcomes.",
-    "image": "data/public/team/Gopal Bhattarai.jpg"
-  },
-  {
-    "name": "Suman Khanal",
-    "position": "Hydropower Engineer",
-    "category": "Engineering Professionals",
-    "education": "Masters in Hydropower Engineering, IOE, Pulchowk Campus",
-    "bio": "Mr. Khanal is a Hydropower Engineer at TAC Hydro Consultancy who contributes to the technical planning and hydraulic design of our project portfolio. He brings a meticulous approach to engineering planning and drafting, focusing on applying advanced hydraulic principles to the analysis and design phases of hydropower infrastructure. By integrating rigorous academic foundations with the firm's engineering workflows, he ensures that waterway alignments and infrastructure components are designed for technical excellence and operational reliability.",
-    "image": "data/public/team/Suman Khanal.jpg"
-  },
-  {
-    "name": "Aashis Mishra",
-    "position": "Civil Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Civil and Rural Engineering, Pokhara University",
-    "bio": "Mr. Mishra is a Civil Engineer with professional experience focused on bill verification, project monitoring, and quality control. He is responsible for assessing the quantity and quality of completed works and reviewing contractor bills for accuracy and contract compliance. His role involves conducting site visits to cross-check work progress against planned targets and milestones. He has provided vital project monitoring for several projects, including Nupche Likhu HPP (57.50 MW), Bhotekoshi-1 HPP (44 MW), and Super Lower Bagmati HPP (41.314 MW), ensuring timely and cost-effective project execution.",
-    "image": "data/public/team/Aashis Mishra.jpg"
-  },
-  {
-    "name": "Amrit Bhusal",
-    "position": "Civil Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Civil Engineering, Pulchowk Campus, Tribhuvan University",
-    "bio": "Mr. Bhusal is a Civil Engineer at TAC Hydro Consultancy with 1.5 years of experience in the hydropower and infrastructure sector. His expertise is focused on hydrology and hydraulic design, where he applies analytical rigor to water resource planning and infrastructure safety. He has contributed significantly to the detailed engineering design (DED) of the Lower Khani B Hydropower Project and the Khani Khola-1 Hydropower Project. His technical skills in hydraulic modeling and quantity estimation ensure the delivery of practical, technically sound, and efficient hydropower solutions.",
-    "image": "data/public/team/Amrit Bhusal.jpg"
-  },
-  {
-    "name": "Shradha Kisi",
-    "position": "Business Management Engineer",
-    "category": "Engineering Professionals",
-    "education": "MBA in Project Management, Islington College, London Metropoliton University | Bachelor's in Civil Engineering, Khwopa Engineering College, Purbanchal University",
-    "bio": "Ms. Kisi is a versatile professional at TAC Hydro Consultancy who brings a strategic multidisciplinary approach to the hydropower sector with over 3 years of experience. She plays a dual role within the firm bridging the gap between technical civil design and overall business management. Her expertise lies in blending solid civil engineering foundations with a high-level understanding of project lifecycles and infrastructure planning. She has supported the development of significant energy projects including Mewa Khola HPP (50 MW), Super Lower Bagmati HPP (41.86 MW) and Langtang Khola HPP (20 MW). Her ability to integrate technical design with management oversight ensures that project milestones are met with engineering precision and operational efficiency.",
-    "image": "data/public/team/Shradha Kisi.jpg"
-  },
-  {
-    "name": "Chandra Kumar Thapa",
-    "position": "Civil Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Civil Engineering",
-    "bio": "Mr. Thapa serves as a Civil Engineer at TAC Hydro Consultancy, specializing in site engineering and construction management. He is responsible for the direct supervision of civil works, ensuring that all construction activities align strictly with the approved technical drawings and project specifications.",
-    "image": "data/public/team/Chandra Kumar Thapa.jpg"
-  },
-  {
-    "name": "Sital Rana",
-    "position": "Civil Engineer",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Civil Engineering",
-    "bio": "Mr. Rana is a Civil Engineer at TAC Hydro Consultancy with 12 years of professional experience primarily focused on site engineering and the technical supervision of hydropower projects. He specializes in the field level implementation of civil designs ensuring that construction activities from headworks to powerhouse complexes adhere to precise engineering standards.",
-    "image": "data/public/team/Sital Rana.jpg"
-  },
-  {
-    "name": "Ujwal Singh",
-    "position": "Assistant Admin",
-    "category": "Engineering Professionals",
-    "education": "Bachelor's in Business Administration",
-    "bio": "Mr. Singh provides vital administrative support to the TAC Hydro team, ensuring the smooth day-to-day operations of the office. He assists in project documentation, record-keeping, and the coordination of logistics for site visits and multidisciplinary team meetings. His organizational support allows the engineering and management teams to maintain a high level of productivity and focus on the delivery of technical solutions for the firm's clients.",
-    "image": "data/public/team/Ujwal Singh.jpg"
-  },
-  {
-    "name": "Shradha Kisi",
-    "position": "Independent Consultant",
-    "category": "Independent Consultants",
-    "education": "MBA in Project Management, Islington College, London Metropoliton University | Bachelor's in Civil Engineering, Khwopa Engineering College, Purbanchal University",
-    "bio": "",
-    "image": "data/public/team/Shradha Kisi.jpg"
+    "name": "Kundan Chauhan",
+    "technical_expertise": "Lead of Civil Engineering and Design",
+    "role": "",
+    "category": "Design Leads",
+    "education": "MSc in Hydropower Development, NTNU (Norway) | BE in Civil Engineering, KU",
+    "bio": "Mr. Chauhan holds over 10 years of professional experience, including over 7 years specifically in the hydropower sector specializing in Feasibility Studies, Detailed Engineering Design (DED), Design support during construction/Construction drawings, Construction supervision and Project Management as Senior Hydropower Engineer. His expertise spans projects ranging from 3.5 MW to 456 MW, with notable contributions to the Langtang Khola Hydroelectric Project (20 MW), Mewa Khola Hydropower Project (50 MW), Bhotekhosi-1 Hydropower Project (44 MW), Super Seti Hydropower Project (24 MW) and Jagdulla PROR Hydroelectric Project (106 MW). He possesses extensive knowledge in the layout planning and design of Headworks, Waterways, and Powerhouse complexes. Experienced in the issuance of construction drawings (IFCs) and project cost estimation, he has successfully delivered engineering solutions for different other hydropower projects such as Super Lower Bagmati Hydropower Projects (42 MW), Bagmati Small Hydropower Project (32 MW), Middle Trishuli Ganga Hydroelectric Project (15 MW) and Siwa Khola hydropower Project (9.3 MW). Also, he had been engaged during the headworks construction of Upper Tamakoshi Hydropower Project (456 MW).",
+    "profile_photo": "data/public/team/profile_photo/Kundan Chauhan.jpg",
+    "photo": "data/public/team/photo/Kundan Chauhan.jpg"
   },
   {
     "name": "Prithivi Raj Thapa",
-    "position": "Head of EM/TL Design",
+    "technical_expertise": "Lead of EM/TL Design",
+    "role": "",
     "category": "Design Leads",
     "education": "Bachelor's in Electrical engineering",
     "bio": "Mr. Thapa leads the Electro Mechanical and Transmission Line Design department at TAC Hydro Consultancy with 5 years of professional experience. He specializes in the design and integration of power evacuation systems and substation components for hydropower projects. His expertise ensures that electrical infrastructure is optimized for efficiency and compliance with national grid standards providing critical technical leadership from the design phase through to project implementation.",
-    "image": ""
+    "profile_photo": "data/public/team/profile_photo/Prithivi Raj Thapa.jpg",
+    "photo": "data/public/team/photo/Prithivi Raj Thapa.jpg"
   },
   {
-    "name": "Prajwal Kharel",
-    "position": "Electrical Engineer",
+    "name": "Amit Bastakoti",
+    "technical_expertise": "Structural Engineer",
+    "role": "",
     "category": "Engineering Professionals",
-    "education": "Bachelor of Electrical Engineering, Tribhuvan University",
-    "bio": "Mr. Kharel brings over 2 years of specialized hydropower experience to the TAC Hydro team. His technical expertise covers the installation of generators turbines and governors alongside the coordination of preventative maintenance schedules. By leveraging his training in solar photo voltaic systems and advanced AutoCAD proficiency he ensures that our electrical infrastructure projects are executed with modern precision and high safety standards.",
-    "image": ""
+    "education": "Masters in Structural Engineering, University of Leeds (UK)| Bachelor's in Civil Engineering, National College of Engineering",
+    "bio": "Mr. Bastakoti is a Structural Engineer with more than 3 years of professional experience in the structural design of hydropower and general civil infrastructure. He specializes in the Detailed Engineering Design (DED) of complex structures, ensuring stability and safety under diverse loading conditions. His notable project involvements at TAC Hydro include the Khani Khola-I Hydropower Project (25+15 MW), Super Seti Hydropower Project (30 MW), and the Jagdulla PROR HEP, where he provides high-level structural analysis and design inputs.",
+    "profile_photo": "data/public/team/profile_photo/Amit Bastakoti.jpg",
+    "photo": "data/public/team/photo/Amit Bastakoti.jpg"
   },
   {
-    "name": "Kumar Bishowkarma",
-    "position": "Civil Engineer",
+    "name": "Bardan Dangi",
+    "technical_expertise": "Hydropower Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "MSc in Hydropower Engineering, IOE Pulchowk | BE in Civil Engineering, IOE Pulchowk",
+    "bio": "Mr. Dangi has over 8 years of experience as a Civil and Hydropower Engineer, specializing in construction supervision and project management. He has served as a Project Engineer for the construction of the Liping Khola Hydropower Project (16.26 MW) and contributed to the Due Diligence Study of the Madhya Chameliya Hydropower Project (28.304 MW). Currently, he leads the technical team for the Detailed Feasibility Study of the Super Molung Hydropower Project (8.6 MW), bringing extensive field experience to the design and planning phases.",
+    "profile_photo": "data/public/team/profile_photo/Bardan Dangi.jpg",
+    "photo": "data/public/team/photo/Bardan Dangi.jpg"
+  },
+  {
+    "name": "Chandra Kr. Thapa Magar",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
     "category": "Engineering Professionals",
     "education": "Bachelor's in Civil Engineering",
-    "bio": "Mr. Bishowkarma is a Civil Engineer primarily engaged in the site supervision and technical monitoring of hydropower projects. His expertise lies in coordinating field activities, managing site logistics, and ensuring that civil structures are built to meet both safety and environmental standards.",
-    "image": ""
+    "bio": "Mr. Thapa serves as a Civil Engineer at TAC Hydro Consultancy, specializing in site engineering and construction management. He is responsible for the direct supervision of civil works, ensuring that all construction activities align strictly with the approved technical drawings and project specifications.",
+    "profile_photo": "data/public/team/profile_photo/Chandra Thapa Magar.png",
+    "photo": "data/public/team/photo/Chandra Thapa Magar.png"
   },
   {
-    "name": "Rajendra Pulami",
-    "position": "Surveyor",
+    "name": "Junuka Shrestha",
+    "technical_expertise": "Junior Mechanical Engineer",
+    "role": "",
     "category": "Engineering Professionals",
-    "education": "Diploma in Civil Engineering",
-    "bio": "Mr. Pulami serves as the lead Surveyor at TAC Hydro Consultancy, providing the essential topographical and geospatial data required for accurate engineering design. He is responsible for conducting precise field surveys, including topographic mapping and the collection of longitudinal and cross-sectional data for headworks and waterway alignments.",
-    "image": ""
+    "education": "Diploma in Mechanical Engineering, Thapathali Campus",
+    "bio": "Ms. Shrestha is a Mechanical Engineer at TAC Hydro Consultancy with 6 years of experience in the hydropower and infrastructure sector. Her expertise includes the preparation of detailed CAD drawings for penstocks, gates, trash racks, valves, and auxiliary systems. She is skilled in reviewing and approving mechanical design drawings, preparing Bill of Quantities (BOQs), and producing comprehensive technical reports and as-built documentation. Throughout her career, she has provided vital engineering support to site teams during erection, ensuring the practical and efficient implementation of mechanical components for small to medium-capacity hydropower plants.",
+    "profile_photo": "data/public/team/profile_photo/Junuka Shrestha.jpg",
+    "photo": "data/public/team/photo/Junuka Shrestha.jpg"
+  },
+  {
+    "name": "Sital Rana",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering",
+    "bio": "Mr. Rana is a Civil Engineer at TAC Hydro Consultancy with 12 years of professional experience primarily focused on site engineering and the technical supervision of hydropower projects. He specializes in the field-level implementation of civil designs ensuring that construction activities from headworks to powerhouse complexes adhere to precise engineering standards.",
+    "profile_photo": "data/public/team/profile_photo/Sital Rana.jpg",
+    "photo": "data/public/team/photo/Sital Rana.jpg"
+  },
+  {
+    "name": "Gopal Bhattarai",
+    "technical_expertise": "Hydropower Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "MSc in Hydropower Engineering, IOE, Pulchowk Campus | Bachelor's in Civil Engineering, IOE, Pulchowk Campus",
+    "bio": "Mr. Bhattarai is a specialist in hydropower assessment, hydraulic planning, and design. He brings a meticulous approach to engineering planning and drafting, helping define high standards across TAC Hydro's project portfolio. His notable experience includes two years as the Site In-charge and Site Engineer for the Upper Tamakoshi Hydropower Project, where he managed critical site-level engineering challenges. His blend of site-based management and high-level hydraulic design ensures practical and technically excellent project outcomes.",
+    "profile_photo": "data/public/team/profile_photo/Gopal Bhattarai.jpg",
+    "photo": "data/public/team/photo/Gopal Bhattarai.jpg"
+  },
+  {
+    "name": "Suman Khanal",
+    "technical_expertise": "Hydropower Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Masters in Hydropower Engineering, IOE, Pulchowk Campus",
+    "bio": "Mr. Khanal is a Hydropower Engineer at TAC Hydro Consultancy who contributes to the technical planning and hydraulic design of our project portfolio. He brings a meticulous approach to engineering planning and drafting, focusing on applying advanced hydraulic principles to the analysis and design phases of hydropower infrastructure. By integrating rigorous academic foundations with the firm's engineering workflows, he ensures that waterway alignments and infrastructure components are designed for technical excellence and operational reliability.",
+    "profile_photo": "data/public/team/profile_photo/Suman Khanal.jpg",
+    "photo": "data/public/team/photo/Suman Khanal.jpg"
+  },
+  {
+    "name": "Manish Adhikari",
+    "technical_expertise": "Geologist",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Master's in Engineering Geology | Tribhuvan University",
+    "bio": "Mr. Adhikari is a seasoned Geologist and has worked as a Site In Charge who played a pivotal role in the 10.7 MW Upper Sanighat Hydroelectric project, where he successfully led the landmark breakthrough of a 2,800m tunnel. He possesses deep technical expertise in rock mass characterization specifically utilizing RMR, SMR, GSI, and Q-system frameworks and has significant experience in precision blast design. By combining rigorous analytical skills with hands-on site management, he ensures the structural integrity and operational success of complex subterranean engineering projects.",
+    "profile_photo": "data/public/team/profile_photo/Manish Adhikari.jpg",
+    "photo": "data/public/team/photo/Manish Adhikari.jpg"
+  },
+  {
+    "name": "Amrit Bhusal",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering, Pulchowk Campus, Tribhuvan University",
+    "bio": "Mr. Bhusal is a Civil Engineer at TAC Hydro Consultancy with 1.5 years of experience in the hydropower and infrastructure sector. His expertise is focused on hydrology and hydraulic design, where he applies analytical rigor to water resource planning and infrastructure safety. He has contributed significantly to the detailed engineering design (DED) of the Lower Khani B Hydropower Project and the Khani Khola-1 Hydropower Project. His technical skills in hydraulic modeling and quantity estimation ensure the delivery of practical, technically sound, and efficient hydropower solutions.",
+    "profile_photo": "data/public/team/profile_photo/Amrit Bhusal.jpg",
+    "photo": "data/public/team/photo/Amrit Bhusal.jpg"
+  },
+  {
+    "name": "Ashish Mishra",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil and Rural Engineering, Pokhara University",
+    "bio": "Mr. Mishra is a Civil Engineer with professional experience focused on bill verification, project monitoring, and quality control. He is responsible for assessing the quantity and quality of completed works and reviewing contractor bills for accuracy and contract compliance. His role involves conducting site visits to cross-check work progress against planned targets and milestones. He has provided vital project monitoring for several projects, including Nupche Likhu HPP (57.50 MW), Bhotekoshi-1 HPP (44 MW), and Super Lower Bagmati HPP (41.314 MW), ensuring timely and cost-effective project execution.",
+    "profile_photo": "data/public/team/profile_photo/Aashis Mishra.jpg",
+    "photo": "data/public/team/photo/Aashis Mishra.jpg"
+  },
+  {
+    "name": "Ashish Thapa Magar",
+    "technical_expertise": "Mechanical Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelors in Mechanical Engineering",
+    "bio": "Mr. Magar is a Mechanical Engineer at TAC Hydro Consultancy with a focus on hydro-mechanical design and technical documentation. Since joining the firm in 2025, he has been responsible for the hydro-mechanical drawing and drafting of critical components, including gates, stoplogs, bifurcations, and bellmouths.",
+    "profile_photo": "data/public/team/profile_photo/Ashish Thapa Magar.jpg",
+    "photo": "data/public/team/photo/Ashish Thapa Magar.jpg"
+  },
+  {
+    "name": "Deepti Malla",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering | Advanced College of Engineering & Management",
+    "bio": "Ms. Malla is a Civil Engineer with over two years of professional experience in the planning and design of key components of hydropower projects. She supports preliminary studies, engineering design, and technical assessments of overall hydropower projects. She has made significant contributions to the Due Diligence Study (DDS) of the Thuligad Khola Hydroelectric Project, where she was involved in reviewing design parameters, assessing project layouts, and supporting technical evaluations to ensure compliance with engineering standards and project requirements.",
+    "profile_photo": "data/public/team/profile_photo/Deepti Malla.jpg",
+    "photo": "data/public/team/photo/Deepti Malla.jpg"
+  },
+  {
+    "name": "Mahesh Thapa",
+    "technical_expertise": "Mechanical Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Mechanical Engineering | Pulchowk Campus, TU",
+    "bio": "Mr. Thapa is a Mechanical Engineer with over three years of experience in mechanical design, with professional exposure in both Nepal and Japan. His international experience has enhanced his technical expertise, attention to detail, and engineering discipline. He is currently working as a Hydromechanical Engineer at TAC Hydro since January, contributing to the design and development of hydromechanical systems. He is dedicated to applying his skills and global experience to support the sustainable growth of Nepal's energy sector.",
+    "profile_photo": "data/public/team/profile_photo/Mahesh Thapa.jpg",
+    "photo": "data/public/team/photo/Mahesh Thapa.jpg"
+  },
+  {
+    "name": "Prashant Chaudhary",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering | Pokhara University",
+    "bio": "Mr. Chaudhary is currently working as a Hydrologist in hydropower projects with a strong focus on automating hydrological analysis and hydraulic design workflows. Alongside engineering responsibilities, he develops engineering tools that transform complex hydrological and hydraulic calculations into fast, automated systems, significantly reducing computation time while improving accuracy and efficiency. He is involved in building web-based civil engineering applications for hydraulic structure design, integrating AI-driven automation and interactive 3D visualization of the structures to support real-time decision-making. Ultimately enhancing productivity for civil engineers by enabling rapid, precise analysis and design of engineering structures. Currently, he is contributing to the DKHP (3.610 MW) hydropower project.",
+    "profile_photo": "data/public/team/profile_photo/Prashant Chaudhary.jpg",
+    "photo": "data/public/team/photo/Prashant Chaudhary.jpg"
+  },
+  {
+    "name": "Rabina Shrestha",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering | IOE, Thapathali Campus",
+    "bio": "Ms. Shrestha has over 3 years of professional experience and 1 year of experience in hydropower. Her expertise includes feasibility study, with experience in Nawa Khola Hydropower Project (4.064 MW), preparation of project general layout, hydrological and sediment study, preparation of BoQ, hydraulic design and drawings, and contributing to the delivery of technically sound and practical hydropower solutions.",
+    "profile_photo": "data/public/team/profile_photo/Rabina Shrestha.jpg",
+    "photo": "data/public/team/photo/Rabina Shrestha.jpg"
+  },
+  {
+    "name": "Rakish Shrestha",
+    "technical_expertise": "Mechanical Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Masters by Research in Mechanical Engineering, Kathmandu University",
+    "bio": "Mr. Shrestha is a Hydro-Mechanical Engineer with over 2.5 years of experience specializing in the structural and fluid dynamics of hydropower components. His expertise includes sediment-induced turbine erosion, Finite Element Analysis (FEA), and Computational Fluid Dynamics (CFD) modeling. He has extensive experience in the design and experimental study of Francis turbines and the structural analysis of complex components like bifurcations and surge tees. His research-driven approach to erosion modeling and turbulence simulation ensures the delivery of highly durable and technically optimized hydro-mechanical systems.",
+    "profile_photo": "data/public/team/profile_photo/Rakish Shrestha.jpg",
+    "photo": "data/public/team/photo/Rakish Shrestha.jpg"
+  },
+  {
+    "name": "Rashmi Jha",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering, Kathmandu University",
+    "bio": "Ms. Jha is a Civil Engineer with over two years of experience in the planning, design, and rehabilitation of hydropower projects. She has contributed significantly to the Detailed Engineering Design (DED) of the Kasuwa Khola Hydropower Project (45 MW) and the updated Feasibility Study of the Rawa Khola Hydropower Project (6.7 MW). Her expertise also extends to Due Diligence studies for projects such as Jurimba Khola and Thuligad Khola, as well as rehabilitation works for the Middle Modi Hydropower Project (18 MW), focusing on technical design inputs and detailed drawing preparation.",
+    "profile_photo": "data/public/team/profile_photo/Rashmi Jha.jpg",
+    "photo": "data/public/team/photo/Rashmi Jha.jpg"
+  },
+  {
+    "name": "Reinsha Rimal",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil and Rural Engineering, Pokhara University",
+    "bio": "Ms. Rimal is a Civil Engineer at TAC Hydro Consultancy with over two years of professional experience in the hydropower and infrastructure sectors. Her expertise includes civil engineering analysis, quantity estimation, and the preparation of comprehensive technical drawings and reports. She has contributed to various project stages, including feasibility studies, detailed engineering design (DED), and BOQ preparation. Her ability to coordinate effectively with multidisciplinary project teams ensures the delivery of technically sound, practical, and sustainable hydropower solutions.",
+    "profile_photo": "data/public/team/profile_photo/Reinsha Rimal.jpg",
+    "photo": "data/public/team/photo/Reinsha Rimal.jpg"
+  },
+  {
+    "name": "Shradha Kisi",
+    "technical_expertise": "Business Management Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "MBA in Project Management, Islington College, London Metropolitan University | Bachelor's in Civil Engineering, Khwopa Engineering College, Purbanchal University",
+    "bio": "Ms. Kisi is a versatile professional at TAC Hydro Consultancy who brings a strategic multidisciplinary approach to the hydropower sector with over 3 years of experience. She plays a dual role within the firm bridging the gap between technical civil design and overall business management. Her expertise lies in blending solid civil engineering foundations with a high-level understanding of project lifecycles and infrastructure planning. She has supported the development of significant energy projects including Mewa Khola HPP (50 MW), Super Lower Bagmati HPP (41.86 MW) and Langtang Khola HPP (20 MW). Her ability to integrate technical design with management oversight ensures that project milestones are met with engineering precision and operational efficiency.",
+    "profile_photo": "data/public/team/profile_photo/Shradha Kisi.jpg",
+    "photo": "data/public/team/photo/Shradha Kisi.jpg"
+  },
+  {
+    "name": "Siddhartha Kandel",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering, IOE, Pulchowk Campus",
+    "bio": "Mr. Kandel is a Civil Engineer with 2 years of professional experience, specializing in hydrologic modeling and hydraulic design. At TAC Hydro Consultancy, he has been a key contributor to the technical analysis of major projects, including the Super Molung Hydropower Project, Super Seti Hydropower Project, and the Jagdulla PROR Hydropower Project. His technical precision in modeling and design facilitates the delivery of robust and efficient engineering solutions for complex hydraulic infrastructure.",
+    "profile_photo": "data/public/team/profile_photo/Siddhartha Kandel.jpg",
+    "photo": "data/public/team/photo/Siddhartha Kandel.jpg"
+  },
+  {
+    "name": "Bishes Bastola",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering | Kathmandu University",
+    "bio": "Mr. Bastola is a Civil Engineer specializing in hydropower-related geotechnical analysis and numerical modeling. A graduate of Kathmandu University, his expertise includes slope stability assessment, seepage analysis, and geotechnical evaluation of hydropower civil structures using PLAXIS 2D, SLIDE, and AutoCAD.",
+    "profile_photo": "data/public/team/profile_photo/Bishes Bastola.jpeg",
+    "photo": "data/public/team/photo/Bishes Bastola.jpeg"
+  },
+  {
+    "name": "Aakash Poudel",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering | Kathmandu University",
+    "bio": "Mr. Poudel is a Civil Engineering graduate from Kathmandu University with a strong academic record and a focused interest in hydropower and structural engineering. He has developed solid technical skills in structural analysis, hydraulic design, and modeling through both academic projects and practical exposure.",
+    "profile_photo": "data/public/team/profile_photo/Aakash Poudel.png",
+    "photo": "data/public/team/photo/Aakash Poudel.png"
+  },
+  {
+    "name": "Anjana Khatiwada",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Civil Engineering | Nepal Engineering College, Pokhara University",
+    "bio": "Ms. Khatiwada is a Civil Engineer with a strong interest in structural and hydropower engineering. She has experience working with tools such as AutoCAD and ETABS, and enjoys applying her technical knowledge to real-world engineering problems. She is excited to begin her professional journey and contribute to meaningful hydropower and infrastructure projects, while continuing to learn and grow as an engineer.",
+    "profile_photo": "data/public/team/profile_photo/Anjana Khatiwada.png",
+    "photo": "data/public/team/photo/Anjana Khatiwada.png"
   },
   {
     "name": "Sushil Mishra",
-    "position": "Civil Engineer",
+    "technical_expertise": "Civil Engineer",
+    "role": "",
     "category": "Engineering Professionals",
     "education": "Bachelor's in Civil Engineering",
     "bio": "Mr. Mishra serves as a Site-based Civil Engineer at TAC Hydro Consultancy, where he focuses on the practical implementation of engineering designs. He is responsible for verifying on-site measurements, reviewing contractor progress, and ensuring that construction materials and methods meet the required technical standards.",
-    "image": ""
+    "profile_photo": "data/public/team/profile_photo/Sushil Mishra.png",
+    "photo": "data/public/team/photo/Sushil Mishra.png"
+  },
+  {
+    "name": "Tarakant Chaudhary",
+    "technical_expertise": "CAD Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Diploma in Mechanical Engineering, Manmohan Memorial Polytechnic Institute",
+    "bio": "Mr. Chaudhary serves as a CAD Engineer at TAC Hydro Consultancy with 4 years of experience in the hydropower, irrigation, and infrastructure sectors. He specializes in CAD drafting and mechanical design, with a strong background in technical documentation and BOQ preparation. His professional experience includes providing essential site support and ensuring that mechanical designs are translated into accurate construction drawings, contributing to the delivery of practical and sustainable engineering solutions.",
+    "profile_photo": "data/public/team/profile_photo/Tara Kant Chaudhary.jpg",
+    "photo": "data/public/team/photo/Tara Kant Chaudhary.jpg"
+  },
+  {
+    "name": "Yogesh Niroula",
+    "technical_expertise": "Mechanical Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor in Mechanical Engineering, Kathmandu University | Diploma in Mechanical Engineering, Manmohan Memorial Polytechnic",
+    "bio": "Mr. Niroula is a detail-oriented Mechanical Engineer at TAC Hydro Consultancy specializing in hydropower with practical experience in technical design machining and fabrication. He possesses significant expertise in vibrational characteristics of Francis turbines and has contributed to techno-economic feasibility studies for rural energy systems. His professional background includes hands-on experience in technical design and internship roles where he developed skills in SolidWorks CAD and analytical problem solving. With a strong commitment to sustainable energy solutions he provides critical support in the design and technical analysis of hydro-mechanical components contributing to the delivery of innovative and practical engineering solutions.",
+    "profile_photo": "data/public/team/profile_photo/Yogesh Niroula.jpg",
+    "photo": "data/public/team/photo/Yogesh Niroula.jpg"
+  },
+  {
+    "name": "Dipak Khadka",
+    "technical_expertise": "Electrical Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Electrical Engineering, National College of Engineering",
+    "bio": "Mr. Khadka is an Electrical Engineer with a focus on site supervision and the management of electrical systems. With professional experience in on-site electrical supervision, including a tenure at Auster Engineering Consultancy, he ensures the rigorous monitoring of electrical installations and system integration. His expertise lies in coordinating on-site technical teams and overseeing the management of electrical infrastructure to ensure compliance with project specifications and safety standards.",
+    "profile_photo": "data/public/team/profile_photo/Dipak Khadka.jpg",
+    "photo": "data/public/team/photo/Dipak Khadka.jpg"
+  },
+  {
+    "name": "Rajendra Pulami",
+    "technical_expertise": "Surveyor",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Diploma in Civil Engineering",
+    "bio": "Mr. Pulami serves as the lead Surveyor at TAC Hydro Consultancy, providing the essential topographical and geospatial data required for accurate engineering design. He is responsible for conducting precise field surveys, including topographic mapping and the collection of longitudinal and cross-sectional data for headworks and waterway alignments.",
+    "profile_photo": "data/public/team/profile_photo/Rajendra Pulami.png",
+    "photo": "data/public/team/photo/Rajendra Pulami.png"
+  },
+  {
+    "name": "Sashikant Chaudhary",
+    "technical_expertise": "CAD Engineer",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Diploma in Civil Engineering, Thaha Polytechnic Institute",
+    "bio": "Mr. Chaudhary is a Junior Civil Engineer at TAC Hydro Consultancy with a focused background in the hydropower and infrastructure sectors. He specializes in the drafting and preparation of comprehensive civil drawings, including overall project layout planning, structural detailing, and the development of precise construction drawings. His technical proficiency in CAD ensures that complex engineering concepts are translated into practical, executable designs, contributing to the delivery of technically sound and sustainable engineering solutions.",
+    "profile_photo": "data/public/team/profile_photo/Sashikant Chaudhary.jpg",
+    "photo": "data/public/team/photo/Sashikant Chaudhary.jpg"
+  },
+  {
+    "name": "Ujwal Singh",
+    "technical_expertise": "Assistant Admin",
+    "role": "",
+    "category": "Engineering Professionals",
+    "education": "Bachelor's in Business Administration",
+    "bio": "Mr. Singh provides vital administrative support to the TAC Hydro team, ensuring the smooth day-to-day operations of the office. He assists in project documentation, record-keeping, and the coordination of logistics for site visits and multidisciplinary team meetings. His organizational support allows the engineering and management teams to maintain a high level of productivity and focus on the delivery of technical solutions for the firm's clients.",
+    "profile_photo": "data/public/team/profile_photo/Ujwal Singh.jpg",
+    "photo": "data/public/team/photo/Ujwal Singh.jpg"
   }
 ]

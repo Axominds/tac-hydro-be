@@ -191,7 +191,7 @@ def load_core_principles():
 
 
 CATEGORY_ORDER = {
-    "BOD": 1,
+    "Board of Directors": 1,
     "Department Leads": 2,
     "Design Leads": 3,
     "Engineering Professionals": 4,
@@ -219,13 +219,24 @@ def load_team():
             education=item.get("education", ""),
             defaults={
                 "bio": item.get("bio", ""),
-                "photo": copy_to_media(item.get("image"), "about_us/team"),
+                "photo": copy_to_media(item.get("photo"), "about_us/team/photo"),
+                "profile_photo": copy_to_media(
+                    item.get("profile_photo"),
+                    "about_us/team/profile_photo",
+                ),
                 "is_active": True,
             },
         )
 
         if not created and not member.photo:
-            member.photo = copy_to_media(item.get("image"), "about_us/team")
+            member.photo = copy_to_media(item.get("photo"), "about_us/team/photo")
+            member.save()
+
+        if not created and not member.profile_photo:
+            member.profile_photo = copy_to_media(
+                item.get("profile_photo"),
+                "about_us/team/profile_photo",
+            )
             member.save()
 
         existing_category = TeamMemberCategory.objects.filter(
@@ -238,7 +249,8 @@ def load_team():
             TeamMemberCategory.objects.create(
                 team_member=member,
                 category=category,
-                position=item.get("position", ""),
+                technical_expertise=item.get("technical_expertise", ""),
+                role=item.get("role", ""),
                 order=category_order,
             )
 
