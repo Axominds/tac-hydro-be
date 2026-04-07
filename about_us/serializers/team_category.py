@@ -1,22 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from about_us.models import TeamCategory
 
 
-class TeamCategorySerializer(Serializer):
-    id: int
-    name: str
-    order: int = 0
-
-    class Config:
-        field_sets = {
-            "list": ["id", "name", "order"],
-            "detail": ["id", "name", "order"],
-            "create": ["name", "order"],
-            "update": ["name", "order"],
-            "admin": ["id", "name", "order"],
-        }
+class TeamCategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TeamCategory
+        fields = ["id", "name", "order"]
 
 
-TeamCategoryListSerializer = TeamCategorySerializer.fields("list")
-TeamCategoryDetailSerializer = TeamCategorySerializer.fields("detail")
-TeamCategoryCreateSerializer = TeamCategorySerializer.fields("create")
-TeamCategoryUpdateSerializer = TeamCategorySerializer.fields("update")
+class TeamCategoryDetailSerializer(TeamCategoryListSerializer):
+    class Meta(TeamCategoryListSerializer.Meta):
+        pass
+
+
+class TeamCategoryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TeamCategory
+        fields = ["name", "order"]
+
+
+class TeamCategoryUpdateSerializer(TeamCategoryCreateSerializer):
+    class Meta(TeamCategoryCreateSerializer.Meta):
+        pass

@@ -1,22 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from contact_us.models import JobCategory
 
 
-class JobCategorySerializer(Serializer):
-    id: int
-    name: str
-    order: int = 0
-
-    class Config:
-        field_sets = {
-            "list": ["id", "name", "order"],
-            "detail": ["id", "name", "order"],
-            "create": ["name", "order"],
-            "update": ["name", "order"],
-            "admin": ["id", "name", "order"],
-        }
+class JobCategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = JobCategory
+        fields = ["id", "name", "order"]
 
 
-JobCategoryListSerializer = JobCategorySerializer.fields("list")
-JobCategoryDetailSerializer = JobCategorySerializer.fields("detail")
-JobCategoryCreateSerializer = JobCategorySerializer.fields("create")
-JobCategoryUpdateSerializer = JobCategorySerializer.fields("update")
+class JobCategoryDetailSerializer(JobCategoryListSerializer):
+    class Meta(JobCategoryListSerializer.Meta):
+        pass
+
+
+class JobCategoryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = JobCategory
+        fields = ["name", "order"]
+
+
+class JobCategoryUpdateSerializer(JobCategoryCreateSerializer):
+    class Meta(JobCategoryCreateSerializer.Meta):
+        pass

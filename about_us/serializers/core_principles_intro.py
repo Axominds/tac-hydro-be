@@ -1,67 +1,45 @@
-from django_bolt.serializers import Serializer
-from django_bolt.serializers.decorators import computed_field
-
 from load_env import env
-from tac_hydro.extras import _serializer_instances
+from rest_framework import serializers
+
+from about_us.models import CorePrinciplesIntro
 
 
-class CorePrinciplesIntroSerializer(Serializer):
-    id: int
-    title: str
-    content_html: str | None = None
-    image_path: str | None = None
-    image_caption_title: str | None = None
-    image_caption_subtitle: str | None = None
+class CorePrinciplesIntroListSerializer(serializers.ModelSerializer):
+    image = serializers.SerializerMethodField()
 
-    @computed_field
-    def image(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+    class Meta:
+        model = CorePrinciplesIntro
+        fields = [
+            "id",
+            "title",
+            "content_html",
+            "image",
+            "image_caption_title",
+            "image_caption_subtitle",
+        ]
+
+    def get_image(self, obj):
+        if not obj.image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/image/"
-
-    class Config:
-        field_sets = {
-            "list": [
-                "id",
-                "title",
-                "content_html",
-                "image",
-                "image_caption_title",
-                "image_caption_subtitle",
-            ],
-            "detail": [
-                "id",
-                "title",
-                "content_html",
-                "image",
-                "image_caption_title",
-                "image_caption_subtitle",
-            ],
-            "create": [
-                "title",
-                "content_html",
-                "image_caption_title",
-                "image_caption_subtitle",
-            ],
-            "update": [
-                "title",
-                "content_html",
-                "image_caption_title",
-                "image_caption_subtitle",
-            ],
-            "admin": [
-                "id",
-                "title",
-                "content_html",
-                "image_path",
-                "image_caption_title",
-                "image_caption_subtitle",
-            ],
-        }
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/image/"
 
 
-CorePrinciplesIntroListSerializer = CorePrinciplesIntroSerializer.fields("list")
-CorePrinciplesIntroDetailSerializer = CorePrinciplesIntroSerializer.fields("detail")
-CorePrinciplesIntroCreateSerializer = CorePrinciplesIntroSerializer.fields("create")
-CorePrinciplesIntroUpdateSerializer = CorePrinciplesIntroSerializer.fields("update")
+class CorePrinciplesIntroDetailSerializer(CorePrinciplesIntroListSerializer):
+    class Meta(CorePrinciplesIntroListSerializer.Meta):
+        pass
+
+
+class CorePrinciplesIntroCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CorePrinciplesIntro
+        fields = [
+            "title",
+            "content_html",
+            "image_caption_title",
+            "image_caption_subtitle",
+        ]
+
+
+class CorePrinciplesIntroUpdateSerializer(CorePrinciplesIntroCreateSerializer):
+    class Meta(CorePrinciplesIntroCreateSerializer.Meta):
+        pass

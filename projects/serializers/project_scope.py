@@ -1,22 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from projects.models import ProjectScope
 
 
-class ProjectScopeSerializer(Serializer):
-    id: int
-    name: str
-    order: int = 0
-
-    class Config:
-        field_sets = {
-            "list": ["id", "name", "order"],
-            "detail": ["id", "name", "order"],
-            "create": ["name", "order"],
-            "update": ["name", "order"],
-            "admin": ["id", "name", "order"],
-        }
+class ProjectScopeListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProjectScope
+        fields = ["id", "name", "order"]
 
 
-ProjectScopeListSerializer = ProjectScopeSerializer.fields("list")
-ProjectScopeDetailSerializer = ProjectScopeSerializer.fields("detail")
-ProjectScopeCreateSerializer = ProjectScopeSerializer.fields("create")
-ProjectScopeUpdateSerializer = ProjectScopeSerializer.fields("update")
+class ProjectScopeDetailSerializer(ProjectScopeListSerializer):
+    class Meta(ProjectScopeListSerializer.Meta):
+        pass
+
+
+class ProjectScopeCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProjectScope
+        fields = ["name", "order"]
+
+
+class ProjectScopeUpdateSerializer(ProjectScopeCreateSerializer):
+    class Meta(ProjectScopeCreateSerializer.Meta):
+        pass

@@ -1,24 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from services.models import ExpertiseCategory
 
 
-class ExpertiseCategorySerializer(Serializer):
-    id: int
-    title: str
-    icon_key: str
-    order: int = 0
-    theme_color: str | None = None
-
-    class Config:
-        field_sets = {
-            "list": ["id", "title", "icon_key", "order", "theme_color"],
-            "detail": ["id", "title", "icon_key", "order", "theme_color"],
-            "create": ["title", "icon_key", "order", "theme_color"],
-            "update": ["title", "icon_key", "order", "theme_color"],
-            "admin": ["id", "title", "icon_key", "order", "theme_color"],
-        }
+class ExpertiseCategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExpertiseCategory
+        fields = ["id", "title", "icon_key", "order", "theme_color"]
 
 
-ExpertiseCategoryListSerializer = ExpertiseCategorySerializer.fields("list")
-ExpertiseCategoryDetailSerializer = ExpertiseCategorySerializer.fields("detail")
-ExpertiseCategoryCreateSerializer = ExpertiseCategorySerializer.fields("create")
-ExpertiseCategoryUpdateSerializer = ExpertiseCategorySerializer.fields("update")
+class ExpertiseCategoryDetailSerializer(ExpertiseCategoryListSerializer):
+    class Meta(ExpertiseCategoryListSerializer.Meta):
+        pass
+
+
+class ExpertiseCategoryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExpertiseCategory
+        fields = ["title", "icon_key", "order", "theme_color"]
+
+
+class ExpertiseCategoryUpdateSerializer(ExpertiseCategoryCreateSerializer):
+    class Meta(ExpertiseCategoryCreateSerializer.Meta):
+        pass

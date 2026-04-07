@@ -1,24 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from contact_us.models import InitiateSynergySection
 
 
-class InitiateSynergySectionSerializer(Serializer):
-    id: int
-    title: str
-    description: str | None = None
-    cta_text: str | None = None
-    cta_note: str | None = None
-
-    class Config:
-        field_sets = {
-            "list": ["id", "title"],
-            "detail": ["id", "title", "description", "cta_text", "cta_note"],
-            "create": ["title", "description", "cta_text", "cta_note"],
-            "update": ["title", "description", "cta_text", "cta_note"],
-            "admin": ["id", "title", "description", "cta_text", "cta_note"],
-        }
+class InitiateSynergySectionListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InitiateSynergySection
+        fields = ["id", "title"]
 
 
-InitiateSynergySectionListSerializer = InitiateSynergySectionSerializer.fields("list")
-InitiateSynergySectionDetailSerializer = InitiateSynergySectionSerializer.fields("detail")
-InitiateSynergySectionCreateSerializer = InitiateSynergySectionSerializer.fields("create")
-InitiateSynergySectionUpdateSerializer = InitiateSynergySectionSerializer.fields("update")
+class InitiateSynergySectionDetailSerializer(InitiateSynergySectionListSerializer):
+    class Meta(InitiateSynergySectionListSerializer.Meta):
+        fields = ["id", "title", "description", "cta_text", "cta_note"]
+
+
+class InitiateSynergySectionCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InitiateSynergySection
+        fields = ["title", "description", "cta_text", "cta_note"]
+
+
+class InitiateSynergySectionUpdateSerializer(InitiateSynergySectionCreateSerializer):
+    class Meta(InitiateSynergySectionCreateSerializer.Meta):
+        pass

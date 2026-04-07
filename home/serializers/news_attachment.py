@@ -1,23 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from home.models import NewsAttachment
 
 
-class NewsAttachmentSerializer(Serializer):
-    id: int
-    news: int
-    file: str | None = None
-    title: str | None = None
-
-    class Config:
-        field_sets = {
-            "list": ["id", "news", "title"],
-            "detail": ["id", "news", "title"],
-            "create": ["news", "title"],
-            "update": ["news", "title"],
-            "admin": ["id", "news", "title"],
-        }
+class NewsAttachmentListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewsAttachment
+        fields = ["id", "news_id", "title"]
 
 
-NewsAttachmentListSerializer = NewsAttachmentSerializer.fields("list")
-NewsAttachmentDetailSerializer = NewsAttachmentSerializer.fields("detail")
-NewsAttachmentCreateSerializer = NewsAttachmentSerializer.fields("create")
-NewsAttachmentUpdateSerializer = NewsAttachmentSerializer.fields("update")
+class NewsAttachmentDetailSerializer(NewsAttachmentListSerializer):
+    class Meta(NewsAttachmentListSerializer.Meta):
+        fields = ["id", "news_id", "file", "title"]
+
+
+class NewsAttachmentCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewsAttachment
+        fields = ["news_id", "title"]
+
+
+class NewsAttachmentUpdateSerializer(NewsAttachmentCreateSerializer):
+    class Meta(NewsAttachmentCreateSerializer.Meta):
+        pass

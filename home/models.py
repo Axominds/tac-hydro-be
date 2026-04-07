@@ -59,6 +59,12 @@ class NewsCategory(models.Model):
     def __str__(self) -> str:
         return self.name
 
+    def save(self, *args, **kwargs):
+        if not self.order:
+            last_order = NewsCategory.objects.aggregate(max_order=models.Max("order"))["max_order"] or 0
+            self.order = last_order + 1
+        super().save(*args, **kwargs)
+
 
 class News(models.Model):
     title = models.CharField(max_length=255)

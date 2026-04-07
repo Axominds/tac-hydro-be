@@ -1,22 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from contact_us.models import PartnershipRoadmapSection
 
 
-class PartnershipRoadmapSectionSerializer(Serializer):
-    id: int
-    title: str
-    subtitle: str | None = None
-
-    class Config:
-        field_sets = {
-            "list": ["id", "title"],
-            "detail": ["id", "title", "subtitle"],
-            "create": ["title", "subtitle"],
-            "update": ["title", "subtitle"],
-            "admin": ["id", "title", "subtitle"],
-        }
+class PartnershipRoadmapSectionListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PartnershipRoadmapSection
+        fields = ["id", "title"]
 
 
-PartnershipRoadmapSectionListSerializer = PartnershipRoadmapSectionSerializer.fields("list")
-PartnershipRoadmapSectionDetailSerializer = PartnershipRoadmapSectionSerializer.fields("detail")
-PartnershipRoadmapSectionCreateSerializer = PartnershipRoadmapSectionSerializer.fields("create")
-PartnershipRoadmapSectionUpdateSerializer = PartnershipRoadmapSectionSerializer.fields("update")
+class PartnershipRoadmapSectionDetailSerializer(PartnershipRoadmapSectionListSerializer):
+    class Meta(PartnershipRoadmapSectionListSerializer.Meta):
+        fields = ["id", "title", "subtitle"]
+
+
+class PartnershipRoadmapSectionCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PartnershipRoadmapSection
+        fields = ["title", "subtitle"]
+
+
+class PartnershipRoadmapSectionUpdateSerializer(PartnershipRoadmapSectionCreateSerializer):
+    class Meta(PartnershipRoadmapSectionCreateSerializer.Meta):
+        pass

@@ -1,22 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from galleries.models import GalleryCategory
 
 
-class GalleryCategorySerializer(Serializer):
-    id: int
-    name: str
-    order: int = 0
-
-    class Config:
-        field_sets = {
-            "list": ["id", "name", "order"],
-            "detail": ["id", "name", "order"],
-            "create": ["name", "order"],
-            "update": ["name", "order"],
-            "admin": ["id", "name", "order"],
-        }
+class GalleryCategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GalleryCategory
+        fields = ["id", "name", "order"]
 
 
-GalleryCategoryListSerializer = GalleryCategorySerializer.fields("list")
-GalleryCategoryDetailSerializer = GalleryCategorySerializer.fields("detail")
-GalleryCategoryCreateSerializer = GalleryCategorySerializer.fields("create")
-GalleryCategoryUpdateSerializer = GalleryCategorySerializer.fields("update")
+class GalleryCategoryDetailSerializer(GalleryCategoryListSerializer):
+    class Meta(GalleryCategoryListSerializer.Meta):
+        pass
+
+
+class GalleryCategoryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GalleryCategory
+        fields = ["name", "order"]
+
+
+class GalleryCategoryUpdateSerializer(GalleryCategoryCreateSerializer):
+    class Meta(GalleryCategoryCreateSerializer.Meta):
+        pass

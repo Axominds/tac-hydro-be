@@ -1,71 +1,46 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from contact_us.models import JobPosting
 
 
-class JobPostingSerializer(Serializer):
-    id: int
-    title: str
-    category: int
-    type: str
-    location: str | None = None
-    description: str | None = None
-    responsibilities: list[str] | None = None
-    qualifications: list[str] | None = None
-    is_open: bool = True
-    published_at: str | None = None
-
-    class Config:
-        field_sets = {
-            "list": ["id", "title", "category", "type", "is_open"],
-            "detail": [
-                "id",
-                "title",
-                "category",
-                "type",
-                "location",
-                "description",
-                "responsibilities",
-                "qualifications",
-                "is_open",
-                "published_at",
-            ],
-            "create": [
-                "title",
-                "category",
-                "type",
-                "location",
-                "description",
-                "responsibilities",
-                "qualifications",
-                "is_open",
-                "published_at",
-            ],
-            "update": [
-                "title",
-                "category",
-                "type",
-                "location",
-                "description",
-                "responsibilities",
-                "qualifications",
-                "is_open",
-                "published_at",
-            ],
-            "admin": [
-                "id",
-                "title",
-                "category",
-                "type",
-                "location",
-                "description",
-                "responsibilities",
-                "qualifications",
-                "is_open",
-                "published_at",
-            ],
-        }
+class JobPostingListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = JobPosting
+        fields = ["id", "title", "category_id", "type", "is_open"]
 
 
-JobPostingListSerializer = JobPostingSerializer.fields("list")
-JobPostingDetailSerializer = JobPostingSerializer.fields("detail")
-JobPostingCreateSerializer = JobPostingSerializer.fields("create")
-JobPostingUpdateSerializer = JobPostingSerializer.fields("update")
+class JobPostingDetailSerializer(JobPostingListSerializer):
+    class Meta(JobPostingListSerializer.Meta):
+        fields = [
+            "id",
+            "title",
+            "category_id",
+            "type",
+            "location",
+            "description",
+            "responsibilities",
+            "qualifications",
+            "is_open",
+            "published_at",
+        ]
+
+
+class JobPostingCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = JobPosting
+        fields = [
+            "title",
+            "category_id",
+            "type",
+            "location",
+            "description",
+            "responsibilities",
+            "qualifications",
+            "is_open",
+            "published_at",
+        ]
+
+
+class JobPostingUpdateSerializer(JobPostingCreateSerializer):
+    class Meta(JobPostingCreateSerializer.Meta):
+        pass

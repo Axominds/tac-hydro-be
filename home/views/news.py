@@ -1,35 +1,40 @@
-import builtins
-
-from django_bolt import PageNumberPagination, paginate
-from django_bolt.views import ModelViewSet
+from rest_framework import viewsets
+from rest_framework.pagination import PageNumberPagination
 
 from home.models import News
 from home.serializers.news import (
+    NewsCreateSerializer,
     NewsListSerializer,
     NewsRetrieveSerializer,
+    NewsUpdateSerializer,
 )
 
 
 class ArticlePagination(PageNumberPagination):
     page_size = 3
     max_page_size = 100
-    page_size_query_param = "page_size"  # Allow client to customize
+    page_size_query_param = "page_size"
 
 
-class NewsViewSet(ModelViewSet):
+class NewsViewSet(viewsets.ModelViewSet):
     queryset = News.objects.all()
     serializer_class = NewsRetrieveSerializer
     list_serializer_class = NewsListSerializer
+    create_serializer_class = NewsCreateSerializer
+    update_serializer_class = NewsUpdateSerializer
+    partial_update_serializer_class = NewsUpdateSerializer
+    pagination_class = ArticlePagination
 
-    # retrieve API at the moment required explicit override in django-bolt
-    async def retrieve(self, request, pk: int):
-        return await super().retrieve(request, pk=pk)
+    def get_serializer_class(self):
+        if self.action == "list":
+            return self.list_serializer_class
+        if self.action in ["create", "update", "partial_update"]:
+            return self.create_serializer_class
+        return super().get_serializer_class()
 
-    @paginate(ArticlePagination)
-    async def list(self, request, news_category_id: int | None = None) -> builtins.list[NewsListSerializer]:
-        super().list(request)
-        qs = await self.get_queryset()
+    def get_queryset(self):
+        queryset = News.objects.all()
+        news_category_id = self.request.query_params.get("news_category_id")
         if news_category_id:
-            qs = qs.filter(news_category_id=news_category_id)
-        qs = await self.filter_queryset(qs)  # Apply filtering (still lazy)
-        return qs
+            queryset = queryset.filter(news_category_id=news_category_id)
+        return queryset

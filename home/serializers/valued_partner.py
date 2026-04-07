@@ -1,34 +1,33 @@
-from django_bolt.serializers import Serializer
-from django_bolt.serializers.decorators import computed_field
-
 from load_env import env
-from tac_hydro.extras import _serializer_instances
+from rest_framework import serializers
+
+from home.models import ValuedPartner
 
 
-class ValuedPartnerSerializer(Serializer):
-    id: int
-    name: str
-    logo_path: str | None = None
-    order: int = 0
+class ValuedPartnerListSerializer(serializers.ModelSerializer):
+    logo = serializers.SerializerMethodField()
 
-    @computed_field
-    def logo(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+    class Meta:
+        model = ValuedPartner
+        fields = ["id", "name", "order", "logo"]
+
+    def get_logo(self, obj):
+        if not obj.logo:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/logo/"
-
-    class Config:
-        field_sets = {
-            "list": ["id", "name", "order", "logo"],
-            "detail": ["id", "name", "order", "logo"],
-            "create": ["name", "order"],
-            "update": ["name", "order"],
-            "admin": ["id", "name", "order", "logo_path"],
-        }
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/logo/"
 
 
-ValuedPartnerListSerializer = ValuedPartnerSerializer.fields("list")
-ValuedPartnerDetailSerializer = ValuedPartnerSerializer.fields("detail")
-ValuedPartnerCreateSerializer = ValuedPartnerSerializer.fields("create")
-ValuedPartnerUpdateSerializer = ValuedPartnerSerializer.fields("update")
+class ValuedPartnerDetailSerializer(ValuedPartnerListSerializer):
+    class Meta(ValuedPartnerListSerializer.Meta):
+        pass
+
+
+class ValuedPartnerCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ValuedPartner
+        fields = ["name", "order"]
+
+
+class ValuedPartnerUpdateSerializer(ValuedPartnerCreateSerializer):
+    class Meta(ValuedPartnerCreateSerializer.Meta):
+        pass

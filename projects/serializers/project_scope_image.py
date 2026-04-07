@@ -1,35 +1,33 @@
-from django_bolt.serializers import Serializer
-from django_bolt.serializers.decorators import computed_field
-
 from load_env import env
-from tac_hydro.extras import _serializer_instances
+from rest_framework import serializers
+
+from projects.models import ProjectScopeImage
 
 
-class ProjectScopeImageSerializer(Serializer):
-    id: int
-    project_scope_membership: int
-    image_path: str | None = None
-    alt_text: str | None = None
-    order: int = 0
+class ProjectScopeImageListSerializer(serializers.ModelSerializer):
+    image = serializers.SerializerMethodField()
 
-    @computed_field
-    def image(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+    class Meta:
+        model = ProjectScopeImage
+        fields = ["id", "project_scope_membership_id", "alt_text", "order", "image"]
+
+    def get_image(self, obj):
+        if not obj.image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/image/"
-
-    class Config:
-        field_sets = {
-            "list": ["id", "project_scope_membership", "alt_text", "order", "image"],
-            "detail": ["id", "project_scope_membership", "alt_text", "order", "image"],
-            "create": ["project_scope_membership", "alt_text", "order"],
-            "update": ["project_scope_membership", "alt_text", "order"],
-            "admin": ["id", "project_scope_membership", "alt_text", "order", "image_path"],
-        }
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/image/"
 
 
-ProjectScopeImageListSerializer = ProjectScopeImageSerializer.fields("list")
-ProjectScopeImageDetailSerializer = ProjectScopeImageSerializer.fields("detail")
-ProjectScopeImageCreateSerializer = ProjectScopeImageSerializer.fields("create")
-ProjectScopeImageUpdateSerializer = ProjectScopeImageSerializer.fields("update")
+class ProjectScopeImageDetailSerializer(ProjectScopeImageListSerializer):
+    class Meta(ProjectScopeImageListSerializer.Meta):
+        fields = ["id", "project_scope_membership_id", "alt_text", "order", "image"]
+
+
+class ProjectScopeImageCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProjectScopeImage
+        fields = ["project_scope_membership_id", "alt_text", "order"]
+
+
+class ProjectScopeImageUpdateSerializer(ProjectScopeImageCreateSerializer):
+    class Meta(ProjectScopeImageCreateSerializer.Meta):
+        pass

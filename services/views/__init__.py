@@ -1,3 +1,9 @@
 from services.views.expertise_category import ExpertiseCategoryViewSet
 from services.views.expertise_item import ExpertiseItemViewSet
 from services.views.service_sector import ServiceSectorViewSet
+
+__all__ = [
+    "ExpertiseCategoryViewSet",
+    "ExpertiseItemViewSet",
+    "ServiceSectorViewSet",
+]

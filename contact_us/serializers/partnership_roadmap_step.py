@@ -1,56 +1,40 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from contact_us.models import PartnershipRoadmapStep
 
 
-class PartnershipRoadmapStepSerializer(Serializer):
-    id: int
-    section: int
-    milestone: str
-    title: str
-    description: str | None = None
-    icon_key: str
-    order: int = 0
-
-    class Config:
-        field_sets = {
-            "list": ["id", "section", "milestone", "title", "order"],
-            "detail": [
-                "id",
-                "section",
-                "milestone",
-                "title",
-                "description",
-                "icon_key",
-                "order",
-            ],
-            "create": [
-                "section",
-                "milestone",
-                "title",
-                "description",
-                "icon_key",
-                "order",
-            ],
-            "update": [
-                "section",
-                "milestone",
-                "title",
-                "description",
-                "icon_key",
-                "order",
-            ],
-            "admin": [
-                "id",
-                "section",
-                "milestone",
-                "title",
-                "description",
-                "icon_key",
-                "order",
-            ],
-        }
+class PartnershipRoadmapStepListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PartnershipRoadmapStep
+        fields = ["id", "section_id", "milestone", "title", "order"]
 
 
-PartnershipRoadmapStepListSerializer = PartnershipRoadmapStepSerializer.fields("list")
-PartnershipRoadmapStepDetailSerializer = PartnershipRoadmapStepSerializer.fields("detail")
-PartnershipRoadmapStepCreateSerializer = PartnershipRoadmapStepSerializer.fields("create")
-PartnershipRoadmapStepUpdateSerializer = PartnershipRoadmapStepSerializer.fields("update")
+class PartnershipRoadmapStepDetailSerializer(PartnershipRoadmapStepListSerializer):
+    class Meta(PartnershipRoadmapStepListSerializer.Meta):
+        fields = [
+            "id",
+            "section_id",
+            "milestone",
+            "title",
+            "description",
+            "icon_key",
+            "order",
+        ]
+
+
+class PartnershipRoadmapStepCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PartnershipRoadmapStep
+        fields = [
+            "section_id",
+            "milestone",
+            "title",
+            "description",
+            "icon_key",
+            "order",
+        ]
+
+
+class PartnershipRoadmapStepUpdateSerializer(PartnershipRoadmapStepCreateSerializer):
+    class Meta(PartnershipRoadmapStepCreateSerializer.Meta):
+        pass

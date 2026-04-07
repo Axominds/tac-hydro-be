@@ -1,24 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from services.models import ExpertiseItem
 
 
-class ExpertiseItemSerializer(Serializer):
-    id: int
-    category_id: int
-    title: str
-    project_scope_id: int | None = None
-    order: int = 0
-
-    class Config:
-        field_sets = {
-            "list": ["id", "category_id", "title", "project_scope_id", "order"],
-            "detail": ["id", "category_id", "title", "project_scope_id", "order"],
-            "create": ["category_id", "title", "project_scope_id", "order"],
-            "update": ["category_id", "title", "project_scope_id", "order"],
-            "admin": ["id", "category_id", "title", "project_scope_id", "order"],
-        }
+class ExpertiseItemListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExpertiseItem
+        fields = ["id", "category_id", "title", "project_scope_id", "order"]
 
 
-ExpertiseItemListSerializer = ExpertiseItemSerializer.fields("list")
-ExpertiseItemDetailSerializer = ExpertiseItemSerializer.fields("detail")
-ExpertiseItemCreateSerializer = ExpertiseItemSerializer.fields("create")
-ExpertiseItemUpdateSerializer = ExpertiseItemSerializer.fields("update")
+class ExpertiseItemDetailSerializer(ExpertiseItemListSerializer):
+    class Meta(ExpertiseItemListSerializer.Meta):
+        pass
+
+
+class ExpertiseItemCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExpertiseItem
+        fields = ["category_id", "title", "project_scope_id", "order"]
+
+
+class ExpertiseItemUpdateSerializer(ExpertiseItemCreateSerializer):
+    class Meta(ExpertiseItemCreateSerializer.Meta):
+        pass

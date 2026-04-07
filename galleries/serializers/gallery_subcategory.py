@@ -1,23 +1,25 @@
-from django_bolt.serializers import Serializer
+from rest_framework import serializers
+
+from galleries.models import GallerySubcategory
 
 
-class GallerySubcategorySerializer(Serializer):
-    id: int
-    category_id: int
-    name: str
-    order: int = 0
-
-    class Config:
-        field_sets = {
-            "list": ["id", "category_id", "name", "order"],
-            "detail": ["id", "category_id", "name", "order"],
-            "create": ["category_id", "name", "order"],
-            "update": ["category_id", "name", "order"],
-            "admin": ["id", "category_id", "name", "order"],
-        }
+class GallerySubcategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GallerySubcategory
+        fields = ["id", "category_id", "name", "order"]
 
 
-GallerySubcategoryListSerializer = GallerySubcategorySerializer.fields("list")
-GallerySubcategoryDetailSerializer = GallerySubcategorySerializer.fields("detail")
-GallerySubcategoryCreateSerializer = GallerySubcategorySerializer.fields("create")
-GallerySubcategoryUpdateSerializer = GallerySubcategorySerializer.fields("update")
+class GallerySubcategoryDetailSerializer(GallerySubcategoryListSerializer):
+    class Meta(GallerySubcategoryListSerializer.Meta):
+        pass
+
+
+class GallerySubcategoryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GallerySubcategory
+        fields = ["category_id", "name", "order"]
+
+
+class GallerySubcategoryUpdateSerializer(GallerySubcategoryCreateSerializer):
+    class Meta(GallerySubcategoryCreateSerializer.Meta):
+        pass

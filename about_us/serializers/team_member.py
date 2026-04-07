@@ -1,45 +1,39 @@
 from load_env import env
-from django_bolt.serializers import Serializer
-from django_bolt.serializers.decorators import computed_field
+from rest_framework import serializers
 
-from tac_hydro.extras import _serializer_instances
+from about_us.models import TeamMember
 
 
-class TeamMemberSerializer(Serializer):
-    id: int
-    name: str
-    education: str | None = None
-    bio: str | None = None
-    is_active: bool = True
+class TeamMemberListSerializer(serializers.ModelSerializer):
+    photo = serializers.SerializerMethodField()
+    profile_photo = serializers.SerializerMethodField()
 
-    @computed_field
-    def photo(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+    class Meta:
+        model = TeamMember
+        fields = ["id", "name", "education", "bio", "is_active", "photo", "profile_photo"]
+
+    def get_photo(self, obj):
+        if not obj.photo:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/photo/"
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/photo/"
 
-    @computed_field
-    def profile_photo(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+    def get_profile_photo(self, obj):
+        if not obj.profile_photo:
             return None
-        return (
-            f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/"
-            f"{instance.pk}/profile_photo/"
-        )
-
-    class Config:
-        field_sets = {
-            "list": ["id", "name", "education", "bio", "is_active", "photo", "profile_photo"],
-            "detail": ["id", "name", "education", "bio", "is_active", "photo", "profile_photo"],
-            "create": ["name", "education", "bio", "is_active"],
-            "update": ["name", "education", "bio", "is_active"],
-            "admin": ["id", "name", "education", "bio", "is_active"],
-        }
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/profile_photo/"
 
 
-TeamMemberListSerializer = TeamMemberSerializer.fields("list")
-TeamMemberDetailSerializer = TeamMemberSerializer.fields("detail")
-TeamMemberCreateSerializer = TeamMemberSerializer.fields("create")
-TeamMemberUpdateSerializer = TeamMemberSerializer.fields("update")
+class TeamMemberDetailSerializer(TeamMemberListSerializer):
+    class Meta(TeamMemberListSerializer.Meta):
+        pass
+
+
+class TeamMemberCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TeamMember
+        fields = ["name", "education", "bio", "is_active"]
+
+
+class TeamMemberUpdateSerializer(TeamMemberCreateSerializer):
+    class Meta(TeamMemberCreateSerializer.Meta):
+        pass

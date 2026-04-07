@@ -1,34 +1,33 @@
-from django_bolt.serializers import Serializer
-from django_bolt.serializers.decorators import computed_field
-
 from load_env import env
-from tac_hydro.extras import _serializer_instances
+from rest_framework import serializers
+
+from about_us.models import AboutPageSection
 
 
-class AboutPageSectionSerializer(Serializer):
-    id: int
-    section_key: str
-    title: str
-    content_html: str | None = None
+class AboutPageSectionListSerializer(serializers.ModelSerializer):
+    image = serializers.SerializerMethodField()
 
-    @computed_field
-    def image(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+    class Meta:
+        model = AboutPageSection
+        fields = ["id", "section_key", "title", "content_html", "image"]
+
+    def get_image(self, obj):
+        if not obj.image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/image/"
-
-    class Config:
-        field_sets = {
-            "list": ["id", "section_key", "title", "content_html", "image"],
-            "detail": ["id", "section_key", "title", "content_html", "image"],
-            "create": ["section_key", "title", "content_html"],
-            "update": ["section_key", "title", "content_html"],
-            "admin": ["id", "section_key", "title", "content_html"],
-        }
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/image/"
 
 
-AboutPageSectionListSerializer = AboutPageSectionSerializer.fields("list")
-AboutPageSectionDetailSerializer = AboutPageSectionSerializer.fields("detail")
-AboutPageSectionCreateSerializer = AboutPageSectionSerializer.fields("create")
-AboutPageSectionUpdateSerializer = AboutPageSectionSerializer.fields("update")
+class AboutPageSectionDetailSerializer(AboutPageSectionListSerializer):
+    class Meta(AboutPageSectionListSerializer.Meta):
+        pass
+
+
+class AboutPageSectionCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AboutPageSection
+        fields = ["section_key", "title", "content_html"]
+
+
+class AboutPageSectionUpdateSerializer(AboutPageSectionCreateSerializer):
+    class Meta(AboutPageSectionCreateSerializer.Meta):
+        pass

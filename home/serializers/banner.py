@@ -1,34 +1,33 @@
-from django_bolt.serializers import Serializer
-from django_bolt.serializers.decorators import computed_field
-
-from tac_hydro.extras import _serializer_instances
 from load_env import env
+from rest_framework import serializers
+
+from home.models import Banner
 
 
-class BannerSerializer(Serializer):
-    id: int
-    headline: str
-    subheadline: str | None = None
-    typewriter_words: list[str] | None = None
+class BannerListSerializer(serializers.ModelSerializer):
+    background_image = serializers.SerializerMethodField()
 
-    @computed_field
-    def background_image(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+    class Meta:
+        model = Banner
+        fields = ["id", "headline", "subheadline", "background_image", "typewriter_words"]
+
+    def get_background_image(self, obj):
+        if not obj.background_image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/background_image/"
-
-    class Config:
-        field_sets = {
-            "list": ["id", "headline", "subheadline", "background_image", "typewriter_words"],
-            "detail": ["id", "headline", "subheadline", "background_image", "typewriter_words"],
-            "create": ["headline", "subheadline", "typewriter_words"],
-            "update": ["headline", "subheadline", "typewriter_words"],
-            "admin": ["id", "headline", "subheadline", "typewriter_words"],
-        }
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/background_image/"
 
 
-BannerListSerializer = BannerSerializer.fields("list")
-BannerDetailSerializer = BannerSerializer.fields("detail")
-BannerCreateSerializer = BannerSerializer.fields("create")
-BannerUpdateSerializer = BannerSerializer.fields("update")
+class BannerDetailSerializer(BannerListSerializer):
+    class Meta(BannerListSerializer.Meta):
+        fields = ["id", "headline", "subheadline", "background_image", "typewriter_words"]
+
+
+class BannerCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Banner
+        fields = ["headline", "subheadline", "typewriter_words"]
+
+
+class BannerUpdateSerializer(BannerCreateSerializer):
+    class Meta(BannerCreateSerializer.Meta):
+        pass

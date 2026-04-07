@@ -10,5 +10,23 @@ wheels/
 .venv
 db.sqlite3*
 .env
+.env.local
+.env.*.local
+
+# Media files
 media/
+
+# Editor
+.vscode/
+.idea/
+*.sw?
+*.suo
+
+# macOS
 .DS_Store
+
+# Ruff
+.ruff_cache/
+
+# Logs
+*.log

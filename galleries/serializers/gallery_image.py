@@ -1,33 +1,33 @@
-from django_bolt.serializers import Serializer
-from django_bolt.serializers.decorators import computed_field
-
-from tac_hydro.extras import _serializer_instances
 from load_env import env
+from rest_framework import serializers
 
-class GalleryImageSerializer(Serializer):
-    id: int
-    gallery_subcategory_id: int
-    image_path: str | None = None
-    order: int = 0
+from galleries.models import GalleryImage
 
-    @computed_field
-    def image(self) -> str | None:
-        instance = _serializer_instances.get(id(self))
-        if instance is None:
+
+class GalleryImageListSerializer(serializers.ModelSerializer):
+    image = serializers.SerializerMethodField()
+
+    class Meta:
+        model = GalleryImage
+        fields = ["id", "gallery_subcategory_id", "order", "image"]
+
+    def get_image(self, obj):
+        if not obj.image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{instance._meta.app_label}/{instance._meta.model_name}/{instance.pk}/image/"
-
-    class Config:
-        field_sets = {
-            "list": ["id", "gallery_subcategory_id", "order", "image"],
-            "detail": ["id", "gallery_subcategory_id", "order", "image"],
-            "create": ["gallery_subcategory_id", "order"],
-            "update": ["gallery_subcategory_id", "order"],
-            "admin": ["id", "gallery_subcategory_id", "order", "image_path"],
-        }
+        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/image/"
 
 
-GalleryImageListSerializer = GalleryImageSerializer.fields("list")
-GalleryImageDetailSerializer = GalleryImageSerializer.fields("detail")
-GalleryImageCreateSerializer = GalleryImageSerializer.fields("create")
-GalleryImageUpdateSerializer = GalleryImageSerializer.fields("update")
+class GalleryImageDetailSerializer(GalleryImageListSerializer):
+    class Meta(GalleryImageListSerializer.Meta):
+        pass
+
+
+class GalleryImageCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GalleryImage
+        fields = ["gallery_subcategory_id", "order", "image"]
+
+
+class GalleryImageUpdateSerializer(GalleryImageCreateSerializer):
+    class Meta(GalleryImageCreateSerializer.Meta):
+        pass
