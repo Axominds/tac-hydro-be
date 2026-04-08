@@ -1,14 +1,8 @@
 from rest_framework.routers import DefaultRouter
 
-from galleries.views import (
-    GalleryCategoryViewSet,
-    GalleryImageViewSet,
-    GallerySubcategoryViewSet,
-)
+from galleries.views import GalleryViewSet
 
 router = DefaultRouter()
-router.register(r"categories", GalleryCategoryViewSet, basename="gallerycategory")
-router.register(r"subcategories", GallerySubcategoryViewSet, basename="gallerysubcategory")
-router.register(r"images", GalleryImageViewSet, basename="galleryimage")
+router.register(r"categories", GalleryViewSet, basename="gallery")
 
 urlpatterns = router.urls

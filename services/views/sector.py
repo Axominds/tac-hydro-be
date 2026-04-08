@@ -9,7 +9,7 @@ from services.serializers.service_sector import (
 )
 
 
-class ServiceSectorViewSet(viewsets.ModelViewSet):
+class SectorViewSet(viewsets.ModelViewSet):
     queryset = ServiceSector.objects.all()
     serializer_class = ServiceSectorDetailSerializer
     list_serializer_class = ServiceSectorListSerializer

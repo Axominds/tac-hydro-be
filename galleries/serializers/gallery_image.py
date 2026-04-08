@@ -1,11 +1,12 @@
 from load_env import env
 from rest_framework import serializers
 
-from galleries.models import GalleryImage
+from galleries.models import GalleryImage, GallerySubcategory
 
 
 class GalleryImageListSerializer(serializers.ModelSerializer):
     image = serializers.SerializerMethodField()
+    gallery_subcategory_id = serializers.IntegerField(source="gallery_subcategory.id", read_only=True)
 
     class Meta:
         model = GalleryImage
@@ -25,7 +26,7 @@ class GalleryImageDetailSerializer(GalleryImageListSerializer):
 class GalleryImageCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = GalleryImage
-        fields = ["gallery_subcategory_id", "order", "image"]
+        fields = ["order", "image"]
 
 
 class GalleryImageUpdateSerializer(GalleryImageCreateSerializer):

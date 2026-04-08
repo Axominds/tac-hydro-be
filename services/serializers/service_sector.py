@@ -25,9 +25,10 @@ class ServiceSectorDetailSerializer(ServiceSectorListSerializer):
 class ServiceSectorCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = ServiceSector
-        fields = ["title", "description", "order"]
+        fields = ["title", "description", "order", "image"]
 
 
-class ServiceSectorUpdateSerializer(ServiceSectorCreateSerializer):
-    class Meta(ServiceSectorCreateSerializer.Meta):
-        pass
+class ServiceSectorUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ServiceSector
+        fields = ["title", "description", "order", "image"]
