@@ -25,7 +25,7 @@ class AboutPageSectionDetailSerializer(AboutPageSectionListSerializer):
 class AboutPageSectionCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutPageSection
-        fields = ["section_key", "title", "content_html"]
+        fields = ["id", "section_key", "title", "content_html"]
 
 
 class AboutPageSectionUpdateSerializer(AboutPageSectionCreateSerializer):

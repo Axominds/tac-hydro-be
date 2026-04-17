@@ -25,7 +25,7 @@ class ProjectScopeImageDetailSerializer(ProjectScopeImageListSerializer):
 class ProjectScopeImageCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectScopeImage
-        fields = ["project_scope_membership_id", "alt_text", "order"]
+        fields = ["project_scope_membership_id", "alt_text", "order", "image"]
 
 
 class ProjectScopeImageUpdateSerializer(ProjectScopeImageCreateSerializer):

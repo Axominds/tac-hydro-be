@@ -85,6 +85,14 @@ class News(models.Model):
     def __str__(self) -> str:
         return self.title
 
+    def save(self, *args, **kwargs):
+        if self.is_published and not self.published_at:
+            from django.utils import timezone
+            self.published_at = timezone.now()
+        elif not self.is_published:
+            self.published_at = None
+        super().save(*args, **kwargs)
+
 
 class NewsAttachment(models.Model):
     news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="attachments")

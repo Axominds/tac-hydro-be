@@ -9,7 +9,7 @@ class NewsListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = News
-        fields = ["id", "title", "news_date", "image", "summary"]
+        fields = ["id", "title", "news_date", "image", "summary", "news_category_id", "is_published"]
 
     def get_image(self, obj):
         if not obj.image:
@@ -49,7 +49,6 @@ class NewsCreateSerializer(serializers.ModelSerializer):
             "title",
             "news_category_id",
             "news_date",
-            "published_at",
             "summary",
             "content_html",
             "is_published",
