@@ -31,7 +31,7 @@ class TeamMemberDetailSerializer(TeamMemberListSerializer):
 class TeamMemberCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = TeamMember
-        fields = ["name", "education", "bio", "is_active"]
+        fields = ["name", "education", "bio", "is_active", "photo", "profile_photo"]
 
 
 class TeamMemberUpdateSerializer(TeamMemberCreateSerializer):

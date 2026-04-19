@@ -1,3 +1,5 @@
+from about_us.models import TeamCategory
+from about_us.models import TeamMember
 from rest_framework import serializers
 
 from about_us.models import TeamMemberCategory
@@ -15,6 +17,8 @@ class TeamMemberCategoryDetailSerializer(TeamMemberCategoryListSerializer):
 
 
 class TeamMemberCategoryCreateSerializer(serializers.ModelSerializer):
+    team_member_id = serializers.PrimaryKeyRelatedField(queryset=TeamMember.objects.all(), source="team_member")
+    category_id = serializers.PrimaryKeyRelatedField(queryset=TeamCategory.objects.all(), source="category")
     class Meta:
         model = TeamMemberCategory
         fields = ["team_member_id", "category_id", "technical_expertise", "role", "order"]
