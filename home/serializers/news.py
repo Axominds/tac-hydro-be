@@ -1,3 +1,4 @@
+from home.models import NewsCategory
 from load_env import env
 from rest_framework import serializers
 
@@ -43,12 +44,15 @@ class NewsRetrieveSerializer(serializers.ModelSerializer):
 
 
 class NewsCreateSerializer(serializers.ModelSerializer):
+    news_category_id = serializers.PrimaryKeyRelatedField(queryset=NewsCategory.objects.all(), source="news_category")
+    image = serializers.FileField(required=False)
     class Meta:
         model = News
         fields = [
             "title",
             "news_category_id",
             "news_date",
+            "image",
             "summary",
             "content_html",
             "is_published",

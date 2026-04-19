@@ -49,7 +49,7 @@ class GalleryViewSet(viewsets.ModelViewSet):
         serializer = GalleryImageListSerializer(images, many=True)
         return Response(serializer.data)
 
-    @action(detail=True, url_path="subcategories")
+    @action(detail=True, url_path="subcategories", methods=["get", "post"])
     def subcategories(self, request, pk=None):
         category = self.get_object()
         if request.method == "GET":
@@ -57,9 +57,11 @@ class GalleryViewSet(viewsets.ModelViewSet):
             serializer = GallerySubcategoryListSerializer(subcategories, many=True)
             return Response(serializer.data)
         elif request.method == "POST":
-            serializer = GallerySubcategoryCreateSerializer(data=request.data)
+            request_data = request.data.copy()
+            request_data["category_id"] = category.id
+            serializer = GallerySubcategoryCreateSerializer(data=request_data)
             serializer.is_valid(raise_exception=True)
-            serializer.save(category=category)
+            serializer.save()
             return Response(
                 GallerySubcategoryDetailSerializer(serializer.instance).data, status=status.HTTP_201_CREATED
             )

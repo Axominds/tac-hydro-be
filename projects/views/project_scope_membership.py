@@ -1,6 +1,7 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, status
+from rest_framework.response import Response
 
-from projects.models import ProjectScopeMembership
+from projects.models import Project, ProjectScope, ProjectScopeMembership
 from projects.serializers.project_scope_membership import (
     ProjectScopeMembershipCreateSerializer,
     ProjectScopeMembershipDetailSerializer,

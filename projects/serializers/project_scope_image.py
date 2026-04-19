@@ -1,3 +1,5 @@
+from projects.models import ProjectScopeMembership
+from projects.serializers import project_scope_membership
 from load_env import env
 from rest_framework import serializers
 
@@ -23,6 +25,7 @@ class ProjectScopeImageDetailSerializer(ProjectScopeImageListSerializer):
 
 
 class ProjectScopeImageCreateSerializer(serializers.ModelSerializer):
+    project_scope_membership_id = serializers.PrimaryKeyRelatedField(queryset=ProjectScopeMembership.objects.all(), source="project_scope_membership")
     class Meta:
         model = ProjectScopeImage
         fields = ["project_scope_membership_id", "alt_text", "order", "image"]
