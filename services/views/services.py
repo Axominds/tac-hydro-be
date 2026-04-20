@@ -34,7 +34,7 @@ class ServicesViewSet(viewsets.ModelViewSet):
         category = self.get_object()
         if request.method == "GET":
             items = category.items.all()
-            serializer = ExpertiseItemListSerializer(items, many=True)
+            serializer = ExpertiseItemListSerializer(items, many=True, context={"request": request})
             return Response(serializer.data)
         elif request.method == "POST":
             serializer = ExpertiseItemCreateSerializer(data=request.data)

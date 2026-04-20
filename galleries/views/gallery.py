@@ -40,13 +40,13 @@ class GalleryViewSet(viewsets.ModelViewSet):
     def category_images(self, request, pk=None):
         category = self.get_object()
         images = GalleryImage.objects.filter(gallery_subcategory__category=category)
-        serializer = GalleryImageListSerializer(images, many=True)
+        serializer = GalleryImageListSerializer(images, many=True, context={"request": request})
         return Response(serializer.data)
 
     @action(detail=False, url_path="all-images")
     def all_images(self, request):
         images = GalleryImage.objects.all()
-        serializer = GalleryImageListSerializer(images, many=True)
+        serializer = GalleryImageListSerializer(images, many=True, context={"request": request})
         return Response(serializer.data)
 
     @action(detail=True, url_path="subcategories", methods=["get", "post"])
@@ -54,7 +54,7 @@ class GalleryViewSet(viewsets.ModelViewSet):
         category = self.get_object()
         if request.method == "GET":
             subcategories = category.subcategories.all()
-            serializer = GallerySubcategoryListSerializer(subcategories, many=True)
+            serializer = GallerySubcategoryListSerializer(subcategories, many=True, context={"request": request})
             return Response(serializer.data)
         elif request.method == "POST":
             request_data = request.data.copy()
@@ -103,7 +103,7 @@ class GalleryViewSet(viewsets.ModelViewSet):
 
         if request.method == "GET":
             images = subcategory.images.all()
-            serializer = GalleryImageListSerializer(images, many=True)
+            serializer = GalleryImageListSerializer(images, many=True, context={"request": request})
             return Response(serializer.data)
         elif request.method == "POST":
             serializer = GalleryImageCreateSerializer(data=request.data)
