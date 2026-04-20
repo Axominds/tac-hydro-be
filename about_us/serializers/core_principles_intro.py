@@ -1,4 +1,3 @@
-from load_env import env
 from rest_framework import serializers
 
 from about_us.models import CorePrinciplesIntro
@@ -21,7 +20,10 @@ class CorePrinciplesIntroListSerializer(serializers.ModelSerializer):
     def get_image(self, obj):
         if not obj.image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/image/"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.image.url)
+        return obj.image.url
 
 
 class CorePrinciplesIntroDetailSerializer(CorePrinciplesIntroListSerializer):

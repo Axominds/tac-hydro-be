@@ -1,8 +1,6 @@
-from projects.models import ProjectScope
-from load_env import env
 from rest_framework import serializers
 
-from projects.models import Project, ProjectScopeImage, ProjectScopeMembership
+from projects.models import Project, ProjectScope, ProjectScopeImage, ProjectScopeMembership
 
 
 class ProjectScopeMembershipListSerializer(serializers.ModelSerializer):
@@ -14,7 +12,15 @@ class ProjectScopeMembershipListSerializer(serializers.ModelSerializer):
 
     def get_image_urls(self, obj):
         images = obj.images.all()
-        return [f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/projectscopeimage/{img.pk}/image/" for img in images]
+        request = self.context.get("request")
+        urls = []
+        for img in images:
+            if img.image:
+                if request:
+                    urls.append(request.build_absolute_uri(img.image.url))
+                else:
+                    urls.append(img.image.url)
+        return urls
 
 
 class ProjectScopeMembershipDetailSerializer(ProjectScopeMembershipListSerializer):

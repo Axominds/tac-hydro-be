@@ -1,4 +1,3 @@
-from load_env import env
 from rest_framework import serializers
 
 from home.models import ValuedPartner
@@ -14,7 +13,10 @@ class ValuedPartnerListSerializer(serializers.ModelSerializer):
     def get_logo(self, obj):
         if not obj.logo:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/logo/"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.logo.url)
+        return obj.logo.url
 
 
 class ValuedPartnerDetailSerializer(ValuedPartnerListSerializer):
@@ -25,9 +27,26 @@ class ValuedPartnerDetailSerializer(ValuedPartnerListSerializer):
 class ValuedPartnerCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = ValuedPartner
-        fields = ["name", "order"]
+        fields = ["name", "order", "logo"]
+
+    def create(self, validated_data):
+        logo = validated_data.pop("logo", None)
+        instance = super().create(validated_data)
+        if logo:
+            instance.logo = logo
+            instance.save()
+        return instance
 
 
 class ValuedPartnerUpdateSerializer(ValuedPartnerCreateSerializer):
-    class Meta(ValuedPartnerCreateSerializer.Meta):
-        pass
+    class Meta:
+        model = ValuedPartner
+        fields = ["name", "order", "logo"]
+
+    def update(self, instance, validated_data):
+        logo = validated_data.pop("logo", None)
+        instance = super().update(instance, validated_data)
+        if logo:
+            instance.logo = logo
+            instance.save()
+        return instance

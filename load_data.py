@@ -24,11 +24,8 @@ from about_us.models import (  # noqa: E402
     TeamMemberCategory,
 )
 from contact_us.models import (  # noqa: E402
-    InitiateSynergySection,
     JobCategory,
     JobPosting,
-    PartnershipRoadmapSection,
-    PartnershipRoadmapStep,
 )
 from galleries.models import GalleryCategory, GalleryImage, GallerySubcategory  # noqa: E402
 from home.models import (  # noqa: E402
@@ -387,79 +384,6 @@ def load_galleries():
 
 
 def load_contact_us():
-    data = load_json("collaboration_sections.json")
-
-    roadmap = data.get("partnership_roadmap", {})
-    roadmap_section, _ = PartnershipRoadmapSection.objects.update_or_create(
-        title=roadmap.get("title", ""),
-        defaults={"subtitle": roadmap.get("subtitle", "")},
-    )
-    for item in roadmap.get("steps", []):
-        PartnershipRoadmapStep.objects.update_or_create(
-            section=roadmap_section,
-            milestone=item.get("milestone", ""),
-            title=item.get("title", ""),
-            defaults={
-                "description": item.get("description", ""),
-                "icon_key": item.get("icon_key", ""),
-                "order": item.get("order", 0),
-            },
-        )
-
-    synergy = data.get("initiate_synergy", {})
-    InitiateSynergySection.objects.update_or_create(
-        title=synergy.get("title", ""),
-        defaults={
-            "description": synergy.get("description", ""),
-            "cta_text": synergy.get("cta_text", ""),
-            "cta_note": synergy.get("cta_note", ""),
-        },
-    )
-
-    careers = load_json("careers.json")
-    for job in careers:
-        category, _ = JobCategory.objects.update_or_create(name=job.get("category", ""), defaults={"order": 0})
-        JobPosting.objects.update_or_create(
-            title=job.get("title", ""),
-            category=category,
-            defaults={
-                "type": job.get("type", ""),
-                "location": job.get("location", ""),
-                "description": job.get("description", ""),
-                "responsibilities": job.get("responsibilities", []),
-                "qualifications": job.get("qualifications", []),
-                "is_open": True,
-                "published_at": None,
-            },
-        )
-
-    roadmap = data.get("partnership_roadmap", {})
-    roadmap_section, _ = PartnershipRoadmapSection.objects.update_or_create(
-        title=roadmap.get("title", ""),
-        defaults={"subtitle": roadmap.get("subtitle", "")},
-    )
-    for item in roadmap.get("steps", []):
-        PartnershipRoadmapStep.objects.update_or_create(
-            section=roadmap_section,
-            milestone=item.get("milestone", ""),
-            title=item.get("title", ""),
-            defaults={
-                "description": item.get("description", ""),
-                "icon_key": item.get("icon_key", ""),
-                "order": item.get("order", 0),
-            },
-        )
-
-    synergy = data.get("initiate_synergy", {})
-    InitiateSynergySection.objects.update_or_create(
-        title=synergy.get("title", ""),
-        defaults={
-            "description": synergy.get("description", ""),
-            "cta_text": synergy.get("cta_text", ""),
-            "cta_note": synergy.get("cta_note", ""),
-        },
-    )
-
     careers = load_json("careers.json")
     for job in careers:
         category, _ = JobCategory.objects.update_or_create(name=job.get("category", ""), defaults={"order": 0})

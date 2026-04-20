@@ -1,4 +1,3 @@
-from load_env import env
 from rest_framework import serializers
 
 from about_us.models import TeamMember
@@ -15,12 +14,18 @@ class TeamMemberListSerializer(serializers.ModelSerializer):
     def get_photo(self, obj):
         if not obj.photo:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/photo/"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.photo.url)
+        return obj.photo.url
 
     def get_profile_photo(self, obj):
         if not obj.profile_photo:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/profile_photo/"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.profile_photo.url)
+        return obj.profile_photo.url
 
 
 class TeamMemberDetailSerializer(TeamMemberListSerializer):

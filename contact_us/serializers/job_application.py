@@ -1,4 +1,3 @@
-from load_env import env
 from rest_framework import serializers
 
 from contact_us.models import JobApplication
@@ -45,12 +44,18 @@ class JobApplicationDetailSerializer(JobApplicationListSerializer):
     def get_cv_file(self, obj):
         if not obj.cv_file:
             return None
-        return f"/api/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/cv_file"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.cv_file.url)
+        return obj.cv_file.url
 
     def get_cover_letter_file(self, obj):
         if not obj.cover_letter_file:
             return None
-        return f"/api/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/cover_letter_file"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.cover_letter_file.url)
+        return obj.cover_letter_file.url
 
 
 class JobApplicationCreateSerializer(serializers.ModelSerializer):

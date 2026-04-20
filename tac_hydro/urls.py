@@ -2,13 +2,14 @@
 URL configuration for tac_hydro project.
 """
 
+from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls.static import static
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from home.urls import router as home_router
 from home.views.stats import StatsView
-from home.views.token import FileServeView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -21,5 +22,6 @@ urlpatterns = [
     path("api/auth/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/auth/token-refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("api/home/stats/", StatsView.as_view(), name="stats"),
-    path("api/<str:app_label>/<str:model_name>/<int:pk>/<str:field_name>/", FileServeView.as_view(), name="file_serve"),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

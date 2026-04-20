@@ -1,4 +1,3 @@
-from load_env import env
 from rest_framework import serializers
 
 from home.models import SiteSettings
@@ -28,7 +27,10 @@ class SiteSettingsListSerializer(serializers.ModelSerializer):
     def get_organization_chart_image(self, obj):
         if not obj.organization_chart_image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/organization_chart_image/"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.organization_chart_image.url)
+        return obj.organization_chart_image.url
 
 
 class SiteSettingsDetailSerializer(SiteSettingsListSerializer):

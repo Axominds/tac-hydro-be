@@ -1,9 +1,3 @@
-from contact_us.serializers.initiate_synergy_section import (
-    InitiateSynergySectionCreateSerializer,
-    InitiateSynergySectionDetailSerializer,
-    InitiateSynergySectionListSerializer,
-    InitiateSynergySectionUpdateSerializer,
-)
 from contact_us.serializers.job_application import (
     JobApplicationCreateSerializer,
     JobApplicationDetailSerializer,
@@ -21,16 +15,4 @@ from contact_us.serializers.job_posting import (
     JobPostingDetailSerializer,
     JobPostingListSerializer,
     JobPostingUpdateSerializer,
-)
-from contact_us.serializers.partnership_roadmap_section import (
-    PartnershipRoadmapSectionCreateSerializer,
-    PartnershipRoadmapSectionDetailSerializer,
-    PartnershipRoadmapSectionListSerializer,
-    PartnershipRoadmapSectionUpdateSerializer,
-)
-from contact_us.serializers.partnership_roadmap_step import (
-    PartnershipRoadmapStepCreateSerializer,
-    PartnershipRoadmapStepDetailSerializer,
-    PartnershipRoadmapStepListSerializer,
-    PartnershipRoadmapStepUpdateSerializer,
 )

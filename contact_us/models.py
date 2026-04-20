@@ -1,50 +1,6 @@
 from django.db import models
 
 
-class PartnershipRoadmapSection(models.Model):
-    title = models.CharField(max_length=255)
-    subtitle = models.TextField(blank=True)
-
-    class Meta:
-        db_table = "partnership_roadmap_sections"
-
-    def __str__(self) -> str:
-        return self.title
-
-
-class PartnershipRoadmapStep(models.Model):
-    section = models.ForeignKey(
-        PartnershipRoadmapSection,
-        on_delete=models.CASCADE,
-        related_name="steps",
-    )
-    milestone = models.CharField(max_length=64)
-    title = models.CharField(max_length=255)
-    description = models.TextField(blank=True)
-    icon_key = models.CharField(max_length=64)
-    order = models.PositiveIntegerField(default=0)
-
-    class Meta:
-        db_table = "partnership_roadmap_steps"
-        ordering = ["order", "milestone"]
-
-    def __str__(self) -> str:
-        return self.title
-
-
-class InitiateSynergySection(models.Model):
-    title = models.CharField(max_length=255)
-    description = models.TextField(blank=True)
-    cta_text = models.CharField(max_length=255, blank=True)
-    cta_note = models.TextField(blank=True)
-
-    class Meta:
-        db_table = "initiate_synergy_sections"
-
-    def __str__(self) -> str:
-        return self.title
-
-
 class JobType(models.TextChoices):
     FULL_TIME = "Full Time", "Full Time"
     INTERNSHIP = "Internship", "Internship"

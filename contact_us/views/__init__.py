@@ -1,15 +1,9 @@
-from contact_us.views.initiate_synergy_section import InitiateSynergySectionViewSet
 from contact_us.views.job_application import JobApplicationViewSet
 from contact_us.views.job_category import JobCategoryViewSet
 from contact_us.views.job_posting import JobPostingViewSet
-from contact_us.views.partnership_roadmap_section import PartnershipRoadmapSectionViewSet
-from contact_us.views.partnership_roadmap_step import PartnershipRoadmapStepViewSet
 
 __all__ = [
-    "InitiateSynergySectionViewSet",
     "JobApplicationViewSet",
     "JobCategoryViewSet",
     "JobPostingViewSet",
-    "PartnershipRoadmapSectionViewSet",
-    "PartnershipRoadmapStepViewSet",
 ]

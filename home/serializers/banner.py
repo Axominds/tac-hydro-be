@@ -1,4 +1,3 @@
-from load_env import env
 from rest_framework import serializers
 
 from home.models import Banner
@@ -14,7 +13,10 @@ class BannerListSerializer(serializers.ModelSerializer):
     def get_background_image(self, obj):
         if not obj.background_image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/background_image/"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.background_image.url)
+        return obj.background_image.url
 
 
 class BannerDetailSerializer(BannerListSerializer):

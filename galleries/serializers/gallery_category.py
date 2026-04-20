@@ -12,11 +12,12 @@ class GalleryImageSerializer(serializers.ModelSerializer):
         fields = ["id", "gallery_subcategory_id", "order", "image"]
 
     def get_image(self, obj):
-        from load_env import env
-
         if not obj.image:
             return None
-        return f"{env.BACKEND_API_BASE_URL}/{obj._meta.app_label}/{obj._meta.model_name}/{obj.pk}/image/"
+        request = self.context.get("request")
+        if request:
+            return request.build_absolute_uri(obj.image.url)
+        return obj.image.url
 
 
 class GallerySubcategoryListSerializer(serializers.ModelSerializer):
