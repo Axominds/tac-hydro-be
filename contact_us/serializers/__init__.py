@@ -16,3 +16,7 @@ from contact_us.serializers.job_posting import (
     JobPostingListSerializer,
     JobPostingUpdateSerializer,
 )
+from contact_us.serializers.inquiry import (
+    ContactInquirySerializer,
+    CollaborationInquirySerializer,
+)

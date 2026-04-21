@@ -10,6 +10,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from home.urls import router as home_router
 from home.views.stats import StatsView
+from home.views.token import TokenValidateView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -21,6 +22,7 @@ urlpatterns = [
     path("api/contact-us/", include("contact_us.urls")),
     path("api/auth/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/auth/token-refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+    path("api/auth/validate/", TokenValidateView.as_view(), name="token_validate"),
     path("api/home/stats/", StatsView.as_view(), name="stats"),
 ]
 

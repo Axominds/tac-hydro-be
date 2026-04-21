@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Collaboration Inquiry - TAC Hydro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f1a2e 0%, #1a365d 100%);
+            padding: 40px 40px 35px;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: #ffffff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #0f1a2e;
+        }
+        .header-text h1 {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        .header-text p {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+        .intro {
+            background: #f8fafc;
+            padding: 30px 40px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .intro p {
+            color: #475569;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .intro strong {
+            color: #0f1a2e;
+        }
+        .org-badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .content {
+            padding: 35px 40px;
+        }
+        .section-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .detail-item {
+            margin-bottom: 20px;
+        }
+        .detail-item.full-width {
+            grid-column: 1 / -1;
+        }
+        .detail-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+        .detail-value {
+            font-size: 15px;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+        .detail-value a {
+            color: #0070c0;
+            text-decoration: none;
+        }
+        .detail-value a:hover {
+            text-decoration: underline;
+        }
+        .collab-type {
+            display: inline-block;
+            background: linear-gradient(135deg, #0070c0 0%, #005a9e 100%);
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .message-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0070c0;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 8px;
+        }
+        .message-box p {
+            white-space: pre-wrap;
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .attachment-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .attachment-icon {
+            width: 45px;
+            height: 45px;
+            background: #22c55e;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+        .attachment-info {
+            flex: 1;
+        }
+        .attachment-info .label {
+            font-size: 11px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .attachment-info .filename {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+        .cta-section {
+            padding: 25px 40px;
+            background: #f0f9ff;
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #0070c0;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #005a9e;
+        }
+        .footer {
+            background: #0f1a2e;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        .footer p {
+            color: #94a3b8;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .footer .company-info {
+            color: #cbd5e1;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        .footer .disclaimer {
+            color: #64748b;
+            font-size: 11px;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">TAC</div>
+                <div class="header-text">
+                    <h1>TAC Hydro Consultancy</h1>
+                    <p>New Collaboration Inquiry</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="intro">
+            <p>You have received a new collaboration inquiry. <strong>{{ rep_name }}</strong> from <span class="org-badge">{{ organization }}</span> is interested in exploring partnership opportunities with TAC Hydro.</p>
+            <p>Please review the information below and assess if this aligns with your strategic objectives. Our team should respond within 48 hours as promised.</p>
+        </div>
+
+        <!-- Organization Details -->
+        <div class="content">
+            <div class="section-title">Organization Details</div>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-label">Representative Name</div>
+                    <div class="detail-value">{{ rep_name }}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Organization</div>
+                    <div class="detail-value">{{ organization }}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Email Address</div>
+                    <div class="detail-value">
+                        <a href="mailto:{{ email }}">{{ email }}</a>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Phone Number</div>
+                    <div class="detail-value">
+                        <a href="tel:{{ phone }}">{{ phone }}</a>
+                    </div>
+                </div>
+                <div class="detail-item full-width">
+                    <div class="detail-label">Website</div>
+                    <div class="detail-value">
+                        {% if website %}<a href="{{ website }}" target="_blank">{{ website }}</a>{% else %}—{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collaboration Type -->
+        {% if collab_type %}
+        <div class="content" style="padding-top: 0;">
+            <div class="section-title">Type of Collaboration</div>
+            <div class="collab-type">
+                {% if collab_type == 'jv' %}Strategic Joint Venture (JV){% elif collab_type == 'market' %}International Market Collaboration{% elif collab_type == 'technical' %}Technical Expertise Partnership{% elif collab_type == 'research' %}Research Partnership{% else %}{{ collab_type }}{% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Company Profile -->
+        {% if company_profile %}
+        <div class="content" style="padding-top: 20px;">
+            <div class="section-title">Company Profile</div>
+            <div class="message-box">
+                <p>{{ company_profile }}</p>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Proposal Brief -->
+        {% if proposal_brief %}
+        <div class="content" style="padding-top: 20px;">
+            <div class="section-title">Proposal Brief</div>
+            <div class="message-box">
+                <p>{{ proposal_brief }}</p>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Attachment Notice -->
+        {% if attachment %}
+        <div class="content" style="padding-top: 20px;">
+            <div class="attachment-box">
+                <div class="attachment-icon">📎</div>
+                <div class="attachment-info">
+                    <div class="label">Attachment Included</div>
+                    <div class="filename">File attached to this email</div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <a href="mailto:{{ email }}?subject=Re: TAC Hydro - Collaboration Inquiry from {{ organization }}" class="cta-button">Respond to {{ rep_name }}</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>This email was sent automatically from the TAC Hydro Collaboration Form</p>
+            <div class="company-info">
+                TAC Hydro Consultancy Pvt. Ltd. • hydropower@tachydro.com.np
+            </div>
+            <div class="disclaimer">
+                This email and any attachments are confidential and intended solely for the use of the individual or entity to whom they are addressed.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
