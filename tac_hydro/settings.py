@@ -11,10 +11,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
+from load_env import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -158,9 +156,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Email settings
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = os.getenv("EMAIL_HOST", "smtp.zoho.com")
-EMAIL_PORT = int(os.getenv("EMAIL_PORT", 587))
-EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "true").lower() == "true"
-EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
-EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
-DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "")
+EMAIL_HOST = env.EMAIL_HOST
+EMAIL_PORT = env.EMAIL_PORT
+EMAIL_USE_TLS = env.EMAIL_USE_TLS
+EMAIL_HOST_USER = env.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = env.EMAIL_HOST_PASSWORD
+DEFAULT_FROM_EMAIL = env.DEFAULT_FROM_EMAIL
