@@ -215,7 +215,7 @@ def load_team():
             name=item.get("name", ""),
             education=item.get("education", ""),
             defaults={
-                "bio": item.get("bio", ""),
+                "profile": item.get("profile", ""),
                 "photo": copy_to_media(item.get("photo"), "about_us/team/photo"),
                 "profile_photo": copy_to_media(
                     item.get("profile_photo"),

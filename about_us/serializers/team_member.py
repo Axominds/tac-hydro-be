@@ -9,7 +9,7 @@ class TeamMemberListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TeamMember
-        fields = ["id", "name", "education", "bio", "is_active", "photo", "profile_photo"]
+        fields = ["id", "name", "education", "profile", "is_active", "photo", "profile_photo"]
 
     def get_photo(self, obj):
         if not obj.photo:
@@ -36,7 +36,7 @@ class TeamMemberDetailSerializer(TeamMemberListSerializer):
 class TeamMemberCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = TeamMember
-        fields = ["name", "education", "bio", "is_active", "photo", "profile_photo"]
+        fields = ["name", "education", "profile", "is_active", "photo", "profile_photo"]
 
 
 class TeamMemberUpdateSerializer(TeamMemberCreateSerializer):

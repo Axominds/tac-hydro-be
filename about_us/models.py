@@ -58,7 +58,7 @@ class TeamCategory(models.Model):
 class TeamMember(models.Model):
     name = models.CharField(max_length=255)
     education = models.TextField(blank=True)
-    bio = models.TextField(blank=True)
+    profile = models.TextField(blank=True)
     photo = models.FileField(upload_to="about_us/team/photo", blank=True)
     profile_photo = models.FileField(upload_to="about_us/team/profile_photo", blank=True)
     is_active = models.BooleanField(default=True)
