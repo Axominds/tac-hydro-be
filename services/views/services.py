@@ -29,7 +29,7 @@ class ServicesViewSet(viewsets.ModelViewSet):
             return ExpertiseCategoryCreateSerializer
         return super().get_serializer_class()
 
-    @action(detail=True, url_path="items")
+    @action(detail=True, url_path="items", methods=["get", "post"])
     def items(self, request: Request, pk=None):
         category = self.get_object()
         if request.method == "GET":

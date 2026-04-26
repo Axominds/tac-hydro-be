@@ -23,34 +23,28 @@
         }
         .header {
             background: linear-gradient(135deg, #0f1a2e 0%, #1a365d 100%);
-            padding: 40px 40px 35px;
-        }
-        .header-content {
-            display: flex;
-            align-items: center;
-            gap: 15px;
+            padding: 60px 40px;
+            text-align: center;
         }
         .logo {
-            width: 50px;
-            height: 50px;
-            background: #ffffff;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 18px;
-            color: #0f1a2e;
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto 20px;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
         }
         .header-text h1 {
             color: #ffffff;
-            font-size: 22px;
+            font-size: 28px;
             font-weight: 600;
-            margin-bottom: 3px;
         }
         .header-text p {
             color: #94a3b8;
             font-size: 13px;
+            margin-top: 8px;
         }
         .intro {
             background: #f8fafc;
@@ -177,12 +171,11 @@
     <div class="email-container">
         <!-- Header -->
         <div class="header">
-            <div class="header-content">
-                <div class="logo">TAC</div>
-                <div class="header-text">
-                    <h1>TAC Hydro Consultancy</h1>
-                    <p>New Contact Inquiry</p>
-                </div>
+            <div class="logo">
+                <img src="https://tachydro.com.np/tac-logo.png" alt="TAC Hydro">
+            </div>
+            <div class="header-text">
+                <h1>New Contact Inquiry</h1>
             </div>
         </div>
 
@@ -238,7 +231,7 @@
         <div class="footer">
             <p>This email was sent automatically from the TAC Hydro Contact Form</p>
             <div class="company-info">
-                TAC Hydro Consultancy Pvt. Ltd. • hydropower@tachydro.com.np
+                <a href="https://tachydro.com.np" target="_blank" style="color: #cbd5e1; text-decoration: none;">tachydro.com.np</a> • {{ contact_email }}
             </div>
             <div class="disclaimer">
                 This email and any attachments are confidential and intended solely for the use of the individual or entity to whom they are addressed.

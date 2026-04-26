@@ -46,6 +46,7 @@ class ContactInquiryView(APIView):
             "email": data.get("email", ""),
             "project_scope_id": project_scope_name,
             "message": data.get("message", ""),
+            "contact_email": to_email,
         }
 
         html_content = render_to_string("contact_inquiry.html", context)
@@ -99,6 +100,7 @@ class CollaborationInquiryView(APIView):
             "company_profile": data.get("company_profile", ""),
             "proposal_brief": data.get("proposal_brief", ""),
             "attachment": data.get("attachment"),
+            "contact_email": to_email,
         }
 
         html_content = render_to_string("collaboration_inquiry.html", context)
