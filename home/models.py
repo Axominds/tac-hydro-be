@@ -1,3 +1,4 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 
 
@@ -14,9 +15,16 @@ class SiteSettings(models.Model):
     map_embed_url = models.URLField(blank=True)
     organization_chart_image = models.FileField(upload_to="home/organization", blank=True)
     founded_year = models.PositiveIntegerField(null=True, blank=True)
+    video = models.FileField(upload_to="home/video", blank=True, null=True)
+    youtube_url = models.URLField(blank=True, null=True)
 
     class Meta:
         db_table = "site_settings"
+
+    def clean(self) -> None:
+        super().clean()
+        if self.video and self.youtube_url:
+            raise ValidationError("video and youtube_url are mutually exclusive")
 
     def __str__(self) -> str:
         return self.company_name

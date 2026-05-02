@@ -102,6 +102,13 @@ def upsert_site_settings():
     instance.map_embed_url = data.get("map_embed_url", instance.map_embed_url)
     instance.organization_chart_image = copy_to_media(data.get("organization_chart_image"), "home/organization")
     instance.founded_year = data.get("founded_year", instance.founded_year)
+    youtube_url = data.get("youtube_url")
+    if youtube_url:
+        instance.youtube_url = youtube_url
+        instance.video = None
+    else:
+        instance.youtube_url = None
+        instance.video = copy_to_media("../tac-hydro-fe/public/videoSection.webm", "home/video")
     instance.save()
 
 
