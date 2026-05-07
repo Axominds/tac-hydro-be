@@ -1,5 +1,7 @@
 from django.db import models
 
+from tac_hydro.storage import hashed_upload_to
+
 
 class ExpertiseCategory(models.Model):
     title = models.CharField(max_length=255)
@@ -37,7 +39,7 @@ class ExpertiseItem(models.Model):
 
 class ServiceSector(models.Model):
     title = models.CharField(max_length=255)
-    image = models.FileField(upload_to="services/sectors", blank=True)
+    image = models.FileField(upload_to=hashed_upload_to("services/sectors"), blank=True)
     description = models.TextField(blank=True)
     order = models.PositiveIntegerField(default=0)
 

@@ -6,7 +6,21 @@ BASE_DIR = Path(__file__).resolve().parent
 
 
 class Settings(BaseSettings):
-    BACKEND_API_BASE_URL: str
+    # Core Django settings
+    SECRET_KEY: str
+    DEBUG: bool = False
+
+    # Hosts
+    ALLOWED_HOSTS: list[str]
+
+    # CORS
+    CORS_ALLOW_ALL_ORIGINS: bool = False
+    CORS_ALLOWED_ORIGINS: list[str]
+
+    # Database (optional override - if not set, sqlite is used)
+    DATABASE_URL: str = ""
+
+    # Email
     EMAIL_HOST: str = "smtp.zoho.com"
     EMAIL_PORT: int = 587
     EMAIL_USE_TLS: bool = True
@@ -22,3 +36,4 @@ class Settings(BaseSettings):
 
 
 env = Settings()
+print(env)

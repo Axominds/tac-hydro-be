@@ -1,5 +1,7 @@
 from django.db import models
 
+from tac_hydro.storage import hashed_upload_to
+
 
 class GalleryCategory(models.Model):
     name = models.CharField(max_length=255)
@@ -32,7 +34,7 @@ class GalleryImage(models.Model):
         on_delete=models.CASCADE,
         related_name="images",
     )
-    image = models.FileField(upload_to="galleries/images")
+    image = models.FileField(upload_to=hashed_upload_to("galleries/images"))
     order = models.PositiveIntegerField(default=0)
 
     class Meta:

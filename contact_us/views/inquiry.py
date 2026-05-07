@@ -2,6 +2,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.conf import settings
 from rest_framework import status
+from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -14,6 +15,8 @@ from contact_us.serializers.inquiry import (
 
 
 class ContactInquiryView(APIView):
+    permission_classes = [AllowAny]
+
     def post(self, request):
         serializer = ContactInquirySerializer(data=request.data)
         if not serializer.is_valid():
@@ -73,6 +76,8 @@ Message: {data.get('message', '')}
 
 
 class CollaborationInquiryView(APIView):
+    permission_classes = [AllowAny]
+
     def post(self, request):
         serializer = CollaborationInquirySerializer(data=request.data)
         if not serializer.is_valid():

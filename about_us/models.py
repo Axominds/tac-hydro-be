@@ -1,11 +1,13 @@
 from django.db import models
 
+from tac_hydro.storage import hashed_upload_to
+
 
 class AboutPageSection(models.Model):
     section_key = models.CharField(max_length=64, unique=True)
     title = models.CharField(max_length=255)
     content_html = models.TextField(blank=True)
-    image = models.FileField(upload_to="about_us/sections", blank=True)
+    image = models.FileField(upload_to=hashed_upload_to("about_us/sections"), blank=True)
 
     class Meta:
         db_table = "about_page_sections"
@@ -17,7 +19,7 @@ class AboutPageSection(models.Model):
 class CorePrinciplesIntro(models.Model):
     title = models.CharField(max_length=255)
     content_html = models.TextField(blank=True)
-    image = models.FileField(upload_to="about_us/core_principles", blank=True)
+    image = models.FileField(upload_to=hashed_upload_to("about_us/core_principles"), blank=True)
     image_caption_title = models.CharField(max_length=255, blank=True)
     image_caption_subtitle = models.CharField(max_length=255, blank=True)
 
@@ -59,8 +61,8 @@ class TeamMember(models.Model):
     name = models.CharField(max_length=255)
     education = models.TextField(blank=True)
     profile = models.TextField(blank=True)
-    photo = models.FileField(upload_to="about_us/team/photo", blank=True)
-    profile_photo = models.FileField(upload_to="about_us/team/profile_photo", blank=True)
+    photo = models.FileField(upload_to=hashed_upload_to("about_us/team/photo"), blank=True)
+    profile_photo = models.FileField(upload_to=hashed_upload_to("about_us/team/profile_photo"), blank=True)
     is_active = models.BooleanField(default=True)
 
     class Meta:

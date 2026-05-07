@@ -1,6 +1,8 @@
 from django.core.exceptions import ValidationError
 from django.db import models
 
+from tac_hydro.storage import hashed_upload_to
+
 
 class SiteSettings(models.Model):
     company_name = models.CharField(max_length=255)
@@ -12,10 +14,10 @@ class SiteSettings(models.Model):
     business_hours = models.CharField(max_length=255, blank=True)
     facebook_url = models.URLField(blank=True)
     linkedin_url = models.URLField(blank=True)
-    map_embed_url = models.URLField(blank=True)
-    organization_chart_image = models.FileField(upload_to="home/organization", blank=True)
+    map_embed_url = models.URLField(max_length=500, blank=True)
+    organization_chart_image = models.FileField(upload_to=hashed_upload_to("home/organization"), blank=True)
     founded_year = models.PositiveIntegerField(null=True, blank=True)
-    video = models.FileField(upload_to="home/video", blank=True, null=True)
+    video = models.FileField(upload_to=hashed_upload_to("home/video"), blank=True, null=True)
     youtube_url = models.URLField(blank=True, null=True)
 
     class Meta:
@@ -33,7 +35,7 @@ class SiteSettings(models.Model):
 class Banner(models.Model):
     headline = models.CharField(max_length=255)
     subheadline = models.TextField(blank=True)
-    background_image = models.FileField(upload_to="home/banners")
+    background_image = models.FileField(upload_to=hashed_upload_to("home/banners"))
     typewriter_words = models.JSONField(default=list, blank=True)
 
     class Meta:
@@ -45,7 +47,7 @@ class Banner(models.Model):
 
 class ValuedPartner(models.Model):
     name = models.CharField(max_length=255)
-    logo = models.FileField(upload_to="home/partners")
+    logo = models.FileField(upload_to=hashed_upload_to("home/partners"))
     order = models.PositiveIntegerField(default=0)
 
     class Meta:
@@ -77,7 +79,7 @@ class NewsCategory(models.Model):
 class News(models.Model):
     title = models.CharField(max_length=255)
     news_category = models.ForeignKey(NewsCategory, on_delete=models.PROTECT, related_name="news")
-    image = models.FileField(upload_to="home/news", blank=True)
+    image = models.FileField(upload_to=hashed_upload_to("home/news"), blank=True)
     news_date = models.DateField()
     published_at = models.DateTimeField(null=True, blank=True)
     summary = models.TextField(blank=True)
@@ -104,7 +106,7 @@ class News(models.Model):
 
 class NewsAttachment(models.Model):
     news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="attachments")
-    file = models.FileField(upload_to="home/news/attachments")
+    file = models.FileField(upload_to=hashed_upload_to("home/news/attachments"))
     title = models.CharField(max_length=255, blank=True)
 
     class Meta:

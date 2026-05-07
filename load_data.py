@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+import hashlib
 import os
 import re
 import shutil
-import uuid
 from datetime import date, datetime
 from pathlib import Path
 
@@ -22,10 +22,6 @@ from about_us.models import (  # noqa: E402
     TeamCategory,
     TeamMember,
     TeamMemberCategory,
-)
-from contact_us.models import (  # noqa: E402
-    JobCategory,
-    JobPosting,
 )
 from galleries.models import GalleryCategory, GalleryImage, GallerySubcategory  # noqa: E402
 from home.models import (  # noqa: E402
@@ -61,8 +57,12 @@ def copy_to_media(source_path: str | None, upload_to: str) -> str | None:
         return None
     dest_dir = MEDIA_ROOT / upload_to
     dest_dir.mkdir(parents=True, exist_ok=True)
+    h = hashlib.md5()
+    with open(source, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
     ext = source.suffix.lower()
-    new_name = f"{uuid.uuid4().hex}{ext}"
+    new_name = f"{h.hexdigest()}{ext}"
     dest_path = dest_dir / new_name
     shutil.copy2(source, dest_path)
     return f"{upload_to}/{new_name}"
@@ -379,25 +379,6 @@ def load_galleries():
                     )
 
 
-def load_contact_us():
-    careers = load_json("careers.json")
-    for job in careers:
-        category, _ = JobCategory.objects.update_or_create(name=job.get("category", ""), defaults={"order": 0})
-        JobPosting.objects.update_or_create(
-            title=job.get("title", ""),
-            category=category,
-            defaults={
-                "type": job.get("type", ""),
-                "location": job.get("location", ""),
-                "description": job.get("description", ""),
-                "responsibilities": job.get("responsibilities", []),
-                "qualifications": job.get("qualifications", []),
-                "is_open": True,
-                "published_at": None,
-            },
-        )
-
-
 def main():
     upsert_site_settings()
     load_banner()
@@ -409,7 +390,6 @@ def main():
     load_services()
     load_projects()
     load_galleries()
-    load_contact_us()
     print("Data load complete.")
 
 

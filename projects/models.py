@@ -1,6 +1,8 @@
 from django.core.exceptions import ValidationError
 from django.db import models
 
+from tac_hydro.storage import hashed_upload_to
+
 
 class ProjectStatus(models.TextChoices):
     COMPLETED = "Completed", "Completed"
@@ -55,7 +57,7 @@ class ProjectScopeImage(models.Model):
         on_delete=models.CASCADE,
         related_name="images",
     )
-    image = models.FileField(upload_to="projects/scopes")
+    image = models.FileField(upload_to=hashed_upload_to("projects/scopes"))
     alt_text = models.CharField(max_length=255, blank=True)
     order = models.PositiveIntegerField(default=0)
 
