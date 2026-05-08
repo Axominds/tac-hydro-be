@@ -12,6 +12,7 @@ dependencies = [
     "psycopg[binary,pool]==3.3.4",
     "pydantic-settings>=2.14.0",
     "dj-database-url>=2.1.0",
+    "gunicorn>=23.0.0",
 ]
 
 [dependency-groups]

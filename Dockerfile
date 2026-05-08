@@ -10,4 +10,5 @@ COPY --from=builder /app /app
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 WORKDIR /app
 EXPOSE 8000
-CMD ["uv", "run", "manage.py", "runserver", "0.0.0.0:8000"]
+RUN uv run manage.py collectstatic --noinput
+CMD ["uv", "run", "gunicorn", "tac_hydro.wsgi:application", "--workers", "8", "--bind", "0.0.0.0:8000"]
