@@ -36,4 +36,3 @@ class Settings(BaseSettings):
 
 
 env = Settings()
-print(env)
