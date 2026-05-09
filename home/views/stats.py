@@ -28,12 +28,21 @@ class StatsView(APIView):
         else:
             years = None
 
+        # return Response(
+        #     {
+        #         "mw_capacity": round(mw_capacity, 2),
+        #         "projects_count": projects_count,
+        #         "clients_count": clients_count,
+        #         "team_members_count": team_members_count,
+        #         "years": years,
+        #     }
+        # )
         return Response(
             {
-                "mw_capacity": round(mw_capacity, 2),
-                "projects_count": projects_count,
-                "clients_count": clients_count,
-                "team_members_count": team_members_count,
-                "years": years,
+                "mw_capacity": 1700,
+                "projects_count": 120,
+                "clients_count": 60,
+                "team_members_count": 50,
+                "years": 20,
             }
         )
