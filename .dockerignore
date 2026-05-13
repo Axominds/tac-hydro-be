@@ -1,0 +1,10 @@
+.git
+__pycache__
+.venv
+.ruff_cache
+.env
+db.sqlite3
+media
+staticfiles
+README.md
+design.md
