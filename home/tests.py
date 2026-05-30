@@ -54,6 +54,9 @@ from home.serializers.valued_partner import (
     ValuedPartnerListSerializer,
     ValuedPartnerUpdateSerializer,
 )
+from about_us.models import TeamMember
+from projects.models import Project, ProjectScope, ProjectScopeMembership
+from services.models import ExpertiseCategory, ServiceSector
 from users.models import User
 
 
@@ -631,4 +634,148 @@ class TokenValidateViewTests(TestCase):
     def test_no_token(self):
         client = APIClient()
         response = client.post("/api/auth/validate/")
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
+
+# ─── Admin Dashboard Stats View Tests ─────────────────────────────
+
+class AdminDashboardStatsViewTests(TestCase):
+    def test_authenticated_returns_correct_counts(self):
+        client, _ = create_authenticated_client()
+        TeamMember.objects.create(name="Alice", is_active=True)
+        TeamMember.objects.create(name="Bob", is_active=True)
+        scope = ProjectScope.objects.create(name="Feasibility")
+        project = Project.objects.create(
+            title="Test Project", installed_capacity=1.0, latitude=0, longitude=0,
+        )
+        ProjectScopeMembership.objects.create(project=project, project_scope=scope)
+        ServiceSector.objects.create(title="Energy")
+        ExpertiseCategory.objects.create(title="Hydropower", icon_key="dam")
+        News.objects.create(
+            title="News Item",
+            news_category=NewsCategory.objects.create(name="Updates"),
+            news_date=date.today(),
+        )
+        ValuedPartner.objects.create(name="Partner A", order=1)
+
+        response = client.get("/api/home/admin-stats/")
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data["team_members_count"], 2)
+        self.assertEqual(response.data["projects_count"], 1)
+        self.assertEqual(response.data["projects_by_scope"], {"Feasibility": 1})
+        self.assertEqual(response.data["service_sectors_count"], 1)
+        self.assertEqual(response.data["expertise_categories_count"], 1)
+        self.assertEqual(response.data["news_count"], 1)
+        self.assertEqual(response.data["partners_count"], 1)
+
+    def test_projects_by_scope_breakdown(self):
+        client, _ = create_authenticated_client()
+        scope_a = ProjectScope.objects.create(name="Feasibility")
+        scope_b = ProjectScope.objects.create(name="Construction")
+        p1 = Project.objects.create(title="P1", installed_capacity=1, latitude=0, longitude=0)
+        p2 = Project.objects.create(title="P2", installed_capacity=1, latitude=0, longitude=0)
+        p3 = Project.objects.create(title="P3", installed_capacity=1, latitude=0, longitude=0)
+        ProjectScopeMembership.objects.create(project=p1, project_scope=scope_a)
+        ProjectScopeMembership.objects.create(project=p2, project_scope=scope_a)
+        ProjectScopeMembership.objects.create(project=p3, project_scope=scope_b)
+
+        response = client.get("/api/home/admin-stats/")
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertDictEqual(
+            response.data["projects_by_scope"],
+            {"Feasibility": 2, "Construction": 1},
+        )
+
+    def test_only_active_team_members_counted(self):
+        client, _ = create_authenticated_client()
+        TeamMember.objects.create(name="Active One", is_active=True)
+        TeamMember.objects.create(name="Inactive One", is_active=False)
+
+        response = client.get("/api/home/admin-stats/")
+
+        self.assertEqual(response.data["team_members_count"], 1)
+
+    def test_unauthenticated_returns_401(self):
+        client = APIClient()
+        response = client.get("/api/home/admin-stats/")
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
+
+# ─── Change Password View Tests ───────────────────────────────────
+
+class ChangePasswordViewTests(TestCase):
+    def test_successful_change(self):
+        client, user = create_authenticated_client()
+        old_password = "testpass123"
+        new_password = "NewStr0ng!Pass"
+
+        response = client.post("/api/auth/change-password/", {
+            "old_password": old_password,
+            "new_password": new_password,
+            "confirm_password": new_password,
+        }, format="json")
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data, {"success": True})
+
+        user.refresh_from_db()
+        self.assertTrue(user.check_password(new_password))
+        self.assertFalse(user.check_password(old_password))
+
+    def test_missing_old_password(self):
+        client, _ = create_authenticated_client()
+        response = client.post("/api/auth/change-password/", {
+            "new_password": "NewStr0ng!Pass",
+            "confirm_password": "NewStr0ng!Pass",
+        }, format="json")
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("old_password", response.data)
+
+    def test_missing_new_password(self):
+        client, _ = create_authenticated_client()
+        response = client.post("/api/auth/change-password/", {
+            "old_password": "testpass123",
+        }, format="json")
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("new_password", response.data)
+
+    def test_wrong_old_password(self):
+        client, _ = create_authenticated_client()
+        response = client.post("/api/auth/change-password/", {
+            "old_password": "wrongpassword",
+            "new_password": "NewStr0ng!Pass",
+            "confirm_password": "NewStr0ng!Pass",
+        }, format="json")
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("old_password", response.data)
+
+    def test_passwords_do_not_match(self):
+        client, _ = create_authenticated_client()
+        response = client.post("/api/auth/change-password/", {
+            "old_password": "testpass123",
+            "new_password": "NewStr0ng!Pass",
+            "confirm_password": "Mismatch123!",
+        }, format="json")
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("confirm_password", response.data)
+
+    def test_weak_new_password(self):
+        client, _ = create_authenticated_client()
+        response = client.post("/api/auth/change-password/", {
+            "old_password": "testpass123",
+            "new_password": "12345678",
+            "confirm_password": "12345678",
+        }, format="json")
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("new_password", response.data)
+
+    def test_unauthenticated_returns_401(self):
+        client = APIClient()
+        response = client.post("/api/auth/change-password/", {
+            "old_password": "testpass123",
+            "new_password": "NewStr0ng!Pass",
+            "confirm_password": "NewStr0ng!Pass",
+        }, format="json")
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
