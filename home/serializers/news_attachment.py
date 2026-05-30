@@ -1,12 +1,12 @@
 from rest_framework import serializers
 
-from home.models import NewsAttachment
+from home.models import News, NewsAttachment
 
 
 class NewsAttachmentListSerializer(serializers.ModelSerializer):
     class Meta:
         model = NewsAttachment
-        fields = ["id", "news_id", "title"]
+        fields = ["id", "news_id", "file", "title"]
 
 
 class NewsAttachmentDetailSerializer(NewsAttachmentListSerializer):
@@ -15,11 +15,20 @@ class NewsAttachmentDetailSerializer(NewsAttachmentListSerializer):
 
 
 class NewsAttachmentCreateSerializer(serializers.ModelSerializer):
+    news_id = serializers.PrimaryKeyRelatedField(
+        queryset=News.objects.all(),
+        source="news",
+    )
+    file = serializers.FileField()
+
     class Meta:
         model = NewsAttachment
-        fields = ["news_id", "title"]
+        fields = ["id", "news_id", "file", "title"]
 
 
-class NewsAttachmentUpdateSerializer(NewsAttachmentCreateSerializer):
-    class Meta(NewsAttachmentCreateSerializer.Meta):
-        pass
+class NewsAttachmentUpdateSerializer(serializers.ModelSerializer):
+    title = serializers.CharField(required=True)
+
+    class Meta:
+        model = NewsAttachment
+        fields = ["title"]

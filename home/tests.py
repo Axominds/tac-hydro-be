@@ -171,7 +171,7 @@ class NewsAttachmentModelTests(TestCase):
         self.assertEqual(str(attachment), "Report")
 
     def test_cascade_delete(self):
-        NewsAttachment.objects.create(news=self.news, file=SimpleUploadedFile("doc.pdf", b"content"))
+        NewsAttachment.objects.create(news=self.news, file=SimpleUploadedFile("doc.pdf", b"content"), title="Doc")
         self.assertEqual(NewsAttachment.objects.count(), 1)
         self.news.delete()
         self.assertEqual(NewsAttachment.objects.count(), 0)
@@ -245,7 +245,7 @@ class NewsAttachmentSerializerTests(TestCase):
         self.news = News.objects.create(title="Article", news_category=self.category, news_date=date.today())
 
     def test_create_serializer_valid(self):
-        data = {"news_id": self.news.pk, "title": "Doc"}
+        data = {"news_id": self.news.pk, "file": SimpleUploadedFile("doc.pdf", b"content"), "title": "Doc"}
         serializer = NewsAttachmentCreateSerializer(data=data)
         self.assertTrue(serializer.is_valid(), serializer.errors)
 
@@ -443,6 +443,18 @@ class NewsViewTests(TestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
+    def test_retrieve_includes_attachments(self):
+        att = NewsAttachment.objects.create(
+            news=self.n1, file=SimpleUploadedFile("doc.pdf", b"content"), title="Report"
+        )
+        response = self.client.get(reverse("news-detail", args=[self.n1.pk]))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("attachments", response.data)
+        self.assertEqual(len(response.data["attachments"]), 1)
+        self.assertEqual(response.data["attachments"][0]["id"], att.pk)
+        self.assertEqual(response.data["attachments"][0]["title"], "Report")
+        self.assertIn("file", response.data["attachments"][0])
+
 
 class NewsCategoryViewTests(TestCase):
     def setUp(self):
@@ -488,6 +500,48 @@ class NewsAttachmentViewTests(TestCase):
         att = NewsAttachment.objects.create(news=self.news, file=SimpleUploadedFile("d.pdf", b"c"), title="Doc")
         response = self.client.get(reverse("newsattachment-detail", args=[att.pk]))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_create_with_file(self):
+        response = self.client.post(
+            reverse("newsattachment-list"),
+            {
+                "news_id": self.news.pk,
+                "file": SimpleUploadedFile("report.pdf", b"pdf_content"),
+                "title": "Annual Report",
+            },
+            format="multipart",
+        )
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(NewsAttachment.objects.count(), 1)
+        self.assertEqual(response.data["title"], "Annual Report")
+
+    def test_create_without_file_returns_400(self):
+        response = self.client.post(
+            reverse("newsattachment-list"),
+            {"news_id": self.news.pk, "file": "", "title": "No File"},
+            format="multipart",
+        )
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_update_title_only(self):
+        att = NewsAttachment.objects.create(news=self.news, file=SimpleUploadedFile("d.pdf", b"c"), title="Original")
+        response = self.client.patch(
+            reverse("newsattachment-detail", args=[att.pk]),
+            {"title": "Updated Title"},
+            format="json",
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        att.refresh_from_db()
+        self.assertEqual(att.title, "Updated Title")
+
+    def test_list_filter_by_news_id(self):
+        other_news = News.objects.create(title="Other", news_category=self.category, news_date=date.today())
+        a1 = NewsAttachment.objects.create(news=self.news, file=SimpleUploadedFile("a.pdf", b"a"), title="A")
+        NewsAttachment.objects.create(news=other_news, file=SimpleUploadedFile("b.pdf", b"b"), title="B")
+        response = self.client.get(reverse("newsattachment-list"), {"news_id": self.news.pk})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 1)
+        self.assertEqual(response.data[0]["id"], a1.pk)
 
     def test_delete(self):
         att = NewsAttachment.objects.create(news=self.news, file=SimpleUploadedFile("d.pdf", b"c"), title="Doc")

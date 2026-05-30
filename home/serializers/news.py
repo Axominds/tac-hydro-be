@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 from home.models import News, NewsCategory
+from home.serializers.news_attachment import NewsAttachmentDetailSerializer
 
 
 class NewsListSerializer(serializers.ModelSerializer):
@@ -21,6 +22,7 @@ class NewsListSerializer(serializers.ModelSerializer):
 
 class NewsRetrieveSerializer(serializers.ModelSerializer):
     image = serializers.SerializerMethodField()
+    attachments = NewsAttachmentDetailSerializer(many=True, read_only=True)
 
     class Meta:
         model = News
@@ -36,6 +38,7 @@ class NewsRetrieveSerializer(serializers.ModelSerializer):
             "is_published",
             "created_at",
             "updated_at",
+            "attachments",
         ]
 
     def get_image(self, obj):
@@ -53,6 +56,7 @@ class NewsCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = News
         fields = [
+            "id",
             "title",
             "news_category_id",
             "news_date",
