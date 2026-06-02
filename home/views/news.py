@@ -35,7 +35,7 @@ class NewsViewSet(viewsets.ModelViewSet):
         return super().get_serializer_class()
 
     def get_queryset(self):
-        queryset = News.objects.all()
+        queryset = News.objects.prefetch_related("attachments")
         news_category_id = self.request.query_params.get("news_category_id")
         if news_category_id:
             queryset = queryset.filter(news_category_id=news_category_id)

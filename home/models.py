@@ -107,10 +107,20 @@ class News(models.Model):
 class NewsAttachment(models.Model):
     news = models.ForeignKey(News, on_delete=models.CASCADE, related_name="attachments")
     file = models.FileField(upload_to=hashed_upload_to("home/news/attachments"))
-    title = models.CharField(max_length=255, blank=True)
+    title = models.CharField(max_length=255)
 
     class Meta:
         db_table = "news_attachments"
 
     def __str__(self) -> str:
         return self.title or self.file.name
+
+
+from django.db.models.signals import pre_delete
+from django.dispatch import receiver
+
+
+@receiver(pre_delete, sender=NewsAttachment)
+def delete_news_attachment_file(sender, instance, **kwargs):
+    if instance.file:
+        instance.file.delete(save=False)

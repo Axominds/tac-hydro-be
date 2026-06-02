@@ -10,13 +10,14 @@ dependencies = [
     "djangorestframework-simplejwt>=5.5.0",
     "django-cors-headers>=4.9.0",
     "psycopg[binary,pool]==3.3.4",
-    "pydantic-settings>=2.14.0",
+    "pydantic-settings>=2.14.1",
     "dj-database-url>=2.1.0",
     "gunicorn>=23.0.0",
+    "django-extensions>=4.1",
 ]
 
 [dependency-groups]
-dev = ["ruff>=0.15.7", "ty>=0.0.24", "uv-secure>=0.17.0"]
+dev = ["ruff>=0.15.7", "ty>=0.0.24", "uv-secure>=0.17.0", "ipython>=9.2"]
 
 [tool.ruff]
 line-length = 120

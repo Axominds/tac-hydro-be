@@ -9,7 +9,9 @@ from django.views.static import serve
 from rest_framework.permissions import AllowAny
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from home.urls import router as home_router
+from home.views.admin_stats import AdminDashboardStatsView
 from home.views.stats import StatsView
+from home.views.change_password import ChangePasswordView
 from home.views.token import TokenValidateView
 
 urlpatterns = [
@@ -23,7 +25,9 @@ urlpatterns = [
     path("api/auth/token/", TokenObtainPairView.as_view(permission_classes=[AllowAny]), name="token_obtain_pair"),
     path("api/auth/token-refresh/", TokenRefreshView.as_view(permission_classes=[AllowAny]), name="token_refresh"),
     path("api/auth/validate/", TokenValidateView.as_view(), name="token_validate"),
+    path("api/auth/change-password/", ChangePasswordView.as_view(), name="change-password"),
     path("api/home/stats/", StatsView.as_view(), name="stats"),
+    path("api/home/admin-stats/", AdminDashboardStatsView.as_view(), name="admin-stats"),
 ]
 
 urlpatterns += [

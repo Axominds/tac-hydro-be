@@ -11,6 +11,13 @@ from home.serializers.news_attachment import (
 
 class NewsAttachmentViewSet(viewsets.ModelViewSet):
     queryset = NewsAttachment.objects.all()
+
+    def get_queryset(self):
+        qs = NewsAttachment.objects.all()
+        news_id = self.request.query_params.get("news_id")
+        if news_id:
+            qs = qs.filter(news_id=news_id)
+        return qs
     serializer_class = NewsAttachmentDetailSerializer
     list_serializer_class = NewsAttachmentListSerializer
     create_serializer_class = NewsAttachmentCreateSerializer
