@@ -42,6 +42,9 @@ class NewsViewSet(viewsets.ModelViewSet):
         is_published = self.request.query_params.get("is_published")
         if is_published is not None:
             queryset = queryset.filter(is_published=is_published.lower() == "true")
+        search = self.request.query_params.get("search")
+        if search:
+            queryset = queryset.filter(title__icontains=search)
         return queryset
 
     @action(detail=False, methods=["get"])

@@ -6,7 +6,7 @@ from projects.models import Project
 class ProjectListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
-        fields = ["id", "title", "installed_capacity", "installed_capacity_unit", "latitude", "longitude"]
+        fields = ["id", "title", "status", "installed_capacity", "installed_capacity_unit", "latitude", "longitude"]
 
 
 class ProjectDetailSerializer(ProjectListSerializer):
