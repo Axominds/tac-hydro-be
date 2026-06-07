@@ -11,6 +11,10 @@ class JobPostingAdmin(admin.ModelAdmin):
 
 @admin.register(JobApplication)
 class JobApplicationAdmin(admin.ModelAdmin):
-    list_display = ["first_name", "last_name", "job", "email", "submitted_at", "status"]
-    list_filter = ["status", "job"]
+    list_display = ["first_name", "last_name", "job", "email", "submitted_at"]
+    list_filter = ["job"]
     search_fields = ["first_name", "last_name", "email"]
+    readonly_fields = ["cv_file", "cover_letter_file", "submitted_at"]
+
+    def has_delete_permission(self, request, obj=None):
+        return False

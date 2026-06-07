@@ -47,7 +47,6 @@ class JobApplication(models.Model):
     cv_file = models.FileField(upload_to="contact_us/applications/cv", blank=True)
     cover_letter_file = models.FileField(upload_to="contact_us/applications/cover", blank=True)
     submitted_at = models.DateTimeField(auto_now_add=True)
-    status = models.CharField(max_length=64, blank=True)
 
     class Meta:
         db_table = "job_applications"
